@@ -145,7 +145,7 @@
       <div class="contact-icon">☕</div>
       <div>
         <div class="contact-method-h">Coffee in person</div>
-        <div class="contact-method-detail">Anywhere across Suffolk. The Hop &amp; Heap in Needham Market is my usual.</div>
+        <div class="contact-method-detail">Come to the office at <strong>Grange Farm, Creeting St Mary</strong> — we make a mean latte with seriously fresh organic beans. Or anywhere else across Suffolk if you'd rather.</div>
       </div>
     </div>
 
@@ -160,12 +160,34 @@
     <div class="contact-method">
       <div class="contact-icon">📍</div>
       <div>
-        <div class="contact-method-h">Studio</div>
-        <div class="contact-method-detail">Needham Market, Suffolk · <strong>IP6</strong><br>Visits by appointment.</div>
+        <div class="contact-method-h">Find the office</div>
+        <div class="contact-method-detail"><strong>The Office, Grange Farm</strong><br>All Saints Road, Creeting St Mary<br>Suffolk, IP6 8NG<br><span style="color: var(--mute); font-size: 12px;">Visits by appointment.</span></div>
       </div>
     </div>
   </div>
 </div>
+
+<!-- MAP -->
+<section style="padding: 70px 48px 90px; background: var(--ink-2); border-top: 1px solid var(--border);">
+  <div class="section-head">
+    <h2>Find the <span class="hl serif">office.</span></h2>
+    <p class="section-sub">Grange Farm, Creeting St Mary — just off the A14 between Stowmarket and Needham Market. Free parking, decent coffee.</p>
+  </div>
+  <div style="border-radius: 18px; overflow: hidden; border: 1px solid var(--border); max-width: 1200px; margin: 30px auto 0;">
+    <iframe
+      src="https://maps.google.com/maps?q=Grange+Farm+All+Saints+Road+Creeting+St+Mary+IP6+8NG&t=&z=14&ie=UTF8&iwloc=&output=embed"
+      width="100%"
+      height="420"
+      style="border: 0; display: block; filter: invert(0.92) hue-rotate(180deg);"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Map showing AJH Technology office at Grange Farm, Creeting St Mary, Suffolk, IP6 8NG">
+    </iframe>
+  </div>
+  <p style="text-align: center; margin-top: 18px; font-size: 13px; color: var(--mute);">
+    <a href="https://www.google.com/maps/dir/?api=1&destination=Grange+Farm+All+Saints+Road+Creeting+St+Mary+IP6+8NG" target="_blank" rel="noopener" style="color: var(--accent); border-bottom: 1px solid var(--accent);">Open in Google Maps for directions →</a>
+  </p>
+</section>
 
 <!-- WHAT HAPPENS NEXT -->
 <section style="background: var(--ink-2);">
@@ -221,33 +243,4 @@
 <footer>
   <div class="footer-grid">
     <div class="footer-brand"><div class="logo"><span class="logo-dot"></span>AJH<span class="logo-suffix">/technology</span></div><p>Built locally in Suffolk. Helping small businesses grow with professional web design, strong brand identity and streamlined processes.</p></div>
-    <div class="footer-col"><h4>Services</h4><ul><li><a href="web.html">Web design</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="brand.html">Brand</a></li><li><a href="process.html">Process</a></li><li><a href="services.html">All services</a></li></ul></div>
-    <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="work.html">Approach</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-    <div class="footer-col"><h4>Contact</h4><ul><li>07488 286207</li><li>The Office, Grange Farm</li><li>All Saints Road</li><li>Creeting St Mary, Suffolk</li><li>IP6 8NG</li></ul></div>
-  </div>
-  <div class="footer-bottom"><div>© 2026 AJH Technology Ltd</div><div>Privacy · Terms · Cookies</div></div>
-</footer>
-
-<div class="sticky-cta">
-  <span class="sticky-cta-dot"></span>
-  <span class="sticky-cta-text"><strong>Book a coffee with Harlyn</strong> · 20 mins · No sales pitch</span>
-  <span class="sticky-cta-mobile">Book a 20-min call</span>
-  <a href="#" class="sticky-cta-btn" onclick="document.getElementById('name').focus(); return false;">Start above ↑</a>
-</div>
-
-<script>
-// Pre-select package from ?package= URL parameter
-(function() {
-  var params = new URLSearchParams(window.location.search);
-  var pkg = params.get('package');
-  var select = document.getElementById('enquiry');
-  if (!pkg || !select) return;
-  var map = {
-    launch: 'Launch package (£500 setup + £25/mo)',
-    grow: 'Grow package (£1,000 setup + £75/mo)',
-    flagship: 'Flagship package (£2,000 setup + £125/mo)',
-    bespoke: 'Bespoke project (let\'s chat)',
-    workshop: 'Bespoke project (let\'s chat)'
-  };
-  var target = map[pkg.toLowerCase()];
-  i
+    <div class="footer-col"><h4>Services</h4><ul><li><a href="web.html">Web design</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="brand.html">Brand</a></
