@@ -79,43 +79,46 @@
   <div class="contact-form">
     <h2 class="form-h">Tell us about <span class="hl serif">your business.</span></h2>
     <p class="form-sub">The more you tell us, the better we can prepare. But none of this is required — even a one-line "let's chat" works.</p>
-    <div class="form-row">
-      <div class="form-field">
-        <label>Your name</label>
-        <input type="text" placeholder="e.g. Sarah Mitchell">
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
+      <input type="hidden" name="form-name" value="contact">
+      <p style="display:none;"><label>Don't fill this out if you're human: <input name="bot-field"></label></p>
+      <div class="form-row">
+        <div class="form-field">
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" placeholder="e.g. Sarah Mitchell" required>
+        </div>
+        <div class="form-field">
+          <label for="business">Business name</label>
+          <input id="business" name="business" type="text" placeholder="e.g. your business name">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.co.uk" required>
+        </div>
+        <div class="form-field">
+          <label for="phone">Phone (optional)</label>
+          <input id="phone" name="phone" type="tel" placeholder="07488 ...">
+        </div>
       </div>
       <div class="form-field">
-        <label>Business name</label>
-        <input type="text" placeholder="e.g. your business name">
+        <label for="enquiry">What are you looking for?</label>
+        <select id="enquiry" name="enquiry">
+          <option>I'm not sure yet — let's chat</option>
+          <option>Lead-generation website (from £1,800)</option>
+          <option>Brand identity (from £1,200)</option>
+          <option>Business process improvement (from £1,800)</option>
+          <option>Free website audit</option>
+        </select>
       </div>
-    </div>
-    <div class="form-row">
       <div class="form-field">
-        <label>Email</label>
-        <input type="email" placeholder="you@example.co.uk">
+        <label for="message">Tell us a bit about your business</label>
+        <textarea id="message" name="message" placeholder="What you do, where you're based, and what's currently frustrating you about your digital setup. Even a few sentences helps."></textarea>
       </div>
-      <div class="form-field">
-        <label>Phone (optional)</label>
-        <input type="tel" placeholder="07488 ...">
-      </div>
-    </div>
-    <div class="form-field">
-      <label>What are you looking for?</label>
-      <select>
-        <option>I'm not sure yet — let's chat</option>
-        <option>Brand identity (from £1,200)</option>
-        <option>Lead-generation website (from £1,800)</option>
-        <option>Business process improvement (from £1,800)</option>
-        <option>Free website audit</option>
-        <option>Free AI opportunity audit</option>
-      </select>
-    </div>
-    <div class="form-field">
-      <label>Tell us a bit about your business</label>
-      <textarea placeholder="What you do, where you're based, and what's currently frustrating you about your digital setup. Even a few sentences helps."></textarea>
-    </div>
-    <a href="#" class="btn-primary" style="width: 100%; justify-content: center; padding: 20px;">Send my message <span class="arrow">→</span></a>
-    <div class="form-mini">Your details are kept private. We'll never share, sell or pass them on. GDPR-compliant.</div>
+      <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; padding: 20px; font-family: inherit;">Send my message <span class="arrow">→</span></button>
+      <div class="form-mini">Your details are kept private. We'll never share, sell or pass them on. GDPR-compliant.</div>
+    </form>
   </div>
 
   <!-- SIDE -->

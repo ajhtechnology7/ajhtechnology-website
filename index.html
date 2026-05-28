@@ -302,10 +302,12 @@ section.compare { background: var(--ink-2); }
       <div class="magnet-tag">Free download · No card needed</div>
       <h3 class="magnet-h">Get the Suffolk Small Business <span class="hl serif">Website Audit.</span></h3>
       <p class="magnet-body">A 12-page practical checklist for your existing site: the conversion fixes that lift enquiries, the speed tweaks that protect your Google ranking, and the design moves that finally make you look as professional as you are.</p>
-      <div class="magnet-form">
-        <input type="email" class="magnet-input" placeholder="your@email.co.uk">
-        <a href="#" class="btn-primary">Send me the audit <span class="arrow">→</span></a>
-      </div>
+      <form name="audit" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" class="magnet-form">
+        <input type="hidden" name="form-name" value="audit">
+        <p style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>
+        <input id="audit-email" name="email" type="email" class="magnet-input" placeholder="your@email.co.uk" required>
+        <button type="submit" class="btn-primary" style="font-family: inherit; cursor: pointer;">Send me the audit <span class="arrow">→</span></button>
+      </form>
       <div class="magnet-mini">Plain English. No follow-up call unless you ask.</div>
     </div>
     <div class="magnet-visual">
