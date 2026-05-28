@@ -108,9 +108,9 @@
         <select id="enquiry" name="enquiry">
           <option>I'm not sure yet — let's chat</option>
           <option>Launch package (£500 setup + £25/mo)</option>
-          <option>Grow package (£1,500 setup + £75/mo)</option>
-          <option>Flagship package (£3,000 setup + £125/mo)</option>
-          <option>Bespoke project (from £6,000)</option>
+          <option>Grow package (£1,000 setup + £75/mo)</option>
+          <option>Flagship package (£2,000 setup + £125/mo)</option>
+          <option>Bespoke project (let's chat)</option>
           <option>Brand identity (from £1,200)</option>
           <option>Business process improvement (from £1,800)</option>
           <option>Free website audit</option>
@@ -249,10 +249,10 @@
   if (!pkg || !select) return;
   var map = {
     launch: 'Launch package (£500 setup + £25/mo)',
-    grow: 'Grow package (£1,500 setup + £75/mo)',
-    flagship: 'Flagship package (£3,000 setup + £125/mo)',
-    bespoke: 'Bespoke project (from £6,000)',
-    workshop: 'Bespoke project (from £6,000)'
+    grow: 'Grow package (£1,000 setup + £75/mo)',
+    flagship: 'Flagship package (£2,000 setup + £125/mo)',
+    bespoke: 'Bespoke project (let\'s chat)',
+    workshop: 'Bespoke project (let\'s chat)'
   };
   var target = map[pkg.toLowerCase()];
   if (!target) return;
