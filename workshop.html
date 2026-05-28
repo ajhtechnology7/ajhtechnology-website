@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The AJH AI Workshop · Half-Day, On-Site in Suffolk | £495</title>
+<meta name="description" content="A practical, hands-on half-day AI workshop for small businesses in Suffolk. Three live AI workflows tailored to your team, by lunchtime. £495 fixed price.">
+<link rel="canonical" href="https://ajh.tech/workshop">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+<style>
+.agenda { padding: 90px 48px; background: var(--ink-2); }
+.agenda-h { font-size: 42px; font-weight: 900; letter-spacing: -1.5px; margin-bottom: 50px; }
+.agenda-h .hl { color: var(--accent); }
+.agenda-list { display: flex; flex-direction: column; gap: 18px; }
+.agenda-item { display: grid; grid-template-columns: 140px 1fr; gap: 32px; padding: 24px 0; border-top: 1px solid #2A2A2A; align-items: start; }
+.agenda-item:last-child { border-bottom: 1px solid #2A2A2A; }
+.agenda-time { font-size: 14px; font-weight: 800; color: var(--accent); letter-spacing: 1px; }
+.agenda-content h3 { font-size: 22px; font-weight: 800; margin-bottom: 8px; letter-spacing: -0.5px; }
+.agenda-content p { font-size: 14px; color: #BBB; line-height: 1.65; }
+
+.booking { padding: 90px 48px; }
+.booking-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 60px; align-items: start; }
+@media (max-width: 800px) { .booking-grid { grid-template-columns: 1fr; } }
+.booking-card { background: var(--ink-2); border: 1px solid var(--border); border-radius: 24px; padding: 40px; position: sticky; top: 110px; }
+.booking-tag { background: var(--accent); color: var(--ink); padding: 8px 16px; border-radius: 999px; font-size: 12px; font-weight: 800; display: inline-block; margin-bottom: 24px; letter-spacing: 1px; text-transform: uppercase; }
+.booking-price { font-size: 64px; font-weight: 900; letter-spacing: -3px; line-height: 1; margin-bottom: 8px; }
+.booking-price-sub { color: var(--mute); margin-bottom: 24px; font-size: 14px; }
+.booking-includes { list-style: none; margin: 32px 0; padding: 24px 0; border-top: 1px solid #2A2A2A; border-bottom: 1px solid #2A2A2A; }
+.booking-includes li { padding: 8px 0; font-size: 14px; color: #DDD; display: flex; gap: 12px; }
+.booking-includes li::before { content: '✓'; color: var(--accent); font-weight: 700; }
+
+.who-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 50px; }
+@media (max-width: 700px) { .who-grid { grid-template-columns: 1fr; } }
+.who-card { background: var(--ink-2); border: 1px solid var(--border); border-radius: 18px; padding: 32px; }
+.who-card.yes { border-color: var(--accent); }
+.who-card-tag { font-size: 12px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 16px; }
+.who-card.yes .who-card-tag { color: var(--accent); }
+.who-card.no .who-card-tag { color: var(--mute); }
+.who-card ul { list-style: none; font-size: 14px; color: #BBB; }
+.who-card li { padding: 10px 0; border-top: 1px solid #2A2A2A; display: flex; gap: 12px; }
+.who-card.yes li::before { content: '✓'; color: var(--accent); font-weight: 700; }
+.who-card.no li::before { content: '✕'; color: #555; font-weight: 700; }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="logo"><span class="logo-dot"></span>AJH<span class="logo-suffix">/technology</span></a>
+  <div class="nav-links">
+    <a href="services.html">Services</a>
+    <a href="ai.html">AI for SMBs</a>
+    <a href="work.html">Work</a>
+    <a href="about.html">About</a>
+    <a href="workshop.html" class="active">Workshop</a>
+  </div>
+  <div class="nav-right">
+    <span class="nav-phone">01449 000 000</span>
+    <a href="contact.html?service=workshop" class="nav-cta">Reserve my spot →</a>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="breadcrumb"><a href="index.html"><span class="accent">AJH</span></a> / Workshop</div>
+  <div class="eyebrow" style="background: var(--accent); color: var(--ink); padding: 6px 14px; border-radius: 999px;">Only 4 spots left in June</div>
+  <h1>Get your team using AI <span class="hl serif">by lunchtime.</span></h1>
+  <p class="sub">A practical, on-site, hands-on half-day workshop. We come to your office. We work with your team. You leave with three live AI workflows tailored to how your business actually runs.</p>
+  <div class="cta-row">
+    <a href="contact.html?service=workshop" class="btn-primary">Reserve my workshop spot <span class="arrow">→</span></a>
+    <a href="#agenda" class="btn-secondary">See the agenda</a>
+    <span class="mini">£495 · On-site in Suffolk · Up to 8 attendees</span>
+  </div>
+</div>
+
+<section class="aeo-box">
+  <div class="aeo-inner">
+    <div class="aeo-tag">What is the AJH AI Workshop?</div>
+    <div class="aeo-a"><strong>The AJH AI Workshop is a hands-on, half-day session delivered on-site at your business for £495.</strong> It includes a business AI audit, hands-on training with your team, three live AI workflows tailored to your business, an AI policy and data-safety briefing, and 30 days of follow-up support. Up to 8 attendees. Available across Suffolk and East Anglia.</div>
+  </div>
+</section>
+
+<!-- AGENDA -->
+<section class="agenda" id="agenda">
+  <h2 class="agenda-h">Your morning, <span class="hl serif">hour by hour.</span></h2>
+  <div class="agenda-list">
+    <div class="agenda-item">
+      <div class="agenda-time">9:00 – 9:30</div>
+      <div class="agenda-content">
+        <h3>Audit your business</h3>
+        <p>We walk through your day-to-day with you. Where time is spent, where leads come in, where bottlenecks are. By the end, we know exactly where AI will help — and where it won't.</p>
+      </div>
+    </div>
+    <div class="agenda-item">
+      <div class="agenda-time">9:30 – 10:30</div>
+      <div class="agenda-content">
+        <h3>Hands-on: the right tools</h3>
+        <p>No slides. We open the tools (ChatGPT, Claude, NotebookLM, Make, etc.) and work through real tasks from your business with your team. They learn by doing.</p>
+      </div>
+    </div>
+    <div class="agenda-item">
+      <div class="agenda-time">10:30 – 11:30</div>
+      <div class="agenda-content">
+        <h3>Build workflow #1</h3>
+        <p>Live, with your team in the room: we build the highest-value AI workflow for your business. By the end of this hour, it's running.</p>
+      </div>
+    </div>
+    <div class="agenda-item">
+      <div class="agenda-time">11:30 – 12:30</div>
+      <div class="agenda-content">
+        <h3>Build workflows #2 and #3</h3>
+        <p>Two more live workflows. Customer-service AI, quote drafts, content automation, lead-qualification — whichever fits your business best.</p>
+      </div>
+    </div>
+    <div class="agenda-item">
+      <div class="agenda-time">12:30 – 1:00</div>
+      <div class="agenda-content">
+        <h3>Policy &amp; safety briefing</h3>
+        <p>A clear, plain-English briefing on AI policy, data handling and GDPR. Your team leaves confident — not anxious — about using AI safely.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="booking">
+  <div class="booking-grid">
+    <div>
+      <div class="eyebrow">Who it's for</div>
+      <h2>Is this <span class="hl serif">right for you?</span></h2>
+      <p class="sub" style="margin-bottom: 0;">An honest gut-check before you book.</p>
+      <div class="who-grid">
+        <div class="who-card yes">
+          <div class="who-card-tag">Yes if</div>
+          <ul>
+            <li>You're curious about AI but don't know where to start</li>
+            <li>Your team spends hours on repetitive admin</li>
+            <li>You want practical, not theoretical</li>
+            <li>You'd rather learn by doing than reading</li>
+            <li>You want a Suffolk-based consultant who'll come to you</li>
+          </ul>
+        </div>
+        <div class="who-card no">
+          <div class="who-card-tag">Not yet if</div>
+          <ul>
+            <li>You're already running advanced AI workflows</li>
+            <li>You want bespoke AI development (we offer that separately)</li>
+            <li>You're looking for AI ethics theory</li>
+            <li>You can't get your team in one room for half a day</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="booking-card">
+      <div class="booking-tag">4 spots left in June</div>
+      <div class="booking-price">£495</div>
+      <div class="booking-price-sub">Half-day on-site · Up to 8 attendees · Suffolk + East Anglia</div>
+      <a href="contact.html?service=workshop" class="btn-primary" style="width: 100%; justify-content: center;">Reserve my spot <span class="arrow">→</span></a>
+      <ul class="booking-includes">
+        <li>Business AI audit</li>
+        <li>Half-day on-site workshop</li>
+        <li>3 live AI workflows built with your team</li>
+        <li>AI policy &amp; data safety briefing</li>
+        <li>30 days of follow-up support</li>
+        <li>All materials &amp; recordings</li>
+      </ul>
+      <p style="font-size: 12px; color: var(--mute); text-align: center;">100% refund if you're not satisfied by the end of the morning.</p>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="final-content">
+    <div class="eyebrow">Not ready yet?</div>
+    <h2 class="final-h">Get the playbook <span class="hl serif">instead.</span></h2>
+    <p class="final-sub">Free 22-page guide: the AI moves Suffolk small businesses should make first.</p>
+    <div class="cta-row">
+      <a href="index.html#audit" class="btn-primary">Send me the playbook <span class="arrow">→</span></a>
+      <a href="contact.html?service=workshop" class="btn-secondary">Reserve a workshop spot</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand"><div class="logo"><span class="logo-dot"></span>AJH<span class="logo-suffix">/technology</span></div><p>Built locally in Needham Market. Helping Suffolk businesses grow.</p></div>
+    <div class="footer-col"><h4>Services</h4><ul><li><a href="brand.html">Brand</a></li><li><a href="process.html">Process</a></li><li><a href="web.html">Web</a></li><li><a href="ai.html">AI</a></li><li><a href="workshop.html">AI Workshop</a></li></ul></div>
+    <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="work.html">Work</a></li><li><a href="contact.html">Contact</a></li><li><a href="app.html">The AJH App</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul><li>01449 000 000</li><li>hello@ajh.tech</li><li>Needham Market, IP6</li></ul></div>
+  </div>
+  <div class="footer-bottom"><div>© 2026 AJH Technology Ltd</div><div>Privacy · Terms · Cookies</div></div>
+</footer>
+
+<div class="sticky-cta">
+  <span class="sticky-cta-dot"></span>
+  <span class="sticky-cta-text"><strong>AI Workshop · £495</strong> · only 4 June spots left</span>
+  <span class="sticky-cta-mobile">£495 · 4 spots left</span>
+  <a href="contact.html?service=workshop" class="sticky-cta-btn">Reserve →</a>
+</div>
+
+</body>
+</html>
