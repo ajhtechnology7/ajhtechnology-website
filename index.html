@@ -66,10 +66,11 @@
 .founder { padding: 110px 48px; background: var(--ink-2); }
 .founder-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 60px; align-items: center; }
 @media (max-width: 800px) { .founder-grid { grid-template-columns: 1fr; } }
-.founder-photo { background: linear-gradient(135deg, #2a2a2a, #1a1a1a); border-radius: 18px; aspect-ratio: 4/5; position: relative; overflow: hidden; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; }
-.founder-photo-placeholder { color: #555; font-size: 13px; opacity: 0.6; }
-.founder-photo-name { position: absolute; bottom: 36px; left: 36px; z-index: 1; font-size: 15px; font-weight: 700; color: var(--paper); }
-.founder-photo-role { position: absolute; bottom: 36px; right: 36px; z-index: 1; font-size: 12px; color: var(--accent); letter-spacing: 1px; }
+.founder-photo { background: #1a1a1a; border-radius: 18px; aspect-ratio: 4/5; position: relative; overflow: hidden; border: 1px solid var(--border); }
+.founder-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 35%; display: block; }
+.founder-photo::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, transparent 55%, rgba(10,10,10,0.85) 100%); pointer-events: none; }
+.founder-photo-name { position: absolute; bottom: 36px; left: 36px; z-index: 2; font-size: 15px; font-weight: 700; color: var(--paper); letter-spacing: 0.3px; }
+.founder-photo-role { position: absolute; bottom: 36px; right: 36px; z-index: 2; font-size: 11px; color: var(--accent); letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600; }
 .founder-h { font-size: 42px; font-weight: 900; letter-spacing: -1.5px; line-height: 1.05; margin-bottom: 28px; }
 .founder-h .hl { color: var(--accent); }
 .founder-body { font-size: 16px; color: #BBB; line-height: 1.6; margin-bottom: 16px; }
@@ -238,16 +239,16 @@ section.compare { background: var(--ink-2); }
 <section class="founder">
   <div class="founder-grid">
     <div class="founder-photo">
-      <span class="founder-photo-placeholder">[ Photo: Harlyn Palmer ]</span>
+      <img src="harlyn-football.jpg" alt="Harlyn Palmer, founder of AJH Technology, on the pitch in Needham Market FC kit">
       <span class="founder-photo-name">Harlyn Palmer</span>
-      <span class="founder-photo-role">Founder</span>
+      <span class="founder-photo-role">Founder · #7</span>
     </div>
     <div>
       <div class="eyebrow">Why AJH exists</div>
-      <h3 class="founder-h">Built locally. <span class="hl serif">Built to last.</span></h3>
-      <p class="founder-body">I grew up watching brilliant local businesses struggle with the same problem: their work was excellent, but their digital shop window didn't reflect it. Leads slipped through the cracks. First impressions cost real money.</p>
-      <p class="founder-body">AJH Technology exists to fix that. We bring the strategic thinking usually reserved for big companies — and apply it where it matters most: to the bakeries, builders, salons and consultancies that make Suffolk tick.</p>
-      <p class="founder-body">No jargon. No long contracts. Just better websites, better results, and the same person on the other end of the phone every time.</p>
+      <h3 class="founder-h">Two pursuits. <span class="hl serif">One work ethic.</span></h3>
+      <p class="founder-body">I grew up watching brilliant local businesses struggle with the same problem: their work was excellent, but their digital shop window didn't reflect it. Leads slipped through the cracks. First impressions cost real money. AJH Technology exists to fix that — strategic thinking usually reserved for big companies, applied to the bakeries, builders, salons and consultancies that make Suffolk tick.</p>
+      <p class="founder-body">Web design isn't my only pursuit. I was signed by Ipswich Town as a seven-year-old and trained through their academy until I was fourteen. Seven years of early starts, hard sessions, and the kind of work nobody claps for at the time. The academy let me go, but the football didn't leave me — I'm still chasing the highest level I can reach, currently wearing #7 for Needham Market FC.</p>
+      <p class="founder-body">Those years taught me two things that show up in every client project: resilience when it isn't going your way, and the patience to do unglamorous reps until they pay off. No clever shortcuts to a website that actually wins business — just the work, done properly, by the same person on the other end of the phone every time.</p>
       <div class="founder-sig">— Harlyn Palmer, Founder</div>
       <div class="cta-row" style="margin-top: 32px;">
         <a href="about.html" class="btn-secondary">Read the full story</a>
