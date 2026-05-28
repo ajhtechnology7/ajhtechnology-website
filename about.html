@@ -14,10 +14,11 @@
 .founder-block { padding: 90px 48px; }
 .founder-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 60px; align-items: center; }
 @media (max-width: 800px) { .founder-grid { grid-template-columns: 1fr; } }
-.founder-photo { background: linear-gradient(135deg, #2a2a2a, #1a1a1a); border-radius: 18px; aspect-ratio: 4/5; position: relative; overflow: hidden; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; }
-.founder-photo-placeholder { color: #555; font-size: 13px; opacity: 0.6; }
-.founder-photo-name { position: absolute; bottom: 36px; left: 36px; font-size: 15px; font-weight: 700; color: var(--paper); }
-.founder-photo-role { position: absolute; bottom: 36px; right: 36px; font-size: 12px; color: var(--accent); letter-spacing: 1px; }
+.founder-photo { background: #1a1a1a; border-radius: 18px; aspect-ratio: 4/5; position: relative; overflow: hidden; border: 1px solid var(--border); }
+.founder-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 30%; display: block; }
+.founder-photo::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, transparent 55%, rgba(10,10,10,0.85) 100%); pointer-events: none; }
+.founder-photo-name { position: absolute; bottom: 36px; left: 36px; z-index: 2; font-size: 15px; font-weight: 700; color: var(--paper); letter-spacing: 0.3px; }
+.founder-photo-role { position: absolute; bottom: 36px; right: 36px; z-index: 2; font-size: 11px; color: var(--accent); letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600; }
 .founder-body { font-size: 17px; color: #CCC; line-height: 1.7; margin-bottom: 20px; max-width: 640px; }
 .founder-sig { font-family: 'Instrument Serif', serif; font-style: italic; font-size: 24px; margin-top: 32px; color: var(--paper); }
 
@@ -72,15 +73,16 @@
 <section class="founder-block">
   <div class="founder-grid">
     <div class="founder-photo">
-      <span class="founder-photo-placeholder">[ Photo: Harlyn Palmer ]</span>
+      <img src="harlyn-action.jpg" alt="Harlyn Palmer, founder of AJH Technology, playing for Needham Market FC">
       <span class="founder-photo-name">Harlyn Palmer</span>
       <span class="founder-photo-role">Founder</span>
     </div>
     <div>
       <div class="eyebrow">From the founder</div>
       <h2 style="font-size: 48px; line-height: 1.05; margin-bottom: 32px;">A letter, <span class="hl serif">basically.</span></h2>
-      <p class="founder-body">I grew up in Suffolk watching brilliant local businesses struggle with the same problem: their work was excellent, but their digital shop window didn't reflect it. The signwriting was beautiful. The website was tragic. Leads slipped through the cracks. Admin ate the evenings. AI sounded like a different language someone else was speaking.</p>
+      <p class="founder-body">I grew up in Suffolk watching brilliant local businesses struggle with the same problem: their work was excellent, but their digital shop window didn't reflect it. The signwriting was beautiful. The website was tragic. Leads slipped through the cracks. First impressions were costing real money.</p>
       <p class="founder-body">AJH Technology exists to fix that. I bring the kind of strategic thinking usually reserved for big companies — and apply it where it matters most: to the bakeries, builders, salons and consultancies that make Suffolk tick.</p>
+      <p class="founder-body">Outside of work, I'm still chasing a different goal. I trained in the Ipswich Town academy from the age of seven until I was fourteen — seven years that taught me about resilience, hard work, and the value of unglamorous reps. I'm still playing the game; currently for Needham Market FC, still aiming for the highest level I can reach. The same head-down mentality is what I bring to every client project.</p>
       <p class="founder-body">No jargon. No long contracts. Same person on every call. If something doesn't make sense for your business, I'll tell you that instead of selling it to you.</p>
       <p class="founder-body">If that sounds like the kind of partner you've been looking for — let's get a coffee.</p>
       <div class="founder-sig">— Harlyn Palmer</div>
@@ -140,7 +142,7 @@
     <div class="timeline-item">
       <div class="timeline-year">2026</div>
       <div class="timeline-content">
-        <h3>AI focus &amp; the workshop</h3>
+        <h3>Web design refocus</h3>
         <p>AJH refocuses on web design as the core service. Brand and process retained as supporting offerings. Fixed-price, fixed-scope model formalised.</p>
       </div>
     </div>
