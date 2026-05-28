@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing &amp; Packages | AJH Technology — Web Design for Suffolk SMEs</title>
+<meta name="description" content="Fixed-price web design packages for Suffolk small businesses. Launch from £500 setup + £25/mo. Grow and Flagship tiers for ambitious SMEs, plus Bespoke for businesses with complex needs.">
+<link rel="canonical" href="https://ajh.tech/pricing">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+<style>
+/* ==== Pricing cards row ==== */
+.pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; padding: 0 48px; margin-top: 20px; }
+@media (max-width: 1000px) { .pricing-grid { grid-template-columns: 1fr; max-width: 480px; margin: 20px auto 0; } }
+
+.tier { background: var(--ink-2); border: 1px solid var(--border); border-radius: 22px; padding: 36px 32px; display: flex; flex-direction: column; position: relative; transition: transform 0.2s, border-color 0.2s; }
+.tier:hover { transform: translateY(-4px); border-color: #333; }
+.tier.featured { background: var(--accent); color: var(--ink); border-color: var(--accent); transform: scale(1.02); }
+.tier.featured:hover { transform: scale(1.02) translateY(-4px); }
+.tier.featured .tier-tagline,
+.tier.featured .tier-includes-h,
+.tier.featured .tier-list li { color: var(--ink); }
+.tier.featured .tier-list li::before { background: var(--ink); }
+.tier.featured .tier-foot-note { color: rgba(10,10,10,0.7); }
+.tier-badge { position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: var(--ink); color: var(--accent); font-size: 11px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; padding: 6px 14px; border-radius: 999px; border: 1px solid var(--accent); }
+.tier-name { font-size: 13px; letter-spacing: 3px; text-transform: uppercase; font-weight: 800; color: var(--accent); margin-bottom: 12px; }
+.tier.featured .tier-name { color: var(--ink); opacity: 0.7; }
+.tier-h { font-family: 'Instrument Serif', serif; font-style: italic; font-size: 36px; line-height: 1; letter-spacing: -1px; margin-bottom: 14px; }
+.tier-tagline { font-size: 14px; color: #BBB; margin-bottom: 28px; line-height: 1.5; min-height: 42px; }
+.tier-price { margin-bottom: 8px; }
+.tier-price-num { font-size: 52px; font-weight: 900; letter-spacing: -2px; line-height: 1; }
+.tier-price-from { font-size: 13px; font-weight: 600; opacity: 0.7; margin-right: 4px; }
+.tier-price-unit { font-size: 14px; font-weight: 600; opacity: 0.7; }
+.tier-monthly { font-size: 14px; opacity: 0.8; margin-bottom: 28px; }
+.tier-monthly strong { font-weight: 800; }
+.tier-cta { display: inline-flex; align-items: center; justify-content: center; gap: 10px; background: var(--paper); color: var(--ink); padding: 14px 20px; border-radius: 999px; font-weight: 700; font-size: 14px; margin-bottom: 28px; transition: transform 0.2s; }
+.tier-cta:hover { transform: translateY(-2px); }
+.tier.featured .tier-cta { background: var(--ink); color: var(--accent); }
+.tier-includes-h { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--mute); margin-bottom: 14px; font-weight: 700; }
+.tier-list { list-style: none; font-size: 14px; line-height: 1.5; flex: 1; }
+.tier-list li { padding: 9px 0; border-top: 1px solid #222; display: flex; gap: 10px; align-items: flex-start; }
+.tier.featured .tier-list li { border-color: rgba(10,10,10,0.12); }
+.tier-list li:first-child { border-top: none; }
+.tier-list li::before { content: ''; flex-shrink: 0; margin-top: 8px; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+.tier-foot-note { font-size: 12px; color: var(--mute); margin-top: 22px; padding-top: 18px; border-top: 1px solid #222; line-height: 1.55; }
+.tier.featured .tier-foot-note { border-color: rgba(10,10,10,0.12); }
+
+/* ==== Bespoke block ==== */
+.bespoke { padding: 90px 48px; }
+.bespoke-inner { background: linear-gradient(135deg, var(--ink-2), var(--ink-3)); border: 1px solid var(--border); border-radius: 28px; padding: 60px 56px; display: grid; grid-template-columns: 1.6fr 1fr; gap: 48px; align-items: center; position: relative; overflow: hidden; }
+@media (max-width: 900px) { .bespoke-inner { grid-template-columns: 1fr; padding: 40px 28px; } }
+.bespoke-inner::before { content: ''; position: absolute; top: -120px; right: -120px; width: 380px; height: 380px; background: radial-gradient(circle, rgba(255,91,46,0.12), transparent 60%); }
+.bespoke-tag { font-size: 11px; letter-spacing: 2.5px; text-transform: uppercase; color: var(--accent-2); font-weight: 800; margin-bottom: 14px; position: relative; z-index: 1; }
+.bespoke-h { font-size: 40px; font-weight: 900; letter-spacing: -1.5px; line-height: 1.05; margin-bottom: 18px; position: relative; z-index: 1; }
+.bespoke-h .hl { color: var(--accent-2); font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400; }
+.bespoke-body { color: #BBB; font-size: 16px; line-height: 1.65; margin-bottom: 22px; position: relative; z-index: 1; }
+.bespoke-list { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 13px; color: #DDD; margin-bottom: 28px; position: relative; z-index: 1; }
+.bespoke-list span { display: flex; gap: 8px; align-items: baseline; }
+.bespoke-list span::before { content: '→'; color: var(--accent-2); font-weight: 700; flex-shrink: 0; }
+.bespoke-card { background: var(--ink); border: 1px solid var(--border); border-radius: 18px; padding: 32px 28px; position: relative; z-index: 1; }
+.bespoke-card-price { font-size: 13px; color: var(--mute); margin-bottom: 6px; letter-spacing: 1.5px; text-transform: uppercase; }
+.bespoke-card-num { font-family: 'Instrument Serif', serif; font-style: italic; font-size: 44px; font-weight: 400; line-height: 1; margin-bottom: 8px; color: var(--accent-2); }
+.bespoke-card-sub { font-size: 13px; color: #BBB; line-height: 1.55; margin-bottom: 24px; }
+.bespoke-cta { width: 100%; justify-content: center; }
+
+/* ==== Comparison table ==== */
+.compare-section { padding: 90px 48px; background: var(--ink-2); }
+.compare-table-wrap { overflow-x: auto; max-width: 1200px; margin: 50px auto 0; }
+.compare-table { width: 100%; min-width: 720px; border-collapse: collapse; font-size: 14px; }
+.compare-table th, .compare-table td { padding: 18px 16px; text-align: left; border-bottom: 1px solid #222; vertical-align: top; }
+.compare-table thead th { font-size: 13px; letter-spacing: 2px; text-transform: uppercase; font-weight: 800; color: var(--accent); border-bottom: 2px solid var(--accent); background: var(--ink); position: sticky; top: 0; }
+.compare-table thead th:first-child { color: var(--mute); }
+.compare-table tbody tr { background: var(--ink); }
+.compare-table tbody tr:nth-child(even) { background: #181818; }
+.compare-table tbody th { font-weight: 600; color: #DDD; font-size: 14px; width: 35%; }
+.compare-table td { color: #BBB; }
+.compare-table td.tick { color: var(--accent); font-weight: 800; }
+.compare-row-group td { background: var(--ink); padding-top: 28px; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--mute); font-weight: 800; border-bottom: 1px solid var(--accent); }
+
+/* ==== SEO/AEO explainer ==== */
+.terms { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 50px; }
+@media (max-width: 800px) { .terms { grid-template-columns: 1fr; } }
+.term-card { background: var(--ink-2); border: 1px solid var(--border); border-radius: 18px; padding: 32px; }
+.term-tag { font-size: 11px; letter-spacing: 2.5px; text-transform: uppercase; color: var(--accent); font-weight: 800; margin-bottom: 10px; }
+.term-h { font-size: 24px; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 14px; }
+.term-body { font-size: 14px; color: #BBB; line-height: 1.65; }
+.term-body strong { color: var(--paper); }
+
+/* ==== FAQ ==== */
+.faq-list { max-width: 900px; margin-top: 50px; }
+.faq-item { border-top: 1px solid #2A2A2A; padding: 28px 0; cursor: pointer; }
+.faq-item:last-child { border-bottom: 1px solid #2A2A2A; }
+.faq-q { display: flex; justify-content: space-between; align-items: center; gap: 24px; }
+.faq-q h3 { font-size: 20px; font-weight: 700; letter-spacing: -0.5px; }
+.faq-toggle { width: 36px; height: 36px; border-radius: 50%; border: 1px solid #333; display: flex; align-items: center; justify-content: center; color: var(--accent); font-size: 18px; flex-shrink: 0; transition: all 0.2s; }
+.faq-item:hover .faq-toggle { background: var(--accent); color: var(--ink); border-color: var(--accent); }
+.faq-a { margin-top: 18px; font-size: 15px; color: #BBB; line-height: 1.7; max-width: 800px; }
+.faq-a strong { color: var(--paper); }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="logo"><span class="logo-dot"></span>AJH<span class="logo-suffix">/technology</span></a>
+  <div class="nav-links">
+    <a href="services.html">Services</a>
+    <a href="web.html">Web design</a>
+    <a href="pricing.html" class="active">Pricing</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="nav-right">
+    <span class="nav-phone">07488 286207</span>
+    <a href="contact.html" class="nav-cta">Book my call →</a>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="breadcrumb"><a href="index.html"><span class="accent">AJH</span></a> / Pricing</div>
+  <h1>Three packages. <span class="hl serif">One bespoke option.</span></h1>
+  <p class="sub">Fixed-price, fixed-scope web design for Suffolk small businesses. No hidden costs, no quote-on-application games. Pick the tier that matches your ambition.</p>
+</div>
+
+<!-- PACKAGES GRID -->
+<section style="padding: 60px 0 90px;">
+  <div class="pricing-grid">
+
+    <!-- LAUNCH -->
+    <div class="tier">
+      <div class="tier-name">Launch</div>
+      <div class="tier-h">Get online, <br>get found.</div>
+      <p class="tier-tagline">Your professional digital shop window — done properly, done quickly.</p>
+      <div class="tier-price">
+        <span class="tier-price-from">From</span><span class="tier-price-num">£500</span><span class="tier-price-unit"> setup</span>
+      </div>
+      <div class="tier-monthly">+ <strong>£25</strong>/month · 12-month minimum</div>
+      <a href="contact.html?package=launch" class="tier-cta">Choose Launch <span>→</span></a>
+      <div class="tier-includes-h">What's included</div>
+      <ul class="tier-list">
+        <li>Custom-designed lead-gen website, up to 10 pages</li>
+        <li>Mobile-first, fast, accessible build</li>
+        <li>Social channel integration (X, LinkedIn, Instagram, Facebook)</li>
+        <li>Contact form (submissions to your inbox)</li>
+        <li>Entry-level SEO baked in</li>
+        <li>Entry-level AEO baked in</li>
+        <li>1 change request a month (up to 1 hour of work)</li>
+        <li>Email support, 4-hour response in working hours</li>
+      </ul>
+      <p class="tier-foot-note">Hosting and domain management available as add-ons.</p>
+    </div>
+
+    <!-- GROW (featured) -->
+    <div class="tier featured">
+      <span class="tier-badge">Most popular</span>
+      <div class="tier-name">Grow</div>
+      <div class="tier-h">More polish. <br>More leads.</div>
+      <p class="tier-tagline">More pages, sharper SEO and monthly reporting so you can see what's working.</p>
+      <div class="tier-price">
+        <span class="tier-price-from">From</span><span class="tier-price-num">£1,500</span><span class="tier-price-unit"> setup</span>
+      </div>
+      <div class="tier-monthly">+ <strong>£75</strong>/month · 12-month minimum</div>
+      <a href="contact.html?package=grow" class="tier-cta">Choose Grow <span>→</span></a>
+      <div class="tier-includes-h">Everything in Launch, plus</div>
+      <ul class="tier-list">
+        <li>Up to 15 pages, room for a blog or portfolio</li>
+        <li>1-hour brand strategy session</li>
+        <li>Blog or news section setup</li>
+        <li>Targeted SEO for 5 priority keywords</li>
+        <li>Google Analytics &amp; Search Console setup</li>
+        <li>Monthly performance report (visitors, sources, top pages)</li>
+        <li>3 change requests a month (up to 3 hours of work)</li>
+        <li>Priority email + phone support, 24-hour response</li>
+        <li>Quarterly conversion-rate review</li>
+      </ul>
+      <p class="tier-foot-note">Hosting and domain management available as add-ons.</p>
+    </div>
+
+    <!-- FLAGSHIP -->
+    <div class="tier">
+      <div class="tier-name">Flagship</div>
+      <div class="tier-h">Lead the <br>market.</div>
+      <p class="tier-tagline">The full package. Custom photography, original assets, and ongoing strategy.</p>
+      <div class="tier-price">
+        <span class="tier-price-from">From</span><span class="tier-price-num">£3,000</span><span class="tier-price-unit"> setup</span>
+      </div>
+      <div class="tier-monthly">+ <strong>£125</strong>/month · 12-month minimum</div>
+      <a href="contact.html?package=flagship" class="tier-cta">Choose Flagship <span>→</span></a>
+      <div class="tier-includes-h">Everything in Grow, plus</div>
+      <ul class="tier-list">
+        <li>Up to 25 pages</li>
+        <li>Half-day on-location photography shoot</li>
+        <li>Custom brand assets (icons, illustrations)</li>
+        <li>Full SEO + AEO strategy with quarterly content plan</li>
+        <li>Monthly 30-min strategy call with Harlyn</li>
+        <li>5 change requests a month (up to 5 hours of work)</li>
+        <li>Booking or quote calculator (if relevant)</li>
+        <li>Quarterly content additions (one new page or section)</li>
+        <li>Dedicated WhatsApp line for direct support</li>
+      </ul>
+      <p class="tier-foot-note">Hosting and domain management available as add-ons.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- BESPOKE -->
+<section class="bespoke">
+  <div class="bespoke-inner">
+    <div>
+      <div class="bespoke-tag">Beyond the boxed packages</div>
+      <h2 class="bespoke-h">Bespoke. <span class="hl">For ambitions that don't fit a box.</span></h2>
+      <p class="bespoke-body">If your project needs e-commerce, a member portal, deep integrations, or anything custom-coded, the boxed tiers won't fit — and we won't pretend they will. Bespoke projects start with a paid discovery workshop so we can scope honestly. We then quote a fixed price for the full build.</p>
+      <div class="bespoke-list">
+        <span>E-commerce &amp; payments</span>
+        <span>Membership / portal sites</span>
+        <span>CRM &amp; software integrations</span>
+        <span>Multi-language sites</span>
+        <span>Franchise / multi-site networks</span>
+        <span>Custom apps &amp; calculators</span>
+        <span>UX research &amp; prototyping</span>
+        <span>Booking systems &amp; APIs</span>
+      </div>
+    </div>
+    <div class="bespoke-card">
+      <div class="bespoke-card-price">Investment</div>
+      <div class="bespoke-card-num">From £6,000</div>
+      <p class="bespoke-card-sub">Discovery workshop first. Honest scope. Fixed-price quote before any build work starts.</p>
+      <a href="contact.html?package=bespoke" class="btn-primary bespoke-cta">Book a consultation <span class="arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON TABLE -->
+<section class="compare-section">
+  <div class="section-head">
+    <h2>Compare the <span class="hl serif">packages.</span></h2>
+    <p class="section-sub">A side-by-side look at what each tier delivers. Bespoke is custom-quoted — talk to us.</p>
+  </div>
+  <div class="compare-table-wrap">
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th>Included</th>
+          <th>Launch</th>
+          <th>Grow</th>
+          <th>Flagship</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="compare-row-group"><td colspan="4">Setup &amp; investment</td></tr>
+        <tr><th>One-off setup fee</th><td>From £500</td><td>From £1,500</td><td>From £3,000</td></tr>
+        <tr><th>Monthly fee</th><td>£25/mo</td><td>£75/mo</td><td>£125/mo</td></tr>
+        <tr><th>Minimum contract</th><td>12 months</td><td>12 months</td><td>12 months</td></tr>
+
+        <tr class="compare-row-group"><td colspan="4">Build</td></tr>
+        <tr><th>Pages included</th><td>Up to 10</td><td>Up to 15</td><td>Up to 25</td></tr>
+        <tr><th>Custom design</th><td class="tick">✓</td><td class="tick">✓</td><td class="tick">✓</td></tr>
+        <tr><th>Mobile-first &amp; accessible</th><td class="tick">✓</td><td class="tick">✓</td><td class="tick">✓</td></tr>
+        <tr><th>Social channel integration</th><td class="tick">✓</td><td class="tick">✓</td><td class="tick">✓</td></tr>
+        <tr><th>Blog / news section</th><td>—</td><td class="tick">✓</td><td class="tick">✓</td></tr>
+        <tr><th>On-location photography</th><td>—</td><td>—</td><td class="tick">Half-day shoot</td></tr>
+        <tr><th>Custom brand assets</th><td>—</td><td>—</td><td class="tick">✓</td></tr>
+        <tr><th>Booking / quote calculator</th><td>—</td><td>—</td><td class="tick">If relevant</td></tr>
+
+        <tr class="compare-row-group"><td colspan="4">SEO &amp; AEO</td></tr>
+        <tr><th>Entry-level SEO &amp; AEO</th><td class="tick">✓</td><td class="tick">✓</td><td class="tick">✓</td></tr>
+        <tr><th>Keyword targeting</th><td>—</td><td>5 priority terms</td><td>Full strategy</td></tr>
+        <tr><th>Google Analytics + Search Console</th><td>—</td><td class="tick">✓</td><td class="tick">✓</td></tr>
+        <tr><th>Quarterly content plan</th><td>—</td><td>—</td><td class="tick">✓</td></tr>
+
+        <tr class="compare-row-group"><td colspan="4">Ongoing care</td></tr>
+        <tr><th>Monthly change requests</th><td>1 (1 hour)</td><td>3 (3 hours)</td><td>5 (5 hours)</td></tr>
+        <tr><th>Monthly performance report</th><td>—</td><td class="tick">✓</td><td class="tick">✓</td></tr>
+        <tr><th>Strategy call with Harlyn</th><td>—</td><td>Quarterly</td><td>Monthly (30 min)</td></tr>
+        <tr><th>Content additions</th><td>—</td><td>—</td><td>Quarterly</td></tr>
+
+        <tr class="compare-row-group"><td colspan="4">Support</td></tr>
+        <tr><th>Email support</th><td>4-hour response</td><td>Priority, 24-hour</td><td>Priority, 4-hour</td></tr>
+        <tr><th>Phone support</th><td>—</td><td class="tick">✓</td><td class="tick">✓</td></tr>
+        <tr><th>WhatsApp direct line</th><td>—</td><td>—</td><td class="tick">✓</td></tr>
+
+        <tr class="compare-row-group"><td colspan="4">Add-ons (all tiers)</td></tr>
+        <tr><th>Hosting</th><td colspan="3">From £8/month</td></tr>
+        <tr><th>Domain management</th><td colspan="3">From £15/year</td></tr>
+        <tr><th>Additional change-request hours</th><td colspan="3">£60/hour</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- SEO/AEO EXPLAINER -->
+<section>
+  <div class="section-head">
+    <h2>Two words you'll see on every tier: <span class="hl serif">SEO and AEO.</span></h2>
+    <p class="section-sub">Plain-English explanations of what they mean and why both matter.</p>
+  </div>
+  <div class="terms">
+    <div class="term-card">
+      <div class="term-tag">SEO</div>
+      <h3 class="term-h">Search Engine Optimisation</h3>
+      <p class="term-body">The art of making your site easier for <strong>Google</strong> to read, understand and rank for the things your customers actually search for. We bake the basics in by default — fast pages, clean structure, the right meta tags, an XML sitemap, and Google Search Console set up so you can see who's finding you and how.</p>
+    </div>
+    <div class="term-card">
+      <div class="term-tag">AEO</div>
+      <h3 class="term-h">Answer Engine Optimisation</h3>
+      <p class="term-body">The new generation of search. <strong>ChatGPT, Perplexity, Google AI Overviews and Gemini</strong> increasingly answer questions directly — and they pick which sites to quote. AEO uses structured data and clear, factual content so when someone asks an AI "best web designer in Stowmarket?", your business is the one it names.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="background: var(--ink-2);">
+  <div class="section-head">
+    <h2>Pricing questions <span class="hl serif">answered.</span></h2>
+    <p class="section-sub">The questions Suffolk owners actually ask when comparing packages.</p>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item">
+      <div class="faq-q"><h3>Why is there a 12-month minimum?</h3><div class="faq-toggle">+</div></div>
+      <div class="faq-a">The monthly fee covers the design, build, hosting set-up, ongoing edits and support across a full year. The 12-month minimum is what lets us price the setup fee as low as it is. After 12 months it moves to a <strong>rolling monthly contract</strong> — cancel any time with one month's notice.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q"><h3>Can I upgrade or downgrade later?</h3><div class="faq-toggle">+</div></div>
+      <div class="faq-a">Yes. <strong>Upgrade any time</strong> — we'll add the new tier's features and adjust your monthly fee from the next billing cycle. Downgrades are available at the end of your 12-month term.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q"><h3>What's not included? Any hidden fees?</h3><div class="faq-toggle">+</div></div>
+      <div class="faq-a">No hidden fees — but a few things sit outside every tier and are quoted clearly upfront: <strong>hosting</strong> (from £8/mo), <strong>domain registration &amp; management</strong> (from £15/yr), <strong>extra change-request hours</strong> beyond your monthly allowance (£60/hr), and any <strong>third-party tools</strong> you choose to use (booking software, email marketing, etc.).</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q"><h3>Do I own the website?</h3><div class="faq-toggle">+</div></div>
+      <div class="faq-a">Yes — the design, the content and the code are <strong>yours from day one</strong>. We host and maintain it for you, but if you ever leave, you take the site with you.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q"><h3>What counts as a "change request"?</h3><div class="faq-toggle">+</div></div>
+      <div class="faq-a">Anything you'd like updated, tweaked or added — copy edits, image swaps, new sections, price changes, news posts, opening-hours updates. If it takes longer than your monthly hours allow, we'll quote the extra time before doing the work.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q"><h3>I have an existing website. Can you take it over?</h3><div class="faq-toggle">+</div></div>
+      <div class="faq-a">In most cases yes — but every existing site is different. We'll do a quick technical audit on the call to confirm. If we can take it over, we'll often suggest the <strong>Launch</strong> tier as a starting point with a redesign sprint included.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q"><h3>Which package is right for me?</h3><div class="faq-toggle">+</div></div>
+      <div class="faq-a"><strong>Launch</strong> suits sole traders and very small businesses who just need a credible online presence. <strong>Grow</strong> fits established small businesses who want to actively generate leads from the site. <strong>Flagship</strong> is for ambitious SMEs who want their website to be a serious competitive advantage. Not sure? Book a 20-min call — we'll tell you honestly.</div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final">
+  <div class="final-content">
+    <div class="eyebrow">Ready when you are</div>
+    <h2 class="final-h">Pick a package, <span class="hl serif">or let's talk.</span></h2>
+    <p class="final-sub">A free 20-minute call. We'll listen, ask the right questions, and recommend the tier that fits — or tell you honestly if none of them do.</p>
+    <div class="cta-row">
+      <a href="contact.html" class="btn-primary">Book my free strategy call <span class="arrow">→</span></a>
+      <a href="services.html" class="btn-secondary">See all services</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand"><div class="logo"><span class="logo-dot"></span>AJH<span class="logo-suffix">/technology</span></div><p>Built locally in Suffolk. Helping small businesses grow with professional web design, strong brand identity and streamlined processes.</p></div>
+    <div class="footer-col"><h4>Services</h4><ul><li><a href="web.html">Web design</a></li><li><a href="brand.html">Brand</a></li><li><a href="process.html">Process</a></li><li><a href="pricing.html">Pricing</a></li></ul></div>
+    <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="work.html">Approach</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul><li>07488 286207</li><li>hello@ajh.tech</li><li>The Office, Grange Farm</li><li>All Saints Road</li><li>Creeting St Mary, Suffolk</li><li>IP6 8NG</li></ul></div>
+  </div>
+  <div class="footer-bottom"><div>© 2026 AJH Technology Ltd</div><div>Privacy · Terms · Cookies</div></div>
+</footer>
+
+<div class="sticky-cta">
+  <span class="sticky-cta-dot"></span>
+  <span class="sticky-cta-text"><strong>Not sure which package?</strong> · Book a free 20-min call</span>
+  <span class="sticky-cta-mobile">Book a 20-min call</span>
+  <a href="contact.html" class="sticky-cta-btn">Book mine →</a>
+</div>
+
+</body>
+</html>
