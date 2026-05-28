@@ -23,7 +23,6 @@
       "description": "Professional web design, branding and business process services for small businesses in Suffolk and the wider East of England.",
       "url": "https://ajh.tech",
       "telephone": "+44-7488-286207",
-      "email": "hello@ajh.tech",
       "founder": { "@type": "Person", "name": "Harlyn Palmer", "jobTitle": "Founder" },
       "address": {
         "@type": "PostalAddress",
@@ -344,9 +343,12 @@ section.compare { background: var(--ink-2); }
       <div class="magnet-tag">Free download · No card needed</div>
       <h3 class="magnet-h">Get the Suffolk Small Business <span class="hl serif">Website Audit.</span></h3>
       <p class="magnet-body">A 12-page practical checklist for your existing site: the conversion fixes that lift enquiries, the speed tweaks that protect your Google ranking, and the design moves that finally make you look as professional as you are.</p>
-      <form name="audit" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" class="magnet-form">
-        <input type="hidden" name="form-name" value="audit">
-        <p style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>
+      <form name="audit" method="POST" action="https://formsubmit.co/harlynpalmer@icloud.com" class="magnet-form">
+        <input type="hidden" name="_subject" value="Website audit request — AJH Technology">
+        <input type="hidden" name="_next" value="https://www.ajhtechnology.digital/thanks.html">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
         <input id="audit-email" name="email" type="email" class="magnet-input" placeholder="your@email.co.uk" required>
         <button type="submit" class="btn-primary" style="font-family: inherit; cursor: pointer;">Send me the audit <span class="arrow">→</span></button>
       </form>
@@ -498,7 +500,7 @@ section.compare { background: var(--ink-2); }
       <h4>Contact</h4>
       <ul>
         <li>07488 286207</li>
-        <li>hello@ajh.tech</li>
+        
         <li>The Office, Grange Farm</li>
         <li>All Saints Road</li>
         <li>Creeting St Mary, Suffolk</li>
