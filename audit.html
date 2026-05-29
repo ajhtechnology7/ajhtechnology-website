@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta name="theme-color" content="#0A0A0A">
+<title>Free Website Audit · AJH Technology</title>
+<meta name="description" content="Request a free one-pass audit of your Suffolk small business website. We review qualifying requests within 48 hours.">
+<link rel="canonical" href="https://ajh.tech/audit">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+<style>
+.audit-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 60px; padding: 60px 48px 90px; align-items: flex-start; }
+@media (max-width: 900px) { .audit-grid { grid-template-columns: 1fr; padding: 40px 24px 60px; } }
+.audit-form { background: var(--ink-2); border: 1px solid var(--border); border-radius: 24px; padding: 48px; }
+@media (max-width: 600px) { .audit-form { padding: 32px 24px; } }
+.audit-form-h { font-size: 30px; font-weight: 900; letter-spacing: -1px; margin-bottom: 12px; line-height: 1.1; }
+.audit-form-h .hl { color: var(--accent); }
+.audit-form-sub { color: #BBB; font-size: 15px; margin-bottom: 32px; line-height: 1.55; }
+
+.form-field { margin-bottom: 22px; }
+.form-field label { display: block; font-size: 12px; font-weight: 700; color: var(--mute); letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 8px; }
+.form-field input, .form-field textarea, .form-field select { width: 100%; padding: 14px 18px; background: var(--ink); border: 1px solid #333; border-radius: 12px; color: var(--paper); font-size: 14px; font-family: inherit; transition: border-color 0.2s; }
+.form-field input:focus, .form-field textarea:focus, .form-field select:focus { outline: none; border-color: var(--accent); }
+.form-field textarea { resize: vertical; min-height: 90px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (max-width: 500px) { .form-row { grid-template-columns: 1fr; } }
+.form-mini { font-size: 12px; color: var(--mute); margin-top: 14px; line-height: 1.55; }
+
+/* Side panel */
+.audit-side { padding-top: 8px; position: sticky; top: 100px; }
+@media (max-width: 900px) { .audit-side { position: static; } }
+.audit-side-eyebrow { font-size: 12px; color: var(--accent); letter-spacing: 2.5px; text-transform: uppercase; font-weight: 700; margin-bottom: 16px; }
+.audit-side h2 { font-size: 32px; font-weight: 900; letter-spacing: -1px; line-height: 1.1; margin-bottom: 24px; }
+.audit-side h2 .hl { color: var(--accent); }
+.audit-side p { font-size: 15px; color: #BBB; line-height: 1.65; margin-bottom: 20px; }
+.audit-includes { list-style: none; margin-bottom: 28px; padding: 0; }
+.audit-includes li { padding: 10px 0 10px 26px; position: relative; font-size: 14px; color: #DDD; line-height: 1.5; border-bottom: 1px solid #2A2A2A; }
+.audit-includes li::before { content: '✓'; color: var(--accent); font-weight: 900; position: absolute; left: 0; top: 10px; }
+.audit-includes li:last-child { border-bottom: none; }
+.audit-honest { background: var(--ink-2); border: 1px solid var(--border); border-radius: 14px; padding: 22px; font-size: 13px; color: #BBB; line-height: 1.6; }
+.audit-honest strong { color: var(--paper); }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="logo"><span class="logo-dot"></span>AJH<span class="logo-suffix">/technology</span></a>
+  <div class="nav-links">
+    <a href="services.html">Services</a>
+    <a href="web.html">Web design</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="work.html">Approach</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="nav-right">
+    <span class="nav-phone">07488 286207</span>
+    <a href="contact.html" class="nav-cta">Book my call →</a>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="breadcrumb"><a href="index.html"><span class="accent">AJH</span></a> / Free Website Audit</div>
+  <h1>Free <span class="hl serif">website audit.</span></h1>
+  <p class="sub">A one-page, plain-English review of your existing site — conversion fixes, speed tweaks, design moves and the SEO basics you might be missing. Reviewed personally by Harlyn within 48 hours of qualification.</p>
+</div>
+
+<div class="audit-grid">
+
+  <!-- FORM -->
+  <div class="audit-form">
+    <h2 class="audit-form-h">Tell us about <span class="hl serif">your site.</span></h2>
+    <p class="audit-form-sub">A few short questions so we can scope your audit properly and confirm we're a good fit. Takes about 90 seconds.</p>
+
+    <form name="audit" method="POST" action="https://formsubmit.co/harlynpalmer@icloud.com">
+      <input type="hidden" name="_subject" value="New website audit request — AJH Technology">
+      <input type="hidden" name="_next" value="https://www.ajhtechnology.digital/audit-thanks.html">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+      <div class="form-row">
+        <div class="form-field">
+          <label for="name">Your name *</label>
+          <input id="name" name="name" type="text" placeholder="e.g. Sarah Mitchell" required>
+        </div>
+        <div class="form-field">
+          <label for="business">Business name *</label>
+          <input id="business" name="business" type="text" placeholder="e.g. Mitchell Roofing" required>
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label for="website">Your website URL *</label>
+        <input id="website" name="website" type="text" placeholder="https://www.yourbusiness.co.uk" required>
+      </div>
+
+      <div class="form-row">
+        <div class="form-field">
+          <label for="email">Email *</label>
+          <input id="email" name="email" type="email" placeholder="you@yourbusiness.co.uk" required>
+        </div>
+        <div class="form-field">
+          <label for="phone">Phone (optional)</label>
+          <input id="phone" name="phone" type="tel" placeholder="07000 ...">
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label for="business-type">What type of business are you? *</label>
+        <select id="business-type" name="business-type" required>
+          <option value="">— please choose —</option>
+          <option>Hospitality (cafe, bakery, restaurant, pub)</option>
+          <option>Trades &amp; construction (builder, plumber, electrician, roofer)</option>
+          <option>Beauty &amp; wellness (salon, barber, gym, clinic)</option>
+          <option>Professional services (accountant, solicitor, consultant)</option>
+          <option>Retail or e-commerce</option>
+          <option>Creative or studio (photographer, designer, agency)</option>
+          <option>Property &amp; estate agents</option>
+          <option>Healthcare / dental / veterinary</option>
+          <option>Education or training</option>
+          <option>Other (please describe below)</option>
+        </select>
+      </div>
+
+      <div class="form-field">
+        <label for="reason">Why are you seeking the audit? *</label>
+        <select id="reason" name="reason" required>
+          <option value="">— please choose —</option>
+          <option>Site isn't generating enough enquiries</option>
+          <option>Site feels slow, dated or off-brand</option>
+          <option>Planning a redesign and want a baseline</option>
+          <option>Losing traffic or ranking on Google</option>
+          <option>Just bought / inherited the business and want a second opinion</option>
+          <option>Other (please describe below)</option>
+        </select>
+      </div>
+
+      <div class="form-field">
+        <label for="agency">Currently working with another agency?</label>
+        <select id="agency" name="agency">
+          <option>No — handling things in-house or alone</option>
+          <option>Yes, but contract ending soon</option>
+          <option>Yes, just want a fresh perspective</option>
+          <option>Prefer not to say</option>
+        </select>
+      </div>
+
+      <div class="form-field">
+        <label for="message">Anything else you'd like us to know?</label>
+        <textarea id="message" name="message" placeholder="Specific pages to focus on, particular pain points, key competitors you want us to compare against, etc."></textarea>
+      </div>
+
+      <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; padding: 20px; font-family: inherit; cursor: pointer;">Request my audit <span class="arrow">→</span></button>
+      <div class="form-mini">Your details are kept private. GDPR-compliant — we won't add you to a marketing list. See our <a href="privacy.html" style="color: var(--accent); border-bottom: 1px solid var(--accent);">privacy policy</a>.</div>
+    </form>
+  </div>
+
+  <!-- SIDE -->
+  <div class="audit-side">
+    <div class="audit-side-eyebrow">— What you get</div>
+    <h2>A one-page audit, <span class="hl serif">in 48 hours.</span></h2>
+    <p>Once your request is qualified (typically within 24 hours), Harlyn personally reviews your site and sends a concise, prioritised report — usually within 48 hours.</p>
+
+    <ul class="audit-includes">
+      <li>Conversion review of your top 3 pages</li>
+      <li>Mobile performance &amp; Core Web Vitals check</li>
+      <li>SEO &amp; AEO foundations review</li>
+      <li>Three prioritised quick wins you can apply this week</li>
+      <li>Honest opinion on whether a rebuild would pay back</li>
+    </ul>
+
+    <div class="audit-honest">
+      <strong>One honest note:</strong> we screen audit requests before producing them. If you're a competitor, an agency reseller, or your business isn't a fit for what we do, we'll let you know quickly and politely. It saves everyone's time — including yours.
+    </div>
+  </div>
+
+</div>
+
+<!-- FAQ -->
+<section style="background: var(--ink-2); border-top: 1px solid var(--border);">
+  <div class="section-head">
+    <h2>Audit <span class="hl serif">questions.</span></h2>
+    <p class="section-sub">The most common questions before requesting an audit.</p>
+  </div>
+  <div style="max-width: 900px;">
+    <div class="card" style="background: var(--ink); margin-bottom: 16px; min-height: auto;">
+      <h3 style="font-size: 20px; margin-bottom: 12px;">How much does the audit cost?</h3>
+      <p style="font-size: 14px; color: #BBB; line-height: 1.6;">Nothing. It's a goodwill gesture for qualifying Suffolk small businesses considering a website project. We do it because it usually starts a useful conversation.</p>
+    </div>
+    <div class="card" style="background: var(--ink); margin-bottom: 16px; min-height: auto;">
+      <h3 style="font-size: 20px; margin-bottom: 12px;">Why do you screen requests?</h3>
+      <p style="font-size: 14px; color: #BBB; line-height: 1.6;">Audits take real time to produce well. We want to spend that time helping potential clients — not running free competitive intelligence for other agencies. The screening is quick, friendly, and we always reply either way.</p>
+    </div>
+    <div class="card" style="background: var(--ink); margin-bottom: 16px; min-height: auto;">
+      <h3 style="font-size: 20px; margin-bottom: 12px;">Am I obligated to buy anything?</h3>
+      <p style="font-size: 14px; color: #BBB; line-height: 1.6;">No. The audit is genuinely free with no obligation. If you read it, apply the quick wins yourself and never speak to us again, that's completely fine.</p>
+    </div>
+    <div class="card" style="background: var(--ink); margin-bottom: 16px; min-height: auto;">
+      <h3 style="font-size: 20px; margin-bottom: 12px;">What happens after I submit?</h3>
+      <p style="font-size: 14px; color: #BBB; line-height: 1.6;"><strong>Within 24 hours:</strong> we confirm we can help. <strong>Within 48 hours of that:</strong> your audit lands in your inbox as a PDF. If anything's unclear, Harlyn will email you to ask before producing it.</p>
+    </div>
+    <div class="card" style="background: var(--ink); min-height: auto;">
+      <h3 style="font-size: 20px; margin-bottom: 12px;">Don't have a website yet?</h3>
+      <p style="font-size: 14px; color: #BBB; line-height: 1.6;">No website to audit yet? Skip the form and <a href="contact.html" style="color: var(--accent); border-bottom: 1px solid var(--accent);">book a 20-min strategy call</a> instead — we'll talk through what your new site needs to do.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand"><div class="logo"><span class="logo-dot"></span>AJH<span class="logo-suffix">/technology</span></div><p>Built locally in Suffolk. Helping small businesses grow with professional web design, strong brand identity and streamlined processes.</p></div>
+    <div class="footer-col"><h4>Services</h4><ul><li><a href="web.html">Web design</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="brand.html">Brand</a></li><li><a href="process.html">Process</a></li><li><a href="services.html">All services</a></li></ul></div>
+    <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="work.html">Approach</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul><li>07488 286207</li><li>The Office, Grange Farm</li><li>All Saints Road</li><li>Creeting St Mary, Suffolk</li><li>IP6 8NG</li></ul></div>
+  </div>
+  <div class="footer-bottom"><div>© 2026 AJH Technology Ltd</div><div><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="cookies.html">Cookies</a></div></div>
+</footer>
+
+</body>
+</html>
