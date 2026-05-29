@@ -1,0 +1,13 @@
+# robots.txt for ajhtechnology.digital
+# Welcome to our site, search engines.
+
+User-agent: *
+Allow: /
+
+# Don't index these pages (they're either redirects or post-submission)
+Disallow: /thanks.html
+Disallow: /ai.html
+Disallow: /workshop.html
+Disallow: /app.html
+
+Sitemap: https://www.ajhtechnology.digital/sitemap.xml
