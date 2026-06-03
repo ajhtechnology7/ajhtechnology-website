@@ -7,7 +7,15 @@
 <meta name="theme-color" content="#0A0A0A">
 <title>Contact AJH Technology · Book a Free 20-min Strategy Call</title>
 <meta name="description" content="Book a free 20-minute strategy call with Harlyn at AJH Technology. Based in Needham Market, Suffolk. Helping small businesses across Ipswich, Stowmarket and Bury St Edmunds.">
-<link rel="canonical" href="https://ajh.tech/contact">
+<link rel="canonical" href="https://www.ajhtechnology.digital/contact">
+<meta property="og:image" content="https://www.ajhtechnology.digital/harlyn-football.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://www.ajhtechnology.digital/contact">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contact AJH Technology · Book a Free 20-min Strategy Call">
+<meta name="twitter:description" content="Book a free 20-minute strategy call with Harlyn at AJH Technology. Based in Needham Market, Suffolk. Helping small businesses across Ipswich, Stowmarket and Bury St Edmunds.">
+<meta name="twitter:image" content="https://www.ajhtechnology.digital/harlyn-football.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
@@ -43,6 +51,36 @@
 .confirm-strip span { display: flex; align-items: center; gap: 8px; }
 .confirm-strip span::before { content: '✓'; font-weight: 900; }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://www.ajhtechnology.digital/#business",
+  "name": "AJH Technology",
+  "url": "https://www.ajhtechnology.digital",
+  "telephone": "+44-7488-286207",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "The Office, Grange Farm, All Saints Road",
+    "addressLocality": "Creeting St Mary",
+    "addressRegion": "Suffolk",
+    "postalCode": "IP6 8NG",
+    "addressCountry": "GB"
+  },
+  "areaServed": ["Ipswich","Stowmarket","Bury St Edmunds","Sudbury","Woodbridge","Felixstowe","Diss","Needham Market"],
+  "priceRange": "££"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.ajhtechnology.digital/"},
+    {"@type": "ListItem", "position": 2, "name": "Contact", "item": "https://www.ajhtechnology.digital/contact"}
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -59,7 +97,7 @@
     
   </div>
   <div class="nav-right">
-    <span class="nav-phone">07488 286207</span>
+    <a class="nav-phone" href="tel:+447488286207" style="color: inherit; text-decoration: none;">07488 286207</a>
     <a href="contact.html" class="nav-cta active">Book my call →</a>
   </div>
 </nav>
@@ -139,7 +177,7 @@
       <div class="contact-icon">📞</div>
       <div>
         <div class="contact-method-h">Phone</div>
-        <div class="contact-method-detail"><strong>07488 286207</strong><br>Mon–Fri, 9am–5:30pm. Voicemail goes straight to my phone.</div>
+        <div class="contact-method-detail"><strong><a href="tel:+447488286207" style="color: inherit;">07488 286207</a></strong><br>Mon–Fri, 9am–5:30pm. Voicemail goes straight to my phone.</div>
       </div>
     </div>
 
@@ -245,4 +283,42 @@
 <footer>
   <div class="footer-grid">
     <div class="footer-brand"><div class="logo"><span class="logo-dot"></span>AJH<span class="logo-suffix">/technology</span></div><p>Built locally in Suffolk. Helping small businesses grow with professional web design, strong brand identity and streamlined processes.</p></div>
-    <div class="footer-col"><h4>Services</h4><ul><li><a href="web.html">Web design</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="brand.html">Brand</a></
+    <div class="footer-col"><h4>Services</h4><ul><li><a href="web.html">Web design</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="brand.html">Brand</a></li><li><a href="process.html">Process</a></li><li><a href="services.html">All services</a></li></ul></div>
+    <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="work.html">Approach</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul><li><a href="tel:+447488286207" style="color: inherit;">07488 286207</a></li><li>The Office, Grange Farm</li><li>All Saints Road</li><li>Creeting St Mary, Suffolk</li><li>IP6 8NG</li></ul></div>
+  </div>
+  <div class="footer-bottom"><div>© 2026 AJH Technology Ltd</div><div><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="cookies.html">Cookies</a></div></div>
+</footer>
+
+<div class="sticky-cta">
+  <span class="sticky-cta-dot"></span>
+  <span class="sticky-cta-text"><strong>Book a coffee with Harlyn</strong> · 20 mins · No sales pitch</span>
+  <span class="sticky-cta-mobile">Book a 20-min call</span>
+  <a href="#" class="sticky-cta-btn" onclick="document.getElementById('name').focus(); return false;">Start above ↑</a>
+</div>
+
+<script>
+(function() {
+  var params = new URLSearchParams(window.location.search);
+  var pkg = params.get('package');
+  var select = document.getElementById('enquiry');
+  if (!pkg || !select) return;
+  var map = {
+    launch: 'Launch package (£500 setup + £25/mo)',
+    grow: 'Grow package (£1,000 setup + £75/mo)',
+    flagship: 'Flagship package (£2,000 setup + £125/mo)',
+    bespoke: 'Bespoke project (let\'s chat)'
+  };
+  var target = map[pkg.toLowerCase()];
+  if (!target) return;
+  for (var i = 0; i < select.options.length; i++) {
+    if (select.options[i].text === target) {
+      select.selectedIndex = i;
+      break;
+    }
+  }
+})();
+</script>
+
+</body>
+</html>
