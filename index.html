@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z58R4WCJMK"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-Z58R4WCJMK');
-</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -155,6 +147,59 @@ section.compare { background: var(--ink-2); }
 .local-towns { display: flex; flex-wrap: wrap; gap: 10px; }
 .town { font-size: 13px; padding: 10px 16px; background: var(--ink); border: 1px solid var(--border); border-radius: 999px; color: #BBB; font-weight: 500; }
 .town strong { color: var(--accent); margin-right: 6px; }
+
+/* ==== HERO AMBIENT BACKGROUND ==== */
+/* Pure CSS, GPU-accelerated, ~0KB extra payload, prefers-reduced-motion safe. */
+.hero-bg { position: absolute; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; }
+.hero > *:not(.hero-bg) { position: relative; z-index: 1; }
+.hero-blob { position: absolute; border-radius: 50%; filter: blur(90px); will-change: transform; }
+.hero-blob-1 { width: 620px; height: 620px; background: radial-gradient(circle, #C7F100 0%, transparent 70%); top: -220px; left: -120px; opacity: 0.30; animation: heroDrift1 22s ease-in-out infinite; }
+.hero-blob-2 { width: 520px; height: 520px; background: radial-gradient(circle, #88AB00 0%, transparent 70%); bottom: -160px; right: -60px; opacity: 0.22; animation: heroDrift2 28s ease-in-out infinite; }
+.hero-blob-3 { width: 760px; height: 760px; background: radial-gradient(circle, #1d2600 0%, transparent 65%); top: 50%; left: 50%; opacity: 0.40; animation: heroDrift3 35s ease-in-out infinite; }
+@keyframes heroDrift1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33%      { transform: translate(140px, 70px) scale(1.10); }
+  66%      { transform: translate(60px, 150px) scale(0.95); }
+}
+@keyframes heroDrift2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50%      { transform: translate(-180px, -90px) scale(1.15); }
+}
+@keyframes heroDrift3 {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); }
+  25%      { transform: translate(-42%, -56%) scale(1.05); }
+  50%      { transform: translate(-56%, -46%) scale(0.95); }
+  75%      { transform: translate(-50%, -52%) scale(1.08); }
+}
+/* Faint dot-grid overlay — futurist technical texture */
+.hero-grid {
+  position: absolute; inset: 0;
+  background-image: radial-gradient(circle, rgba(199, 241, 0, 0.07) 1px, transparent 1.5px);
+  background-size: 28px 28px;
+  -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, black 0%, transparent 85%);
+          mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, black 0%, transparent 85%);
+}
+/* Subtle slow scanline — adds drift sense without distraction */
+.hero-scan {
+  position: absolute; inset: 0;
+  background: linear-gradient(90deg, transparent 0%, rgba(199, 241, 0, 0.025) 50%, transparent 100%);
+  background-size: 250% 100%;
+  animation: heroScan 14s linear infinite;
+}
+@keyframes heroScan {
+  0%   { background-position: -120% 0; }
+  100% { background-position: 220% 0; }
+}
+/* Vignette to settle the edges so headline contrast stays solid */
+.hero-vignette {
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 80% 70% at 50% 50%, transparent 0%, rgba(10,10,10,0.4) 90%);
+}
+/* Accessibility — kill motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  .hero-blob, .hero-scan { animation: none !important; }
+  .hero-blob-3 { transform: translate(-50%, -50%); }
+}
 </style>
 </head>
 <body>
@@ -178,6 +223,14 @@ section.compare { background: var(--ink-2); }
 
 <!-- HERO -->
 <section class="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="hero-blob hero-blob-1"></div>
+    <div class="hero-blob hero-blob-2"></div>
+    <div class="hero-blob hero-blob-3"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-scan"></div>
+    <div class="hero-vignette"></div>
+  </div>
   <div class="eyebrow">Suffolk-built · Lead-driving · Professionally crafted</div>
   <h1>Websites that turn visitors into <span class="hl serif">paying customers.</span></h1>
   <p class="sub">AJH Technology designs and builds high-converting websites for small businesses across Ipswich, Stowmarket and Bury St Edmunds. Every site is engineered for one thing — more leads, more enquiries, more revenue.</p>
@@ -463,88 +516,4 @@ section.compare { background: var(--ink-2); }
   <h3 class="local-h">Proudly serving Suffolk and beyond</h3>
   <p class="local-sub">We work in-person with businesses across these towns and postcodes. Coffee first. Strategy second.</p>
   <div class="local-towns">
-    <span class="town"><strong>IP1–IP5</strong>Ipswich</span>
-    <span class="town"><strong>IP6</strong>Needham Market</span>
-    <span class="town"><strong>IP14</strong>Stowmarket</span>
-    <span class="town"><strong>IP28–IP33</strong>Bury St Edmunds</span>
-    <span class="town"><strong>CO10</strong>Sudbury</span>
-    <span class="town"><strong>IP12</strong>Woodbridge</span>
-    <span class="town"><strong>IP11</strong>Felixstowe</span>
-    <span class="town"><strong>IP22</strong>Diss</span>
-    <span class="town">+ remote across the UK</span>
-  </div>
-</section>
-
-<!-- FINAL CTA -->
-
-<!-- FINAL CTA -->
-<section class="final">
-  <div class="final-content">
-    <div class="eyebrow">Ready when you are</div>
-    <h2 class="final-h">Let's get your <span class="hl serif">first 10 leads.</span></h2>
-    <p class="final-sub">Twenty minutes. No sales pitch. Just a clear next step for your business.</p>
-    <div class="cta-row">
-      <a href="contact.html" class="btn-primary">Book my free strategy call <span class="arrow">→</span></a>
-      <a href="pricing.html" class="btn-secondary">See pricing</a>
-    </div>
-    <div class="final-trust">
-      <span>20 minutes max</span>
-      <span>No sales pitch</span>
-      <span>Walk away with a plan</span>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="footer-grid">
-    <div class="footer-brand">
-      <div class="logo"><span class="logo-dot"></span>AJH<span class="logo-suffix">/technology</span></div>
-      <p>Built locally in Suffolk. Helping small businesses grow with professional web design, strong brand identity and streamlined processes.</p>
-    </div>
-    <div class="footer-col">
-      <h4>Services</h4>
-      <ul>
-        <li><a href="web.html">Web design</a></li>
-        <li><a href="pricing.html">Pricing</a></li>
-        <li><a href="brand.html">Brand</a></li>
-        <li><a href="process.html">Process</a></li>
-        <li><a href="services.html">All services</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Company</h4>
-      <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="work.html">Approach</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Contact</h4>
-      <ul>
-        <li><a href="tel:+447488286207" style="color: inherit;">07488 286207</a></li>
-        
-        <li>The Office, Grange Farm</li>
-        <li>All Saints Road</li>
-        <li>Creeting St Mary, Suffolk</li>
-        <li>IP6 8NG</li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <div>© 2026 AJH Technology Ltd · Built locally, built to last</div>
-    <div><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="cookies.html">Cookies</a></div>
-  </div>
-</footer>
-
-<!-- STICKY CTA -->
-<div class="sticky-cta">
-  <span class="sticky-cta-dot"></span>
-  <span class="sticky-cta-text"><strong>Free 20-min strategy call</strong> · Book a slot in 60 seconds</span>
-  <span class="sticky-cta-mobile">Book a 20-min call</span>
-  <a href="contact.html" class="sticky-cta-btn">Book mine →</a>
-</div>
-
-</body>
-</html>
+    <span class="town"><st
