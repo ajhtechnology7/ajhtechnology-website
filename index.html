@@ -223,26 +223,27 @@ section.compare { background: var(--ink-2); }
 .fw-pill strong { color: var(--accent); margin-right: 5px; }
 .fw-link { display: inline-flex; align-items: center; gap: 8px; color: var(--accent); font-weight: 700; font-size: 16px; text-decoration: none; padding-bottom: 4px; border-bottom: 2px solid var(--accent); }
 .fw-link:hover { gap: 12px; }
-/* W2W mini browser mockup */
+/* W2W mini browser mockup — using REAL Wall2Wall homepage hero photo + real SVG logo */
 .fw-mock { border-radius: 14px; overflow: hidden; box-shadow: 0 30px 90px rgba(0,0,0,0.45), 0 0 0 1px #2a2a2a; transform: rotate(-1deg); transition: transform 0.4s ease; }
 .fw-mock:hover { transform: rotate(0deg) scale(1.01); }
 .fw-mock-chrome { background: #1a1a1a; padding: 10px 14px; display: flex; align-items: center; gap: 6px; }
 .fw-mock-dot { width: 10px; height: 10px; border-radius: 50%; background: #3a3a3a; }
 .fw-mock-url { flex: 1; background: #0d0d0d; padding: 5px 12px; border-radius: 5px; font-family: 'Inter', monospace; font-size: 11px; color: #888; margin-left: 14px; }
-.fw-mock-body { background: #123C63; padding: 0; }
+.fw-mock-body { padding: 0; }
 .fw-mock-top { padding: 10px 24px; background: #123C63; color: white; font-size: 11px; display: flex; justify-content: space-between; align-items: center; }
-.fw-mock-nav { background: white; padding: 14px 24px; display: flex; justify-content: space-between; align-items: center; }
-.fw-mock-logo { font-family: 'Inter', sans-serif; font-weight: 900; font-size: 18px; color: #123C63; letter-spacing: -0.5px; }
-.fw-mock-logo .two { color: #2F9BDC; }
-.fw-mock-logo .group { display: block; font-size: 8px; color: #383E45; letter-spacing: 2px; margin-top: 1px; font-weight: 700; }
-.fw-mock-cta { background: #123C63; color: white; padding: 6px 14px; border-radius: 4px; font-size: 11px; font-weight: 700; }
-.fw-mock-hero { background: linear-gradient(135deg, #123C63 0%, #1B567E 60%, #1B6FB5 100%); padding: 50px 32px 40px; min-height: 260px; position: relative; overflow: hidden; }
-.fw-mock-hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 70% 50%, rgba(47,155,220,0.25) 0%, transparent 60%); pointer-events: none; }
-.fw-mock-hero-eb { position: relative; color: #2F9BDC; font-size: 9px; letter-spacing: 2px; text-transform: uppercase; font-weight: 700; margin-bottom: 10px; }
-.fw-mock-hero-h { position: relative; color: white; font-size: 22px; font-weight: 900; line-height: 1.15; letter-spacing: -0.5px; margin-bottom: 10px; }
+.fw-mock-top .req-btn { background: white; color: #123C63; padding: 4px 12px; border-radius: 4px; font-weight: 800; font-size: 9px; letter-spacing: 0.5px; }
+.fw-mock-nav { background: white; padding: 12px 24px; display: flex; justify-content: space-between; align-items: center; }
+.fw-mock-nav-links { display: flex; gap: 10px; align-items: center; font-family: 'Inter', sans-serif; font-size: 10px; font-weight: 600; color: #383E45; }
+.fw-mock-svg-logo { height: 32px; width: auto; display: block; }
+.fw-mock-cta { background: white; color: #123C63; border: 1.5px solid #123C63; padding: 5px 12px; border-radius: 4px; font-size: 10px; font-weight: 700; }
+.fw-mock-hero { background-image: linear-gradient(rgba(18,60,99,0.55), rgba(27,86,126,0.55)), url('w2w-hero.jpg'); background-size: cover; background-position: center; padding: 50px 32px 40px; min-height: 260px; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+.fw-mock-hero-text { position: relative; max-width: 380px; text-align: center; }
+.fw-mock-hero-eb { color: #2F9BDC; font-size: 9px; letter-spacing: 2px; text-transform: uppercase; font-weight: 800; margin-bottom: 8px; }
+.fw-mock-hero-h { color: white; font-size: 18px; font-weight: 800; line-height: 1.2; letter-spacing: -0.3px; margin-bottom: 8px; }
 .fw-mock-hero-h .hl { color: #2F9BDC; }
-.fw-mock-hero-sub { position: relative; color: rgba(255,255,255,0.85); font-size: 11px; line-height: 1.5; margin-bottom: 16px; max-width: 360px; }
-.fw-mock-hero-btn { position: relative; display: inline-block; background: white; color: #123C63; padding: 8px 16px; border-radius: 4px; font-weight: 700; font-size: 10px; letter-spacing: 0.5px; }
+.fw-mock-hero-sub { color: rgba(255,255,255,0.92); font-size: 10px; line-height: 1.5; margin-bottom: 14px; }
+.fw-mock-hero-btn { display: inline-block; background: white; color: #123C63; padding: 7px 14px; border-radius: 4px; font-weight: 800; font-size: 9px; letter-spacing: 0.5px; }
+.fw-mock-hero-phone { display: inline-block; background: rgba(255,255,255,0.15); color: white; padding: 7px 14px; border-radius: 4px; font-weight: 700; font-size: 9px; margin-left: 6px; border: 1px solid rgba(255,255,255,0.5); }
 </style>
 </head>
 <body>
@@ -326,6 +327,26 @@ section.compare { background: var(--ink-2); }
     </div>
 
     <a href="case-study-wall2wall.html" class="fw-mock" style="text-decoration: none;">
+      <!-- Inline SVG sprite — actual Wall2Wall Group logo used on their live site -->
+      <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <defs>
+          <linearGradient id="w2wGrad-fw" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#123C63"/><stop offset="1" stop-color="#2F9BDC"/>
+          </linearGradient>
+          <symbol id="w2w-mark-fw" viewBox="0 0 144 110">
+            <path d="M16 22 L44 80 L72 22" fill="none" stroke="#123C63" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M72 22 L100 80 L128 22" fill="none" stroke="url(#w2wGrad-fw)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+          </symbol>
+          <symbol id="w2w-logo-fw" viewBox="0 0 370 110">
+            <use href="#w2w-mark-fw" transform="translate(2,5) scale(.9)"/>
+            <text x="140" y="56" font-family="Montserrat,Arial" font-weight="800" font-size="34" fill="#383E45">WALL<tspan fill="#2F9BDC">2</tspan>WALL</text>
+            <line x1="137" y1="76" x2="193" y2="76" stroke="#1B6FB5" stroke-width="2.5"/>
+            <text x="251" y="82" text-anchor="middle" font-family="Montserrat,Arial" font-weight="600" font-size="15" letter-spacing="8" fill="#123C63">GROUP</text>
+            <line x1="301" y1="76" x2="357" y2="76" stroke="#1B6FB5" stroke-width="2.5"/>
+          </symbol>
+        </defs>
+      </svg>
+
       <div class="fw-mock-chrome">
         <div class="fw-mock-dot"></div>
         <div class="fw-mock-dot"></div>
@@ -333,16 +354,25 @@ section.compare { background: var(--ink-2); }
         <div class="fw-mock-url">🔒 wall2wallplastering.co.uk</div>
       </div>
       <div class="fw-mock-body">
-        <div class="fw-mock-top"><span>Need our help with your upcoming project?</span><span>📞 01449 424980</span></div>
+        <div class="fw-mock-top">
+          <span>Need our help with your upcoming project?</span>
+          <span><span class="req-btn">REQUEST FREE QUOTE</span> &nbsp; 📞 Call: 01449 424980</span>
+        </div>
         <div class="fw-mock-nav">
-          <div class="fw-mock-logo">W<span class="two">2</span>WALL<div class="group">GROUP</div></div>
-          <div class="fw-mock-cta">Get a Free Quote</div>
+          <svg class="fw-mock-svg-logo" viewBox="0 0 370 110" aria-label="Wall2Wall Group"><use href="#w2w-logo-fw"/></svg>
+          <div class="fw-mock-nav-links">
+            <span>Home</span><span>Services</span><span>Case Studies</span><span>Reviews</span><span>Locations</span><span>Contact Us</span>
+            <span class="fw-mock-cta">Get a Free Quote</span>
+          </div>
         </div>
         <div class="fw-mock-hero">
-          <div class="fw-mock-hero-eb">CHAS ACCREDITED CONTRACTOR</div>
-          <div class="fw-mock-hero-h">Welcome to Wall2Wall Group — <span class="hl">Plasterers, Renderers &amp; Dry Lining Specialists</span> in Suffolk &amp; East Anglia</div>
-          <div class="fw-mock-hero-sub">A fully accredited plastering company in Stowmarket offering all aspects of residential and commercial work.</div>
-          <span class="fw-mock-hero-btn">MAKE AN ENQUIRY →</span>
+          <div class="fw-mock-hero-text">
+            <div class="fw-mock-hero-eb">CHAS ACCREDITED CONTRACTOR</div>
+            <div class="fw-mock-hero-h">Welcome to Wall2Wall Group — <span class="hl">Plasterers, Renderers &amp; Dry Lining Specialists</span> in Suffolk &amp; East Anglia</div>
+            <div class="fw-mock-hero-sub">A fully accredited plastering company in Stowmarket, Suffolk offering all aspects of residential and commercial work.</div>
+            <span class="fw-mock-hero-btn">MAKE AN ENQUIRY →</span>
+            <span class="fw-mock-hero-phone">📞 01449 424980</span>
+          </div>
         </div>
       </div>
     </a>
@@ -518,60 +548,4 @@ section.compare { background: var(--ink-2); }
     <div>
       <div class="magnet-tag">Free download · No card needed</div>
       <h3 class="magnet-h">A personalised audit of <span class="hl serif">your site.</span></h3>
-      <p class="magnet-body">A one-page, plain-English review of your existing site — conversion fixes, speed tweaks, and the SEO basics you might be missing. Reviewed personally by Harlyn within 48 hours of qualification.</p>
-      <div class="magnet-form">
-        <a href="audit.html" class="btn-primary">Request my audit <span class="arrow">→</span></a>
-      </div>
-      <div class="magnet-mini">90-second questionnaire · Reviewed in 24hrs · Audit in 48hrs · No follow-up unless you ask.</div>
-    </div>
-    <div class="magnet-visual">
-      <div class="magnet-visual-cover">
-        <div class="magnet-visual-tag">AJH Audit · 2026</div>
-        <div>
-          <div class="magnet-visual-title">Your personalised website audit</div>
-        </div>
-        <div class="magnet-visual-meta">1 page · 48hr turnaround</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- BEFORE / AFTER -->
-<section class="compare">
-  <div class="section-head" style="margin-bottom:0;">
-    <h2>Before AJH. <span class="hl serif">After AJH.</span></h2>
-    <p class="section-sub">Most small business websites quietly cost their owner leads every single day. Here's the difference a proper one makes.</p>
-  </div>
-  <div class="grid-2" style="margin-top: 50px;">
-    <div class="panel before">
-      <span class="panel-tag">Before</span>
-      <div class="panel-h">Tired site, leaking leads.</div>
-      <ul>
-        <li>Outdated design, slow on mobile</li>
-        <li>No clear call to action</li>
-        <li>Looks like 50 other local sites</li>
-        <li>Visitors leave without enquiring</li>
-      </ul>
-    </div>
-    <div class="panel after">
-      <span class="panel-tag">After</span>
-      <div class="panel-h">Confident brand, leads on autopilot.</div>
-      <ul>
-        <li>Site that converts visitors into bookings</li>
-        <li>One clear next step on every page</li>
-        <li>Looks unmistakably like your business</li>
-        <li>Enquiries land in your inbox while you sleep</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section>
-  <div class="section-head">
-    <h2>The questions <span class="hl serif">we hear most.</span></h2>
-    <p class="section-sub">Plain answers to the questions Suffolk business owners actually ask us.</p>
-  </div>
-  <div class="faq-list">
-    <div class="faq-item">
-      <div class="faq-q"><h3>How much does a small business website cost in Suf
+      <p class="magnet-body">A one-page, plain-English review of your existing site — conversion fixes, speed tweaks, and the SEO basics you might be missing. Reviewed personally by Harlyn within 48 hours
