@@ -207,6 +207,42 @@ section.compare { background: var(--ink-2); }
   .hero-blob-3 { transform: translate(-50%, -50%); }
   .hero-blob-1, .hero-blob-2, .hero-blob-4 { opacity: 0.4; }
 }
+
+/* ==== FEATURED WORK · WALL2WALL ==== */
+.fw-section { padding: 90px 48px; max-width: 1240px; margin: 0 auto; }
+.fw-eyebrow { display: inline-block; font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: var(--accent); padding: 8px 16px; border: 1px solid var(--accent); border-radius: 100px; margin-bottom: 24px; }
+.fw-grid { display: grid; grid-template-columns: 1fr 1.05fr; gap: 70px; align-items: center; }
+@media (max-width: 900px) { .fw-grid { grid-template-columns: 1fr; gap: 40px; } }
+.fw-text h2 { font-size: 44px; font-weight: 800; letter-spacing: -1.5px; line-height: 1.1; margin-bottom: 18px; }
+.fw-text h2 .hl { color: var(--accent); }
+.fw-text h2 .serif { font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400; color: var(--accent); }
+.fw-text .meta { font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: var(--mute); margin-bottom: 22px; font-weight: 600; }
+.fw-text .desc { font-size: 17px; color: #BBB; line-height: 1.7; margin-bottom: 26px; }
+.fw-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 32px; }
+.fw-pill { font-size: 12px; padding: 7px 14px; background: #141414; border: 1px solid var(--border); border-radius: 100px; color: #DDD; font-weight: 500; }
+.fw-pill strong { color: var(--accent); margin-right: 5px; }
+.fw-link { display: inline-flex; align-items: center; gap: 8px; color: var(--accent); font-weight: 700; font-size: 16px; text-decoration: none; padding-bottom: 4px; border-bottom: 2px solid var(--accent); }
+.fw-link:hover { gap: 12px; }
+/* W2W mini browser mockup */
+.fw-mock { border-radius: 14px; overflow: hidden; box-shadow: 0 30px 90px rgba(0,0,0,0.45), 0 0 0 1px #2a2a2a; transform: rotate(-1deg); transition: transform 0.4s ease; }
+.fw-mock:hover { transform: rotate(0deg) scale(1.01); }
+.fw-mock-chrome { background: #1a1a1a; padding: 10px 14px; display: flex; align-items: center; gap: 6px; }
+.fw-mock-dot { width: 10px; height: 10px; border-radius: 50%; background: #3a3a3a; }
+.fw-mock-url { flex: 1; background: #0d0d0d; padding: 5px 12px; border-radius: 5px; font-family: 'Inter', monospace; font-size: 11px; color: #888; margin-left: 14px; }
+.fw-mock-body { background: #123C63; padding: 0; }
+.fw-mock-top { padding: 10px 24px; background: #123C63; color: white; font-size: 11px; display: flex; justify-content: space-between; align-items: center; }
+.fw-mock-nav { background: white; padding: 14px 24px; display: flex; justify-content: space-between; align-items: center; }
+.fw-mock-logo { font-family: 'Inter', sans-serif; font-weight: 900; font-size: 18px; color: #123C63; letter-spacing: -0.5px; }
+.fw-mock-logo .two { color: #2F9BDC; }
+.fw-mock-logo .group { display: block; font-size: 8px; color: #383E45; letter-spacing: 2px; margin-top: 1px; font-weight: 700; }
+.fw-mock-cta { background: #123C63; color: white; padding: 6px 14px; border-radius: 4px; font-size: 11px; font-weight: 700; }
+.fw-mock-hero { background: linear-gradient(135deg, #123C63 0%, #1B567E 60%, #1B6FB5 100%); padding: 50px 32px 40px; min-height: 260px; position: relative; overflow: hidden; }
+.fw-mock-hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 70% 50%, rgba(47,155,220,0.25) 0%, transparent 60%); pointer-events: none; }
+.fw-mock-hero-eb { position: relative; color: #2F9BDC; font-size: 9px; letter-spacing: 2px; text-transform: uppercase; font-weight: 700; margin-bottom: 10px; }
+.fw-mock-hero-h { position: relative; color: white; font-size: 22px; font-weight: 900; line-height: 1.15; letter-spacing: -0.5px; margin-bottom: 10px; }
+.fw-mock-hero-h .hl { color: #2F9BDC; }
+.fw-mock-hero-sub { position: relative; color: rgba(255,255,255,0.85); font-size: 11px; line-height: 1.5; margin-bottom: 16px; max-width: 360px; }
+.fw-mock-hero-btn { position: relative; display: inline-block; background: white; color: #123C63; padding: 8px 16px; border-radius: 4px; font-weight: 700; font-size: 10px; letter-spacing: 0.5px; }
 </style>
 </head>
 <body>
@@ -218,6 +254,7 @@ section.compare { background: var(--ink-2); }
     <a href="services.html">Services</a>
     <a href="web.html">Web design</a>
     <a href="pricing.html">Pricing</a>
+    <a href="case-study-wall2wall.html">Work</a>
     <a href="work.html">Approach</a>
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
@@ -261,6 +298,54 @@ section.compare { background: var(--ink-2); }
   <div class="aeo-inner">
     <div class="aeo-tag">What is AJH Technology?</div>
     <div class="aeo-a"><strong>AJH Technology is a web design agency based in Needham Market, Suffolk.</strong> We design and build lead-generating websites for small businesses — supported by strong brand identity and streamlined business processes. Founded by Harlyn Palmer, we work with businesses across Ipswich, Stowmarket, Bury St Edmunds and the wider East of England. Most projects launch within three weeks — or in one when a real deadline demands it — and start with a free 20-minute strategy call.</div>
+  </div>
+</section>
+
+<!-- FEATURED WORK · WALL2WALL GROUP -->
+<section class="fw-section">
+  <div class="fw-grid">
+    <div class="fw-text">
+      <div class="fw-eyebrow">Featured project · Our most recent work</div>
+      <div class="meta">Wall2Wall Group · Stowmarket, Suffolk</div>
+      <h2>A brand that travels — <span class="serif">from inbox to scaffold board.</span></h2>
+      <p class="desc">Full brand identity, lead-generating website, SEO, AEO and an 8-piece collateral pack for a CHAS-accredited plastering, dry lining, insulation and rendering specialist scaling across Suffolk, East Anglia and Essex.</p>
+      <div class="fw-pills">
+        <span class="fw-pill"><strong>·</strong> Website</span>
+        <span class="fw-pill"><strong>·</strong> SEO + AEO</span>
+        <span class="fw-pill"><strong>·</strong> Logo system</span>
+        <span class="fw-pill"><strong>·</strong> Colour &amp; type</span>
+        <span class="fw-pill"><strong>·</strong> Email signature</span>
+        <span class="fw-pill"><strong>·</strong> Business cards</span>
+        <span class="fw-pill"><strong>·</strong> Letterhead</span>
+        <span class="fw-pill"><strong>·</strong> Social kit</span>
+        <span class="fw-pill"><strong>·</strong> Van livery</span>
+        <span class="fw-pill"><strong>·</strong> Site boards</span>
+        <span class="fw-pill"><strong>·</strong> Workwear</span>
+      </div>
+      <a href="case-study-wall2wall.html" class="fw-link">See the full case study <span>→</span></a>
+    </div>
+
+    <a href="case-study-wall2wall.html" class="fw-mock" style="text-decoration: none;">
+      <div class="fw-mock-chrome">
+        <div class="fw-mock-dot"></div>
+        <div class="fw-mock-dot"></div>
+        <div class="fw-mock-dot"></div>
+        <div class="fw-mock-url">🔒 wall2wallplastering.co.uk</div>
+      </div>
+      <div class="fw-mock-body">
+        <div class="fw-mock-top"><span>Need our help with your upcoming project?</span><span>📞 01449 424980</span></div>
+        <div class="fw-mock-nav">
+          <div class="fw-mock-logo">W<span class="two">2</span>WALL<div class="group">GROUP</div></div>
+          <div class="fw-mock-cta">Get a Free Quote</div>
+        </div>
+        <div class="fw-mock-hero">
+          <div class="fw-mock-hero-eb">CHAS ACCREDITED CONTRACTOR</div>
+          <div class="fw-mock-hero-h">Welcome to Wall2Wall Group — <span class="hl">Plasterers, Renderers &amp; Dry Lining Specialists</span> in Suffolk &amp; East Anglia</div>
+          <div class="fw-mock-hero-sub">A fully accredited plastering company in Stowmarket offering all aspects of residential and commercial work.</div>
+          <span class="fw-mock-hero-btn">MAKE AN ENQUIRY →</span>
+        </div>
+      </div>
+    </a>
   </div>
 </section>
 
@@ -489,29 +574,4 @@ section.compare { background: var(--ink-2); }
   </div>
   <div class="faq-list">
     <div class="faq-item">
-      <div class="faq-q"><h3>How much does a small business website cost in Suffolk?</h3><div class="faq-toggle">+</div></div>
-      <div class="faq-a"><strong>AJH Technology offers three website packages for Suffolk small businesses:</strong> <strong>Launch</strong> (from £500 setup + £25/mo), <strong>Grow</strong> (from £1,000 setup + £75/mo) and <strong>Flagship</strong> (from £2,000 setup + £125/mo) — all on a 12-month minimum. For something more custom, our <strong>Bespoke</strong> option starts with a friendly call. Full details on the <a href="pricing.html" style="color: var(--accent); border-bottom: 1px solid var(--accent);">pricing page</a>.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q"><h3>How long does a project take from start to launch?</h3><div class="faq-toggle">+</div></div>
-      <div class="faq-a"><strong>Most AJH Technology websites go live within three weeks</strong> of the kick-off call. But if you've got a hard deadline — a trade show, a launch event, a season change — <strong>we've delivered in one week</strong>. Tell us your date and we'll work backwards from there. Your deadline drives the schedule, not ours.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q"><h3>How do you make sure my website actually generates leads?</h3><div class="faq-toggle">+</div></div>
-      <div class="faq-a">Every site we ship is built around <strong>one clear action per page</strong> (booking, enquiry or phone call), with analytics and conversion tracking wired up from day one. We tell you which page is doing the work — and which one needs a tweak.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q"><h3>What platform will my website be built on?</h3><div class="faq-toggle">+</div></div>
-      <div class="faq-a">We pick the right tool for the job. <strong>Most lead-generation sites are hand-built for speed and SEO</strong>; content-heavy or self-edited sites might use Webflow or WordPress. We'll recommend an option in the strategy call — never lock you into a platform you don't own.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q"><h3>Do you work with businesses outside Suffolk?</h3><div class="faq-toggle">+</div></div>
-      <div class="faq-a">Yes. We're based in Needham Market and prefer in-person across Ipswich, Stowmarket, Bury St Edmunds, Sudbury, Woodbridge, Felixstowe and Diss, but we work remotely with clients across the UK.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q"><h3>What makes you different from other Ipswich agencies?</h3><div class="faq-toggle">+</div></div>
-      <div class="faq-a">Three things. <strong>One:</strong> we design for conversion, not awards. <strong>Two:</strong> we're local — same person every call. <strong>Three:</strong> fixed scope, fixed price, no surprises.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q"><h3>Do you offer ongoing support after launch?</h3><div class="faq-toggle">+</div></div>
-      <div class="faq-a">Yes. Every project includes <strong>30 days of post-launch support</strong> as standard — small tweaks, training, and any teething issues
+      <div class="faq-q"><h3>How much does a small business website cost in Suf
