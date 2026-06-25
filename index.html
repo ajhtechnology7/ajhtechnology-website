@@ -208,42 +208,33 @@ section.compare { background: var(--ink-2); }
   .hero-blob-1, .hero-blob-2, .hero-blob-4 { opacity: 0.4; }
 }
 
-/* ==== FEATURED WORK · WALL2WALL ==== */
-.fw-section { padding: 70px 48px; max-width: 1240px; margin: 0 auto; }
-.fw-eyebrow { display: inline-block; font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: var(--accent); padding: 8px 16px; border: 1px solid var(--accent); border-radius: 100px; margin-bottom: 24px; }
-.fw-grid { display: grid; grid-template-columns: 1fr 1.05fr; gap: 50px; align-items: center; }
-@media (max-width: 900px) { .fw-grid { grid-template-columns: 1fr; gap: 40px; } }
-.fw-text h2 { font-size: 44px; font-weight: 800; letter-spacing: -1.5px; line-height: 1.1; margin-bottom: 12px; }
-.fw-text h2 .hl { color: var(--accent); }
-.fw-text h2 .serif { font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400; color: var(--accent); }
-.fw-text .meta { font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: var(--mute); margin-bottom: 22px; font-weight: 600; }
-.fw-text .desc { font-size: 17px; color: #BBB; line-height: 1.65; margin-bottom: 20px; }
-.fw-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 22px; }
-.fw-pill { font-size: 12px; padding: 7px 14px; background: #141414; border: 1px solid var(--border); border-radius: 100px; color: #DDD; font-weight: 500; }
-.fw-pill strong { color: var(--accent); margin-right: 5px; }
-.fw-link { display: inline-flex; align-items: center; gap: 8px; color: var(--accent); font-weight: 700; font-size: 16px; text-decoration: none; padding-bottom: 4px; border-bottom: 2px solid var(--accent); }
-.fw-link:hover { gap: 12px; }
-/* W2W mini browser mockup — using REAL Wall2Wall homepage hero photo + real SVG logo */
-.fw-mock { border-radius: 14px; overflow: hidden; box-shadow: 0 30px 90px rgba(0,0,0,0.45), 0 0 0 1px #2a2a2a; transform: rotate(-1deg); transition: transform 0.4s ease; }
-.fw-mock:hover { transform: rotate(0deg) scale(1.01); }
-.fw-mock-chrome { background: #1a1a1a; padding: 10px 14px; display: flex; align-items: center; gap: 6px; }
-.fw-mock-dot { width: 10px; height: 10px; border-radius: 50%; background: #3a3a3a; }
-.fw-mock-url { flex: 1; background: #0d0d0d; padding: 5px 12px; border-radius: 5px; font-family: 'Inter', monospace; font-size: 11px; color: #888; margin-left: 14px; }
-.fw-mock-body { padding: 0; }
-.fw-mock-top { padding: 10px 24px; background: #123C63; color: white; font-size: 11px; display: flex; justify-content: space-between; align-items: center; }
-.fw-mock-top .req-btn { background: white; color: #123C63; padding: 4px 12px; border-radius: 4px; font-weight: 800; font-size: 9px; letter-spacing: 0.5px; }
-.fw-mock-nav { background: white; padding: 12px 24px; display: flex; justify-content: space-between; align-items: center; }
-.fw-mock-nav-links { display: flex; gap: 10px; align-items: center; font-family: 'Inter', sans-serif; font-size: 10px; font-weight: 600; color: #383E45; }
-.fw-mock-svg-logo { height: 32px; width: auto; display: block; }
-.fw-mock-cta { background: white; color: #123C63; border: 1.5px solid #123C63; padding: 5px 12px; border-radius: 4px; font-size: 10px; font-weight: 700; }
-.fw-mock-hero { background-image: linear-gradient(rgba(18,60,99,0.55), rgba(27,86,126,0.55)), url('w2w-hero.jpg'); background-size: cover; background-position: center; padding: 50px 32px 40px; min-height: 260px; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; }
-.fw-mock-hero-text { position: relative; max-width: 460px; text-align: left; margin: 0 auto; }
-.fw-mock-hero-eb { color: #2F9BDC; font-size: 9px; letter-spacing: 2px; text-transform: uppercase; font-weight: 800; margin-bottom: 8px; }
-.fw-mock-hero-h { color: white; font-size: 18px; font-weight: 800; line-height: 1.2; letter-spacing: -0.3px; margin-bottom: 8px; }
-.fw-mock-hero-h .hl { color: #2F9BDC; }
-.fw-mock-hero-sub { color: rgba(255,255,255,0.92); font-size: 10px; line-height: 1.5; margin-bottom: 14px; }
-.fw-mock-hero-btn { display: inline-block; background: white; color: #123C63; padding: 7px 14px; border-radius: 4px; font-weight: 800; font-size: 9px; letter-spacing: 0.5px; }
-.fw-mock-hero-phone { display: inline-block; background: white; color: #123C63; padding: 7px 14px; border-radius: 4px; font-weight: 800; font-size: 9px; margin-left: 6px; }
+/* ==== RECENT WORK · 2-CASE-STUDY GRID ==== */
+.rw-home { padding: 70px 48px; max-width: 1240px; margin: 0 auto; }
+.rw-home .rw-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 30px; margin-bottom: 36px; flex-wrap: wrap; }
+.rw-home .rw-head .left .eyebrow-pill { display: inline-block; font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: var(--accent); padding: 8px 16px; border: 1px solid var(--accent); border-radius: 100px; margin-bottom: 18px; }
+.rw-home .rw-head h2 { font-size: 44px; font-weight: 800; letter-spacing: -1.5px; line-height: 1.1; max-width: 720px; }
+.rw-home .rw-head h2 .serif { font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400; color: var(--accent); }
+.rw-home .rw-head .right { color: #BBB; max-width: 380px; font-size: 15px; line-height: 1.6; }
+.rw-home .rw-head .right .all-link { display: inline-flex; align-items: center; gap: 8px; color: var(--accent); font-weight: 700; font-size: 14px; text-decoration: none; margin-top: 12px; border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
+.rw-home-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
+@media (max-width: 900px) { .rw-home-grid { grid-template-columns: 1fr; } }
+.rw-home-card { display: block; background: #141414; border: 1px solid var(--border); border-radius: 18px; padding: 26px; text-decoration: none; color: inherit; transition: transform 0.25s ease, border-color 0.25s ease; }
+.rw-home-card:hover { transform: translateY(-4px); border-color: var(--accent); }
+.rw-home-thumb { border-radius: 12px; aspect-ratio: 16 / 10; margin-bottom: 22px; position: relative; overflow: hidden; box-shadow: 0 16px 40px rgba(0,0,0,0.35); }
+.rw-home-thumb.eastrada { background: linear-gradient(135deg, #0a1d3e 0%, #1a3a6e 65%, #2d8038 100%); }
+.rw-home-thumb.wall2wall { background: linear-gradient(135deg, #123C63 0%, #1B6FB5 50%, #2F9BDC 100%); }
+.rw-home-thumb-overlay { position: absolute; inset: 0; padding: 24px; display: flex; flex-direction: column; justify-content: space-between; }
+.rw-home-thumb-eb { font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase; font-weight: 700; color: rgba(255,255,255,0.7); }
+.rw-home-thumb-logo { font-family: 'Inter', sans-serif; font-weight: 900; color: white; font-size: 24px; letter-spacing: -0.8px; line-height: 1; }
+.rw-home-thumb-logo small { display: block; font-size: 9px; letter-spacing: 3px; font-weight: 500; margin-top: 5px; color: rgba(255,255,255,0.75); }
+.rw-home-thumb-tags { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 5px; }
+.rw-home-thumb-tag { display: inline-block; background: rgba(255,255,255,0.14); border: 1px solid rgba(255,255,255,0.3); color: white; font-size: 10px; padding: 5px 10px; border-radius: 100px; backdrop-filter: blur(6px); font-weight: 600; }
+.rw-home-meta { font-size: 11.5px; letter-spacing: 2px; text-transform: uppercase; color: var(--mute); margin-bottom: 10px; }
+.rw-home-meta .accent { color: var(--accent); }
+.rw-home-card h3 { font-size: 22px; font-weight: 800; letter-spacing: -0.6px; line-height: 1.2; margin-bottom: 12px; color: var(--paper); }
+.rw-home-card p.desc { font-size: 14px; color: #BBB; line-height: 1.6; margin-bottom: 16px; }
+.rw-home-card .rw-home-link { color: var(--accent); font-weight: 700; font-size: 14px; display: inline-flex; align-items: center; gap: 6px; }
+.rw-home-card:hover .rw-home-link { gap: 12px; }
 </style>
 </head>
 <body>
@@ -255,7 +246,7 @@ section.compare { background: var(--ink-2); }
     <a href="services.html">Services</a>
     <a href="web.html">Web design</a>
     <a href="pricing.html">Pricing</a>
-    <a href="case-study-wall2wall.html">Work</a>
+    <a href="recent-work.html">Work</a>
     <a href="work.html">Approach</a>
     <a href="insights.html">Insights</a>
     <a href="about.html">About</a>
@@ -296,80 +287,63 @@ section.compare { background: var(--ink-2); }
   </div>
 </section>
 
-<!-- FEATURED WORK · WALL2WALL GROUP -->
-<section class="fw-section">
-  <div class="fw-grid">
-    <div class="fw-text">
-      <div class="fw-eyebrow">Featured project · Our most recent work</div>
-      <div class="meta">Wall2Wall Group · Stowmarket, Suffolk</div>
-      <h2>A brand that travels — <span class="serif">from inbox to scaffold board.</span></h2>
-      <p class="desc">Full brand identity, lead-generating website, SEO, AEO and an 8-piece collateral pack for a CHAS-accredited plastering, dry lining, insulation and rendering specialist scaling across Suffolk, East Anglia and Essex.</p>
-      <div class="fw-pills">
-        <span class="fw-pill"><strong>·</strong> Website</span>
-        <span class="fw-pill"><strong>·</strong> SEO + AEO</span>
-        <span class="fw-pill"><strong>·</strong> Logo system</span>
-        <span class="fw-pill"><strong>·</strong> Colour &amp; type</span>
-        <span class="fw-pill"><strong>·</strong> Email signature</span>
-        <span class="fw-pill"><strong>·</strong> Business cards</span>
-        <span class="fw-pill"><strong>·</strong> Letterhead</span>
-        <span class="fw-pill"><strong>·</strong> Social kit</span>
-        <span class="fw-pill"><strong>·</strong> Van livery</span>
-        <span class="fw-pill"><strong>·</strong> Site boards</span>
-        <span class="fw-pill"><strong>·</strong> Workwear</span>
-      </div>
-      <a href="case-study-wall2wall.html" class="fw-link">See the full case study <span>→</span></a>
+<!-- RECENT WORK · 2 CASE STUDIES -->
+<section class="rw-home">
+  <div class="rw-head">
+    <div class="left">
+      <div class="eyebrow-pill">Recent work · Two case studies</div>
+      <h2>Two Suffolk businesses. Two industries. <span class="serif">One studio.</span></h2>
     </div>
+    <div class="right">
+      Each project is the same level of care — whether it's a single-page conversion site for a facilities contractor or a full brand pack with vehicle livery for a CHAS-accredited plastering firm.
+      <a class="all-link" href="recent-work.html">See all recent work <span>→</span></a>
+    </div>
+  </div>
 
-    <a href="case-study-wall2wall.html" class="fw-mock" style="text-decoration: none;">
-      <!-- Inline SVG sprite — actual Wall2Wall Group logo used on their live site -->
-      <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-        <defs>
-          <linearGradient id="w2wGrad-fw" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stop-color="#123C63"/><stop offset="1" stop-color="#2F9BDC"/>
-          </linearGradient>
-          <g id="w2w-mark-fw">
-            <path d="M16 22 L44 80 L72 22" fill="none" stroke="#123C63" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M72 22 L100 80 L128 22" fill="none" stroke="url(#w2wGrad-fw)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-          </g>
-          <symbol id="w2w-logo-fw" viewBox="0 0 370 110">
-            <use href="#w2w-mark-fw" transform="translate(2,5) scale(.9)"/>
-            <text x="140" y="56" font-family="Montserrat,Arial" font-weight="800" font-size="34" fill="#383E45">WALL<tspan fill="#1B6FB5">2</tspan>WALL</text>
-            <line x1="137" y1="76" x2="193" y2="76" stroke="#1B6FB5" stroke-width="2.5"/>
-            <text x="251" y="82" text-anchor="middle" font-family="Montserrat,Arial" font-weight="600" font-size="15" letter-spacing="8" fill="#123C63">GROUP</text>
-            <line x1="301" y1="76" x2="357" y2="76" stroke="#1B6FB5" stroke-width="2.5"/>
-          </symbol>
-        </defs>
-      </svg>
+  <div class="rw-home-grid">
 
-      <div class="fw-mock-chrome">
-        <div class="fw-mock-dot"></div>
-        <div class="fw-mock-dot"></div>
-        <div class="fw-mock-dot"></div>
-        <div class="fw-mock-url">🔒 wall2wallplastering.co.uk</div>
-      </div>
-      <div class="fw-mock-body">
-        <div class="fw-mock-top">
-          <span>Need our help with your upcoming project?</span>
-          <span><span class="req-btn">REQUEST FREE QUOTE</span> &nbsp; <span style="background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.4); padding:4px 10px; border-radius:4px; font-weight:600;"><svg width="11" height="11" viewBox="0 0 24 24" fill="#25D366" style="display:inline-block; vertical-align:-1px; margin-right:4px;"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.36 11.36 0 0 0 3.57.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.24 1.02l-2.21 2.2z"/></svg>Call: 01449 424980</span></span>
-        </div>
-        <div class="fw-mock-nav">
-          <svg class="fw-mock-svg-logo" viewBox="0 0 370 110" aria-label="Wall2Wall Group"><use href="#w2w-logo-fw"/></svg>
-          <div class="fw-mock-nav-links">
-            <span>Home</span><span>Services</span><span>Case Studies</span><span>Reviews</span><span>Locations</span><span>Contact Us</span>
-            <span class="fw-mock-cta">Get a Free Quote</span>
-          </div>
-        </div>
-        <div class="fw-mock-hero">
-          <div class="fw-mock-hero-text">
-            <div class="fw-mock-hero-eb">CHAS ACCREDITED CONTRACTOR</div>
-            <div class="fw-mock-hero-h"><span class="hl">Plastering, Rendering</span> and Dry-Lining <span class="hl">Specialists</span></div>
-            <div class="fw-mock-hero-sub">A fully accredited commercial contractor in Stowmarket, Suffolk offering all aspects of residential and commercial plastering, rendering, dry lining and insulation across East Anglia and Essex.</div>
-            <span class="fw-mock-hero-btn">MAKE AN ENQUIRY →</span>
-            <span class="fw-mock-hero-phone"><svg width="14" height="14" viewBox="0 0 24 24" fill="#25D366" style="display:inline-block; vertical-align:-2px; margin-right:6px;"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.36 11.36 0 0 0 3.57.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.24 1.02l-2.21 2.2z"/></svg>01449 424980</span>
+    <a class="rw-home-card" href="case-study-eastrada.html">
+      <div class="rw-home-thumb eastrada">
+        <div class="rw-home-thumb-overlay">
+          <div class="rw-home-thumb-eb">Live since 2026 · Mendlesham, Suffolk</div>
+          <div>
+            <div class="rw-home-thumb-logo">EASTRADA<small>FACILITIES LIMITED</small></div>
+            <div class="rw-home-thumb-tags">
+              <span class="rw-home-thumb-tag">Concept</span>
+              <span class="rw-home-thumb-tag">Design</span>
+              <span class="rw-home-thumb-tag">Deploy</span>
+              <span class="rw-home-thumb-tag">Manage</span>
+            </div>
           </div>
         </div>
       </div>
+      <div class="rw-home-meta">Case study <span class="accent">·</span> Commercial cleaning &amp; facilities</div>
+      <h3>A single-page conversion machine for a Suffolk facilities contractor.</h3>
+      <p class="desc">Concept, design, build and ongoing management of <strong>eastrada.co.uk</strong> for a CHAS- and Achilles-verified commercial cleaning and facilities contractor. Real teams, real kit, real before-and-after results.</p>
+      <span class="rw-home-link">Read the case study <span>→</span></span>
     </a>
+
+    <a class="rw-home-card" href="case-study-wall2wall.html">
+      <div class="rw-home-thumb wall2wall">
+        <div class="rw-home-thumb-overlay">
+          <div class="rw-home-thumb-eb">Live since 2026 · Stowmarket, Suffolk</div>
+          <div>
+            <div class="rw-home-thumb-logo">WALL<span style="color:#2F9BDC;">2</span>WALL<small>GROUP</small></div>
+            <div class="rw-home-thumb-tags">
+              <span class="rw-home-thumb-tag">Brand</span>
+              <span class="rw-home-thumb-tag">Website</span>
+              <span class="rw-home-thumb-tag">Print</span>
+              <span class="rw-home-thumb-tag">Vehicle</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rw-home-meta">Case study <span class="accent">·</span> Plastering, dry lining &amp; rendering</div>
+      <h3>A brand that travels — from inbox to scaffold board.</h3>
+      <p class="desc">Full brand identity, lead-generating website, SEO, AEO and an 8-piece collateral pack for <strong>Wall2Wall Group</strong> — a CHAS-accredited plastering, dry lining, insulation and rendering specialist across Suffolk and Essex.</p>
+      <span class="rw-home-link">Read the case study <span>→</span></span>
+    </a>
+
   </div>
 </section>
 
