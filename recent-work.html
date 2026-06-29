@@ -6,7 +6,7 @@
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <meta name="theme-color" content="#0A0A0A">
 <title>Recent Work · Suffolk Web Design Case Studies | AJH Technology</title>
-<meta name="description" content="Recent web design, brand identity and managed-service projects delivered by AJH Technology for businesses across Suffolk and East Anglia. Two featured case studies: Wall2Wall Group (plastering specialists, Stowmarket) and Eastrada Facilities (commercial cleaning &amp; facilities contractor, Mendlesham).">
+<meta name="description" content="Recent web design, brand identity and managed-service projects delivered by AJH Technology for businesses across Suffolk and East Anglia. Three featured case studies: Needham Market FC (Southern League football club, Bloomfields), Eastrada Facilities (commercial cleaning &amp; facilities, Mendlesham) and Wall2Wall Group (plastering specialists, Stowmarket).">
 <link rel="canonical" href="https://www.ajhtechnology.digital/recent-work">
 <meta property="og:title" content="Recent Work · Suffolk Web Design Case Studies | AJH Technology">
 <meta property="og:description" content="Recent web design, brand identity and managed-service projects delivered by AJH Technology for businesses across Suffolk and East Anglia.">
@@ -28,6 +28,14 @@
   "url": "https://www.ajhtechnology.digital/recent-work",
   "inLanguage": "en-GB",
   "hasPart": [
+    {
+      "@type": "Article",
+      "headline": "Needham Market FC · Brand, website, API integrations &amp; SQL booking system",
+      "url": "https://www.ajhtechnology.digital/case-study-needham-market-fc",
+      "image": "https://www.ajhtechnology.digital/og-needham.png",
+      "datePublished": "2026-06-29",
+      "about": { "@type": "SportsOrganization", "name": "Needham Market FC" }
+    },
     {
       "@type": "Article",
       "headline": "Eastrada Facilities · Concept, design, build and ongoing management",
@@ -76,8 +84,22 @@
 .rw-card:hover { transform: translateY(-4px); border-color: var(--accent); }
 
 .rw-thumb { border-radius: 12px; aspect-ratio: 16 / 10; margin-bottom: 26px; position: relative; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.4); }
-.rw-thumb.eastrada { background: linear-gradient(135deg, #0a1d3e 0%, #1a3a6e 65%, #2d8038 100%); }
-.rw-thumb.wall2wall { background: linear-gradient(135deg, #123C63 0%, #1B6FB5 50%, #2F9BDC 100%); }
+.rw-thumb.needham {
+  background-image:
+    linear-gradient(135deg, rgba(27,27,34,0.78) 0%, rgba(139,10,31,0.62) 55%, rgba(200,16,46,0.50) 100%),
+    url('nmfc-hero.jpg');
+  background-size: cover; background-position: center;
+}
+.rw-thumb.eastrada {
+  background-image:
+    linear-gradient(135deg, rgba(10,29,62,0.74) 0%, rgba(26,58,110,0.62) 55%, rgba(45,128,56,0.55) 100%),
+    url('eastrada-hero.jpg');
+}
+.rw-thumb.wall2wall {
+  background-image:
+    linear-gradient(135deg, rgba(18,60,99,0.76) 0%, rgba(27,111,181,0.62) 50%, rgba(47,155,220,0.52) 100%),
+    url('w2w-hero.jpg');
+}
 
 .rw-thumb-overlay { position: absolute; inset: 0; padding: 28px; display: flex; flex-direction: column; justify-content: space-between; }
 .rw-thumb-eyebrow { font-size: 11px; letter-spacing: 2.5px; text-transform: uppercase; font-weight: 700; color: rgba(255,255,255,0.7); }
@@ -121,11 +143,45 @@
 
 <section class="rw-hero">
   <div class="breadcrumb"><a href="index.html"><span style="color: var(--accent);">AJH</span></a> / Recent work</div>
-  <h1>Two Suffolk businesses. <span class="serif">Two industries.</span><br>One studio.</h1>
-  <p class="sub">Recent web design, brand identity and managed-service projects delivered by AJH Technology. Each case study is the same level of care, regardless of the size of the brief — from a single-page conversion site to a full brand pack with vehicle livery.</p>
+  <h1>Three Suffolk businesses. <span class="serif">Three industries.</span><br>One studio.</h1>
+  <p class="sub">Recent web design, brand identity and managed-service projects delivered by AJH Technology. Each case study is the same level of care, regardless of the size of the brief — from a 12-month platform build for a 100-year-old football club, to a single-page conversion site for a facilities contractor, to a full brand pack with vehicle livery for a CHAS-accredited plastering firm.</p>
 </section>
 
 <section class="rw-grid">
+
+  <!-- NEEDHAM FC CARD -->
+  <a class="rw-card" href="case-study-needham-market-fc.html">
+    <div class="rw-thumb needham">
+      <div class="rw-thumb-overlay">
+        <div class="rw-thumb-eyebrow">Live since 2026 · Bloomfields, Suffolk</div>
+        <div>
+          <div class="rw-thumb-logo" style="text-shadow: 0 2px 8px rgba(0,0,0,0.5);">NEEDHAM FC<small>THE MARKETMEN · EST. 1919</small></div>
+          <div style="margin-top: 16px;">
+            <span class="rw-thumb-tag">Brand</span>
+            <span class="rw-thumb-tag">Web</span>
+            <span class="rw-thumb-tag">API</span>
+            <span class="rw-thumb-tag">SQL</span>
+            <span class="rw-thumb-tag">Manage</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rw-meta">Case study <span class="accent">·</span> Football · Southern League Premier</div>
+    <h2>A century-old football club, rebuilt as a modern digital platform.</h2>
+    <p class="desc">Brand refresh, one-club website, live fixtures &amp; league API integrations, SQL-powered ticketing &amp; venue booking, and ongoing management for <strong>Needham Market FC</strong> — Bloomfields, Suffolk, est. 1919. The largest single project AJH has shipped to date.</p>
+    <div class="rw-pills">
+      <span class="rw-pill">Brand refresh</span>
+      <span class="rw-pill">One-club architecture</span>
+      <span class="rw-pill">FA Full-Time API</span>
+      <span class="rw-pill">SQL ticketing</span>
+      <span class="rw-pill">SQL venue booking</span>
+      <span class="rw-pill">My Account / supporter portal</span>
+      <span class="rw-pill">Club shop</span>
+      <span class="rw-pill">NeedhamFC TV</span>
+      <span class="rw-pill">Ongoing managed service</span>
+    </div>
+    <span class="rw-link">Read the case study <span>→</span></span>
+  </a>
 
   <!-- EASTRADA CARD -->
   <a class="rw-card" href="case-study-eastrada.html">
@@ -133,7 +189,7 @@
       <div class="rw-thumb-overlay">
         <div class="rw-thumb-eyebrow">Live since 2026 · Mendlesham, Suffolk</div>
         <div>
-          <div class="rw-thumb-logo">EASTRADA<small>FACILITIES LIMITED</small></div>
+          <div class="rw-thumb-logo" style="text-shadow: 0 2px 8px rgba(0,0,0,0.5);">EASTRADA<small>FACILITIES LIMITED</small></div>
           <div style="margin-top: 16px;">
             <span class="rw-thumb-tag">Concept</span>
             <span class="rw-thumb-tag">Design</span>
@@ -162,7 +218,7 @@
       <div class="rw-thumb-overlay">
         <div class="rw-thumb-eyebrow">Live since 2026 · Stowmarket, Suffolk</div>
         <div>
-          <div class="rw-thumb-logo">WALL<span style="color:#2F9BDC;">2</span>WALL<small>GROUP</small></div>
+          <div class="rw-thumb-logo" style="text-shadow: 0 2px 8px rgba(0,0,0,0.5);">WALL<span style="color:#C7F100;">2</span>WALL<small>GROUP</small></div>
           <div style="margin-top: 16px;">
             <span class="rw-thumb-tag">Brand</span>
             <span class="rw-thumb-tag">Website</span>

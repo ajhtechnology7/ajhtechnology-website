@@ -216,12 +216,18 @@ section.compare { background: var(--ink-2); }
 .rw-home .rw-head h2 .serif { font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400; color: var(--accent); }
 .rw-home .rw-head .right { color: #BBB; max-width: 380px; font-size: 15px; line-height: 1.6; }
 .rw-home .rw-head .right .all-link { display: inline-flex; align-items: center; gap: 8px; color: var(--accent); font-weight: 700; font-size: 14px; text-decoration: none; margin-top: 12px; border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
-.rw-home-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
-@media (max-width: 900px) { .rw-home-grid { grid-template-columns: 1fr; } }
-.rw-home-card { display: block; background: #141414; border: 1px solid var(--border); border-radius: 18px; padding: 26px; text-decoration: none; color: inherit; transition: transform 0.25s ease, border-color 0.25s ease; }
+.rw-home-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 22px; }
+@media (max-width: 1100px) { .rw-home-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 700px) { .rw-home-grid { grid-template-columns: 1fr; } }
+.rw-home-card { display: block; background: #141414; border: 1px solid var(--border); border-radius: 16px; padding: 20px; text-decoration: none; color: inherit; transition: transform 0.25s ease, border-color 0.25s ease; }
 .rw-home-card:hover { transform: translateY(-4px); border-color: var(--accent); }
-.rw-home-thumb { border-radius: 12px; aspect-ratio: 16 / 10; margin-bottom: 22px; position: relative; overflow: hidden; box-shadow: 0 16px 40px rgba(0,0,0,0.35); background-size: cover; background-position: center top; transition: filter 0.25s ease; }
+.rw-home-thumb { border-radius: 10px; aspect-ratio: 16 / 10; margin-bottom: 18px; position: relative; overflow: hidden; box-shadow: 0 16px 40px rgba(0,0,0,0.35); background-size: cover; background-position: center top; transition: filter 0.25s ease; }
 /* Faded screenshot of the actual live site underneath, brand gradient on top */
+.rw-home-thumb.needham {
+  background-image:
+    linear-gradient(135deg, rgba(27,27,34,0.78) 0%, rgba(139,10,31,0.62) 55%, rgba(200,16,46,0.50) 100%),
+    url('nmfc-hero.jpg');
+}
 .rw-home-thumb.eastrada {
   background-image:
     linear-gradient(135deg, rgba(10,29,62,0.74) 0%, rgba(26,58,110,0.62) 55%, rgba(45,128,56,0.55) 100%),
@@ -256,14 +262,14 @@ section.compare { background: var(--ink-2); }
 .rw-home-thumb-chrome .url::before { content: '🔒 '; opacity: 0.7; }
 .rw-home-thumb-overlay { position: absolute; inset: 0; padding: 38px 24px 24px; display: flex; flex-direction: column; justify-content: space-between; z-index: 2; }
 .rw-home-thumb-eb { font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase; font-weight: 700; color: rgba(255,255,255,0.7); }
-.rw-home-thumb-logo { font-family: 'Inter', sans-serif; font-weight: 900; color: white; font-size: 24px; letter-spacing: -0.8px; line-height: 1; }
+.rw-home-thumb-logo { font-family: 'Inter', sans-serif; font-weight: 900; color: white; font-size: 20px; letter-spacing: -0.7px; line-height: 1; }
 .rw-home-thumb-logo small { display: block; font-size: 9px; letter-spacing: 3px; font-weight: 500; margin-top: 5px; color: rgba(255,255,255,0.75); }
 .rw-home-thumb-tags { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 5px; }
 .rw-home-thumb-tag { display: inline-block; background: rgba(255,255,255,0.14); border: 1px solid rgba(255,255,255,0.3); color: white; font-size: 10px; padding: 5px 10px; border-radius: 100px; backdrop-filter: blur(6px); font-weight: 600; }
 .rw-home-meta { font-size: 11.5px; letter-spacing: 2px; text-transform: uppercase; color: var(--mute); margin-bottom: 10px; }
 .rw-home-meta .accent { color: var(--accent); }
-.rw-home-card h3 { font-size: 22px; font-weight: 800; letter-spacing: -0.6px; line-height: 1.2; margin-bottom: 12px; color: var(--paper); }
-.rw-home-card p.desc { font-size: 14px; color: #BBB; line-height: 1.6; margin-bottom: 16px; }
+.rw-home-card h3 { font-size: 19px; font-weight: 800; letter-spacing: -0.5px; line-height: 1.25; margin-bottom: 10px; color: var(--paper); }
+.rw-home-card p.desc { font-size: 13.5px; color: #BBB; line-height: 1.55; margin-bottom: 14px; }
 .rw-home-card .rw-home-link { color: var(--accent); font-weight: 700; font-size: 14px; display: inline-flex; align-items: center; gap: 6px; }
 .rw-home-card:hover .rw-home-link { gap: 12px; }
 </style>
@@ -322,16 +328,42 @@ section.compare { background: var(--ink-2); }
 <section class="rw-home">
   <div class="rw-head">
     <div class="left">
-      <div class="eyebrow-pill">Recent work · Two case studies</div>
-      <h2>Two Suffolk businesses. Two industries. <span class="serif">One studio.</span></h2>
+      <div class="eyebrow-pill">Recent work · Three case studies</div>
+      <h2>Three Suffolk businesses. Three industries. <span class="serif">One studio.</span></h2>
     </div>
     <div class="right">
-      Each project is the same level of care — whether it's a single-page conversion site for a facilities contractor or a full brand pack with vehicle livery for a CHAS-accredited plastering firm.
+      Each project is the same level of care — from a 12-month platform build for a 100-year-old football club to a single-page conversion site for a facilities contractor.
       <a class="all-link" href="recent-work.html">See all recent work <span>→</span></a>
     </div>
   </div>
 
   <div class="rw-home-grid">
+
+    <a class="rw-home-card" href="case-study-needham-market-fc.html">
+      <div class="rw-home-thumb needham">
+        <div class="rw-home-thumb-chrome">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="url">needhammarketfc.co.uk</span>
+        </div>
+        <div class="rw-home-thumb-overlay">
+          <div class="rw-home-thumb-eb">Live since 2026 · Bloomfields, Suffolk</div>
+          <div>
+            <div class="rw-home-thumb-logo" style="text-shadow: 0 2px 8px rgba(0,0,0,0.5);">NEEDHAM FC<small>THE MARKETMEN · EST. 1919</small></div>
+            <div class="rw-home-thumb-tags">
+              <span class="rw-home-thumb-tag">Brand</span>
+              <span class="rw-home-thumb-tag">Web</span>
+              <span class="rw-home-thumb-tag">API</span>
+              <span class="rw-home-thumb-tag">SQL</span>
+              <span class="rw-home-thumb-tag">Manage</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rw-home-meta">Case study <span class="accent">·</span> Football · Southern League Premier</div>
+      <h3>A century-old football club, rebuilt as a modern digital platform.</h3>
+      <p class="desc">Brand refresh, one-club website, live fixtures &amp; league API integrations, SQL-powered ticketing &amp; venue booking, and ongoing management for <strong>Needham Market FC</strong> — Bloomfields, Suffolk, est. 1919.</p>
+      <span class="rw-home-link">Read the case study <span>→</span></span>
+    </a>
 
     <a class="rw-home-card" href="case-study-eastrada.html">
       <div class="rw-home-thumb eastrada">
@@ -533,4 +565,26 @@ section.compare { background: var(--ink-2); }
       </div>
       <div class="card-desc">Up to 15 pages, 4 social posts/month, targeted SEO + monthly reports, 3 change requests/month. <strong>See what's included →</strong></div>
     </a>
-    <a href="pricing.html" class="
+    <a href="pricing.html" class="card linked" style="text-decoration: none;">
+      <div>
+        <div class="card-num">PACKAGE 03 / FLAGSHIP</div>
+        <div class="card-title" style="margin-top: 14px;">Lead the market.</div>
+        <div style="font-size: 38px; font-weight: 900; letter-spacing: -1.5px; margin: 18px 0 4px;">£2,000<span style="font-size: 14px; font-weight: 600; color: var(--mute); letter-spacing: 0;"> setup</span></div>
+        <div style="font-size: 14px; color: var(--mute);">+ £125/month · 12-month min</div>
+      </div>
+      <div class="card-desc">Up to 25 pages, 8 social posts/month, full SEO+AEO strategy, monthly strategy call, 5 change requests/month. <strong style="color: var(--accent);">See what's included →</strong></div>
+    </a>
+  </div>
+  <div class="center" style="margin-top: 40px;">
+    <a href="pricing.html" class="btn-primary">Compare all packages <span class="arrow">→</span></a>
+    <span style="display: block; margin-top: 16px; font-size: 13px; color: var(--mute);">Or <a href="pricing.html#bespoke" style="color: var(--accent); border-bottom: 1px solid var(--accent);">start a bespoke conversation</a> — for e-commerce, member portals, integrations and anything custom.</span>
+  </div>
+</section>
+
+<!-- LEAD MAGNET -->
+<section class="magnet" id="audit">
+  <div class="magnet-inner">
+    <div>
+      <div class="magnet-tag">Free download · No card needed</div>
+      <h3 class="magnet-h">A personalised audit of <span class="hl serif">your site.</span></h3>
+      <p class="magnet-body">A one-page, plain-English review of your existing site — conversion fixes, speed tweaks, and the SEO basics you might be missing. Reviewed personally by Harlyn within 48 hours                                                                                                                                                                                                                           
