@@ -5,9 +5,15 @@ User-agent: *
 Allow: /
 
 # Don't index these pages (they're either redirects or post-submission)
+Disallow: /thanks
 Disallow: /thanks.html
+Disallow: /ai
 Disallow: /ai.html
+Disallow: /workshop
 Disallow: /workshop.html
+Disallow: /app
 Disallow: /app.html
+Disallow: /audit-thanks
+Disallow: /audit-thanks.html
 
-Sitemap: https://www.ajhtechnology.digital/sitemap.xml
+Sitemap: https://ajhtechnology.digital/sitemap.xml
