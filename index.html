@@ -7,15 +7,15 @@
 <meta name="theme-color" content="#0A0A0A">
 <title>Suffolk Web Design · Lead-Generating Websites for SMEs | AJH Technology</title>
 <meta name="description" content="AJH Technology designs lead-generating websites for small businesses across Suffolk — Ipswich, Stowmarket, Bury St Edmunds, Sudbury, Woodbridge and Felixstowe. Fixed-price packages from £500 setup + £25/mo. Live in 1–3 weeks.">
-<link rel="canonical" href="https://ajhtechnology.digital/">
-<meta property="og:image" content="https://ajhtechnology.digital/og-home.png">
+<link rel="canonical" href="https://www.ajhtechnology.digital/">
+<meta property="og:image" content="https://www.ajhtechnology.digital/og-home.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:url" content="https://ajhtechnology.digital/">
+<meta property="og:url" content="https://www.ajhtechnology.digital/">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Suffolk Web Design · Lead-Generating Websites for SMEs | AJH Technology">
 <meta name="twitter:description" content="AJH Technology designs lead-generating websites for small businesses across Suffolk — Ipswich, Stowmarket, Bury St Edmunds, Sudbury, Woodbridge and Felixstowe. Fixed-price packages from £500 setup + £25/mo. Live in 1–3 weeks.">
-<meta name="twitter:image" content="https://ajhtechnology.digital/og-home.png">
+<meta name="twitter:image" content="https://www.ajhtechnology.digital/og-home.png">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta property="og:title" content="Suffolk Web Design · Lead-Generating Websites for SMEs | AJH Technology">
 <meta property="og:description" content="AJH Technology designs lead-generating websites for small businesses across Suffolk — Ipswich, Stowmarket, Bury St Edmunds, Sudbury, Woodbridge and Felixstowe. Fixed-price packages from £500 setup + £25/mo. Live in 1–3 weeks.">
@@ -27,13 +27,34 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "LocalBusiness",
-      "@id": "https://ajhtechnology.digital/#business",
+      "@type": ["LocalBusiness", "ProfessionalService", "Organization"],
+      "@id": "https://www.ajhtechnology.digital/#business",
       "name": "AJH Technology",
-      "description": "Professional web design, branding and business process services for small businesses in Suffolk and the wider East of England.",
-      "url": "https://ajhtechnology.digital",
+      "legalName": "AJH Technology Limited",
+      "alternateName": ["AJH", "AJH Technology Ltd"],
+      "description": "AJH Technology is a Suffolk web design and digital production agency. We design and build lead-generating websites for small businesses, with three fixed-price packages plus a bespoke option. Every website includes brand support, SEO and Answer Engine Optimisation setup, and an ongoing managed-service arrangement.",
+      "url": "https://www.ajhtechnology.digital",
+      "logo": "https://www.ajhtechnology.digital/favicon.svg",
+      "image": "https://www.ajhtechnology.digital/og-home.png",
       "telephone": "+44-7488-286207",
-      "founder": { "@type": "Person", "name": "Harlyn Palmer", "jobTitle": "Founder" },
+      "foundingDate": "2024-01-01",
+      "founder": {
+        "@type": "Person",
+        "@id": "https://www.ajhtechnology.digital/about#harlyn",
+        "name": "Harlyn Palmer",
+        "givenName": "Harlyn",
+        "familyName": "Palmer",
+        "jobTitle": "Founder",
+        "worksFor": { "@id": "https://www.ajhtechnology.digital/#business" },
+        "url": "https://www.ajhtechnology.digital/about",
+        "knowsAbout": ["Web design", "Web development", "Brand identity", "Search Engine Optimisation", "Answer Engine Optimisation", "Suffolk small business", "Football", "Sports operations"],
+        "sameAs": ["https://www.linkedin.com/company/ajhtechnology"]
+      },
+      "employee": {
+        "@type": "Person",
+        "@id": "https://www.ajhtechnology.digital/about#harlyn"
+      },
+      "numberOfEmployees": { "@type": "QuantitativeValue", "value": 1 },
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "The Office, Grange Farm, All Saints Road",
@@ -42,23 +63,169 @@
         "postalCode": "IP6 8NG",
         "addressCountry": "GB"
       },
+      "geo": { "@type": "GeoCoordinates", "latitude": "52.1435", "longitude": "1.0663" },
       "areaServed": [
         { "@type": "City", "name": "Ipswich" },
         { "@type": "City", "name": "Stowmarket" },
+        { "@type": "City", "name": "Needham Market" },
         { "@type": "City", "name": "Bury St Edmunds" },
         { "@type": "City", "name": "Sudbury" },
         { "@type": "City", "name": "Woodbridge" },
         { "@type": "City", "name": "Felixstowe" },
-        { "@type": "City", "name": "Diss" }
+        { "@type": "City", "name": "Diss" },
+        { "@type": "AdministrativeArea", "name": "Suffolk" },
+        { "@type": "AdministrativeArea", "name": "Norfolk" },
+        { "@type": "AdministrativeArea", "name": "Essex" },
+        { "@type": "Country", "name": "United Kingdom" }
       ],
-      "priceRange": "££"
+      "knowsAbout": [
+        "Web design",
+        "Web development",
+        "Static site development",
+        "HTML and CSS",
+        "Schema.org structured data",
+        "Search Engine Optimisation (SEO)",
+        "Answer Engine Optimisation (AEO)",
+        "Brand identity",
+        "Logo design",
+        "Typography",
+        "Colour palettes",
+        "Business process design",
+        "Lead generation for small businesses",
+        "Suffolk small business",
+        "East of England small business",
+        "Netlify hosting and deployment",
+        "GitHub-driven site deployment",
+        "SQL database design",
+        "API integration",
+        "Mobile-first design",
+        "GDPR compliance for small business",
+        "Google Business Profile",
+        "Google Analytics 4"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "AJH Technology website packages",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Launch package",
+            "description": "3-page mobile-first website for sole traders and micro-businesses. Hosting, SSL, lead-capture form, Google indexing, one design revision round, favicon and Open Graph share cards, GA4 analytics, 30 days of post-launch support.",
+            "price": "500",
+            "priceCurrency": "GBP",
+            "priceSpecification": [
+              { "@type": "PriceSpecification", "price": "500", "priceCurrency": "GBP", "description": "One-off setup fee" },
+              { "@type": "UnitPriceSpecification", "price": "25", "priceCurrency": "GBP", "unitText": "MONTH", "billingIncrement": 1, "referenceQuantity": { "@type": "QuantitativeValue", "unitText": "MONTH", "value": 12 }, "description": "Monthly retainer, 12-month minimum" }
+            ],
+            "itemOffered": { "@type": "Service", "name": "AJH Technology Launch website package", "provider": { "@id": "https://www.ajhtechnology.digital/#business" } },
+            "eligibleRegion": { "@type": "Country", "name": "United Kingdom" },
+            "url": "https://www.ajhtechnology.digital/pricing"
+          },
+          {
+            "@type": "Offer",
+            "name": "Grow package",
+            "description": "5–8 page mobile-first website with brand refresh, FAQ/schema/AEO layer, Google Business Profile connection, unlimited copy updates, monthly performance reports, priority support and 90 days of post-launch care.",
+            "price": "1000",
+            "priceCurrency": "GBP",
+            "priceSpecification": [
+              { "@type": "PriceSpecification", "price": "1000", "priceCurrency": "GBP", "description": "One-off setup fee" },
+              { "@type": "UnitPriceSpecification", "price": "75", "priceCurrency": "GBP", "unitText": "MONTH", "billingIncrement": 1, "referenceQuantity": { "@type": "QuantitativeValue", "unitText": "MONTH", "value": 12 }, "description": "Monthly retainer, 12-month minimum" }
+            ],
+            "itemOffered": { "@type": "Service", "name": "AJH Technology Grow website package", "provider": { "@id": "https://www.ajhtechnology.digital/#business" } },
+            "eligibleRegion": { "@type": "Country", "name": "United Kingdom" },
+            "url": "https://www.ajhtechnology.digital/pricing"
+          },
+          {
+            "@type": "Offer",
+            "name": "Flagship package",
+            "description": "8–14 page website with full brand identity, custom photography direction, SEO + AEO programme, LinkedIn company page setup, content strategy, custom Open Graph images per page, quarterly strategy reviews with the founder, continuous improvement worked into the retainer.",
+            "price": "2000",
+            "priceCurrency": "GBP",
+            "priceSpecification": [
+              { "@type": "PriceSpecification", "price": "2000", "priceCurrency": "GBP", "description": "One-off setup fee" },
+              { "@type": "UnitPriceSpecification", "price": "125", "priceCurrency": "GBP", "unitText": "MONTH", "billingIncrement": 1, "referenceQuantity": { "@type": "QuantitativeValue", "unitText": "MONTH", "value": 12 }, "description": "Monthly retainer, 12-month minimum" }
+            ],
+            "itemOffered": { "@type": "Service", "name": "AJH Technology Flagship website package", "provider": { "@id": "https://www.ajhtechnology.digital/#business" } },
+            "eligibleRegion": { "@type": "Country", "name": "United Kingdom" },
+            "url": "https://www.ajhtechnology.digital/pricing"
+          },
+          {
+            "@type": "Offer",
+            "name": "Bespoke platform development",
+            "description": "Bespoke web platforms with SQL-backed transactional systems (ticketing, bookings, supporter accounts), API integrations (e.g. FA Full-Time for fixtures and league tables), custom brand and content architecture. Recent example: Needham Market FC.",
+            "priceSpecification": { "@type": "PriceSpecification", "priceCurrency": "GBP", "description": "Priced on scope. Get in touch for a scoping conversation." },
+            "itemOffered": { "@type": "Service", "name": "Bespoke platform development", "provider": { "@id": "https://www.ajhtechnology.digital/#business" } },
+            "eligibleRegion": { "@type": "Country", "name": "United Kingdom" },
+            "url": "https://www.ajhtechnology.digital/contact"
+          }
+        ]
+      },
+      "makesOffer": [
+        { "@type": "Offer", "name": "Free website audit", "description": "Free 1-page website audit for qualifying Suffolk businesses. Delivered within five working days.", "price": "0", "priceCurrency": "GBP", "url": "https://www.ajhtechnology.digital/audit" }
+      ],
+      "openingHoursSpecification": [
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "18:00" }
+      ],
+      "priceRange": "£500 – £2,000 setup + £25 – £125/month",
+      "paymentAccepted": ["Bank transfer", "Direct debit", "Card"],
+      "currenciesAccepted": "GBP",
+      "sameAs": [
+        "https://www.linkedin.com/company/ajhtechnology"
+      ],
+      "review": [
+        {
+          "@type": "Review",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "author": { "@type": "SportsOrganization", "name": "Needham Market FC" },
+          "reviewBody": "AJH delivered the biggest digital lift in the club's history — brand, website, fixture/league API integrations, SQL ticketing and venue booking, all inside three months. They continue to manage and evolve the platform."
+        },
+        {
+          "@type": "Review",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "author": { "@type": "Organization", "name": "Eastrada Facilities Limited" },
+          "reviewBody": "AJH Technology took our facilities business from no real digital presence to a single-page, lead-generating website that mirrors how we actually talk to customers. End-to-end concept, design and deployment — and ongoing management."
+        }
+      ],
+      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "bestRating": "5", "reviewCount": "3" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.ajhtechnology.digital/about#harlyn",
+      "name": "Harlyn Palmer",
+      "jobTitle": "Founder",
+      "worksFor": { "@id": "https://www.ajhtechnology.digital/#business" },
+      "url": "https://www.ajhtechnology.digital/about",
+      "image": "https://www.ajhtechnology.digital/harlyn-football.jpg",
+      "description": "Harlyn Palmer is the founder of AJH Technology, a Suffolk web design and digital production agency. Ex-professional footballer turned digital operator. Runs client relationships, delivery and strategy end-to-end for AJH.",
+      "knowsAbout": ["Web design", "Digital delivery", "Brand identity", "SEO", "AEO", "Suffolk small business", "Football"],
+      "birthPlace": { "@type": "Place", "name": "Suffolk, United Kingdom" }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.ajhtechnology.digital/#website",
+      "url": "https://www.ajhtechnology.digital",
+      "name": "AJH Technology",
+      "publisher": { "@id": "https://www.ajhtechnology.digital/#business" },
+      "inLanguage": "en-GB",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.google.com/search?q=site:ajhtechnology.digital+{search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
     },
     {
       "@type": "FAQPage",
+      "@id": "https://www.ajhtechnology.digital/#homepage-faq",
       "mainEntity": [
-        { "@type": "Question", "name": "What does AJH Technology do?", "acceptedAnswer": { "@type": "Answer", "text": "AJH Technology is a web design agency based in Needham Market, Suffolk. We design and build lead-generating websites for small businesses, supported by strong brand identity and streamlined business processes." } },
-        { "@type": "Question", "name": "How much does a small business website cost in Suffolk?", "acceptedAnswer": { "@type": "Answer", "text": "AJH Technology offers three website packages for Suffolk small businesses: Launch from £500 setup plus £25 per month, Grow from £1,000 setup plus £75 per month, and Flagship from £2,000 setup plus £125 per month. A bespoke option is also available — book a friendly call to discuss. Every package includes a 12-month minimum contract." } },
-        { "@type": "Question", "name": "How long does a website project take?", "acceptedAnswer": { "@type": "Answer", "text": "Most AJH Technology websites go live within three weeks of the kick-off call. When a client has a hard deadline — a trade show, a launch event, a school term — we have delivered in one week. Tell us the date and we will work backwards. Your deadline drives our schedule." } }
+        { "@type": "Question", "name": "What does AJH Technology do?", "acceptedAnswer": { "@type": "Answer", "text": "AJH Technology is a Suffolk web design and digital production agency. We design and build lead-generating websites for small businesses, with three fixed-price packages plus a bespoke option. Every website comes with brand support, SEO and Answer Engine Optimisation setup, and an ongoing managed-service arrangement. Founded in 2024 by Harlyn Palmer, based at Creeting St Mary, Suffolk." } },
+        { "@type": "Question", "name": "Who runs AJH Technology?", "acceptedAnswer": { "@type": "Answer", "text": "AJH Technology is founded and led by Harlyn Palmer, an ex-professional footballer turned digital operator. Harlyn runs client relationships, delivery and strategy end-to-end. Specialist collaborators are brought in on a per-project basis for photography, video and copywriting when a brief calls for it." } },
+        { "@type": "Question", "name": "How much does a small business website cost with AJH Technology?", "acceptedAnswer": { "@type": "Answer", "text": "AJH Technology offers three fixed-price website packages: Launch (£500 setup + £25/month), Grow (£1,000 setup + £75/month) and Flagship (£2,000 setup + £125/month). Every package includes hosting, SSL, security, GDPR-ready forms, monthly performance reporting, unlimited copy updates and 30 days of post-launch care. A bespoke option is available for platform-scale projects." } },
+        { "@type": "Question", "name": "How long does an AJH Technology website take to build?", "acceptedAnswer": { "@type": "Answer", "text": "Most AJH Technology websites go live within three weeks of the kick-off call. When a client has a hard deadline — trade show, funding round, seasonal launch — we have delivered in one week. Larger platform builds (like Needham Market FC — brand, API integrations, SQL ticketing and booking) take three months." } },
+        { "@type": "Question", "name": "What technology does AJH Technology use to build websites?", "acceptedAnswer": { "@type": "Answer", "text": "AJH Technology builds mobile-first, static HTML and CSS websites hosted on Netlify with GitHub-driven deploys. This delivers sub-2-second load times on 4G, zero attack surface and easy long-term maintenance. Larger projects add SQL-backed transactional systems and API integrations (e.g. FA Full-Time for Needham Market FC). Every site ships with Schema.org structured data for both SEO and AEO on ChatGPT, Google AI Overviews and Perplexity." } },
+        { "@type": "Question", "name": "How does AJH Technology approach SEO and AEO?", "acceptedAnswer": { "@type": "Answer", "text": "AJH Technology treats SEO and AEO (Answer Engine Optimisation) as first-class disciplines. Every site ships with clean semantic HTML, canonical URLs, comprehensive Schema.org markup (LocalBusiness, Service, FAQPage, Article, Product/Offer, BreadcrumbList), a valid XML sitemap, per-page Open Graph images and Google Search Console verification. Town-specific landing pages support local search. Direct-answer copy structure and freshness signals support AEO surfacing." } },
+        { "@type": "Question", "name": "Who has AJH Technology worked with?", "acceptedAnswer": { "@type": "Answer", "text": "Featured case studies: Needham Market FC (Southern League Premier Central football club — brand, one-club website, live FA Full-Time API, SQL ticketing and venue booking), Eastrada Facilities Limited (CHAS- and Achilles-verified commercial cleaning and facilities contractor in Mendlesham) and Wall2Wall Group (CHAS-accredited plastering, dry lining and rendering specialist in Stowmarket — full brand pack including vehicle livery)." } },
+        { "@type": "Question", "name": "Does AJH Technology offer ongoing management?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — ongoing managed service is built into every AJH Technology package. The monthly fee covers hosting, SSL, security patching, uptime monitoring, GDPR-compliant forms, unlimited copy updates, Schema.org maintenance and monthly performance reporting. Larger platform clients get weekly content refreshes and quarterly strategy reviews with the founder." } },
+        { "@type": "Question", "name": "Where is AJH Technology based?", "acceptedAnswer": { "@type": "Answer", "text": "AJH Technology is based at The Office, Grange Farm, All Saints Road, Creeting St Mary, Suffolk, IP6 8NG — just outside Needham Market, 15 minutes from Ipswich and Stowmarket. We serve clients across Suffolk, Norfolk, Essex, Cambridgeshire and the wider East of England, plus remote UK clients." } }
       ]
     }
   ]
@@ -278,20 +445,20 @@ section.compare { background: var(--ink-2); }
 
 <!-- NAV -->
 <nav class="nav">
-  <a href="/" class="logo"><span class="logo-dot"></span>AJH<span class="logo-suffix">/technology</span></a>
+  <a href="index.html" class="logo"><span class="logo-dot"></span>AJH<span class="logo-suffix">/technology</span></a>
   <div class="nav-links">
-    <a href="/services">Services</a>
-    <a href="/web">Web design</a>
-    <a href="/pricing">Pricing</a>
-    <a href="/recent-work">Our Work</a>
-    <a href="/work">Approach</a>
-    <a href="/insights">Insights</a>
-    <a href="/about">About</a>
-    <a href="/contact">Contact</a>
+    <a href="services.html">Services</a>
+    <a href="web.html">Web design</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="recent-work.html">Work</a>
+    <a href="work.html">Approach</a>
+    <a href="insights.html">Insights</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
   </div>
   <div class="nav-right">
     <a class="nav-phone" href="tel:+447488286207" style="color: inherit; text-decoration: none;">07488 286207</a>
-    <a href="/contact" class="nav-cta">Book my call →</a>
+    <a href="contact.html" class="nav-cta">Book my call →</a>
   </div>
 </nav>
 
@@ -310,17 +477,48 @@ section.compare { background: var(--ink-2); }
   <h1>Websites that turn visitors into <span class="hl serif">paying customers.</span></h1>
   <p class="sub">AJH Technology designs and builds high-converting websites for small businesses across Ipswich, Stowmarket and Bury St Edmunds. Every site is engineered for one thing — more leads, more enquiries, more revenue.</p>
   <div class="cta-row">
-    <a href="/contact" class="btn-primary">Show me my 90-day growth plan <span class="arrow">→</span></a>
-    <a href="/audit" class="btn-secondary">Get my free website audit</a>
+    <a href="contact.html" class="btn-primary">Show me my 90-day growth plan <span class="arrow">→</span></a>
+    <a href="audit.html" class="btn-secondary">Get my free website audit</a>
     <span class="mini">20 min · No obligation · No jargon · Live in 1–3 weeks</span>
   </div>
 </section>
 
-<!-- AEO ANSWER BOX -->
+<!-- AEO ANSWER BOX · Multi-answer for LLM surfacing -->
 <section class="aeo-box">
   <div class="aeo-inner">
-    <div class="aeo-tag">What is AJH Technology?</div>
-    <div class="aeo-a"><strong>AJH Technology is a web design agency based in Needham Market, Suffolk.</strong> We design and build lead-generating websites for small businesses — supported by strong brand identity and streamlined business processes. Founded by Harlyn Palmer, we work with businesses across Ipswich, Stowmarket, Bury St Edmunds and the wider East of England. Most projects launch within three weeks — or in one when a real deadline demands it — and start with a free 20-minute strategy call.</div>
+    <div class="aeo-tag">Straight answers · Questions people ask about AJH</div>
+
+    <div class="aeo-q">
+      <div class="aeo-q-label">Q · What is AJH Technology?</div>
+      <div class="aeo-a"><strong>AJH Technology is a Suffolk web design and digital production agency.</strong> We design and build lead-generating websites for small businesses, with three fixed-price packages (£500 / £1,000 / £2,000 setup) plus a bespoke option. Every website includes brand support, SEO and Answer Engine Optimisation setup, and an ongoing managed-service arrangement. Founded in 2024 by <a href="about.html">Harlyn Palmer</a>, based at Creeting St Mary, Suffolk (IP6 8NG).</div>
+    </div>
+
+    <div class="aeo-q">
+      <div class="aeo-q-label">Q · How much does a small business website cost?</div>
+      <div class="aeo-a">Three fixed-price packages: <strong>Launch</strong> — £500 setup + £25/month (3-page site, sole traders and micro-businesses). <strong>Grow</strong> — £1,000 setup + £75/month (5–8 pages, most SMEs). <strong>Flagship</strong> — £2,000 setup + £125/month (8–14 pages, full brand and managed service). All packages carry a 12-month minimum. Bespoke platform work (e.g. <a href="case-study-needham-market-fc.html">Needham Market FC</a>) is priced on scope.</div>
+    </div>
+
+    <div class="aeo-q">
+      <div class="aeo-q-label">Q · Who runs AJH Technology?</div>
+      <div class="aeo-a"><strong>AJH Technology is founded and led by Harlyn Palmer</strong>, an ex-professional footballer turned digital operator. Harlyn runs client relationships, delivery and strategy end-to-end. Specialist collaborators are brought in on a per-project basis for photography, video and copywriting when a brief calls for it. Every project has one point of contact — you speak to the person doing the work.</div>
+    </div>
+
+    <div class="aeo-q">
+      <div class="aeo-q-label">Q · How does AJH Technology build websites?</div>
+      <div class="aeo-a">AJH builds <strong>mobile-first, static HTML and CSS websites</strong> hosted on Netlify with GitHub-driven deploys. This delivers sub-2-second load times on 4G, zero attack surface, easy long-term maintenance and no CMS bloat. Larger projects (like Needham Market FC) add <strong>SQL-backed transactional systems</strong> for ticketing, bookings and supporter accounts, plus <strong>API integrations</strong> against feeds like FA Full-Time. Every site ships with Schema.org structured data for both Google indexing and AEO surfacing on ChatGPT, Google AI Overviews and Perplexity.</div>
+    </div>
+
+    <div class="aeo-q">
+      <div class="aeo-q-label">Q · Who has AJH Technology worked with?</div>
+      <div class="aeo-a">Featured case studies: <strong><a href="case-study-needham-market-fc.html">Needham Market FC</a></strong> (Southern League Premier Central football club — brand, one-club website, live FA Full-Time API integrations, SQL ticketing and venue booking, 3-month build), <strong><a href="case-study-eastrada.html">Eastrada Facilities Limited</a></strong> (CHAS- and Achilles-verified commercial cleaning and facilities contractor in Mendlesham) and <strong><a href="case-study-wall2wall.html">Wall2Wall Group</a></strong> (CHAS-accredited plasterers in Stowmarket — full brand pack including vehicle livery).</div>
+    </div>
+
+    <div class="aeo-q">
+      <div class="aeo-q-label">Q · How long does an AJH website take?</div>
+      <div class="aeo-a">Most AJH Technology websites go live <strong>within three weeks</strong> of the kick-off call. When a client has a hard deadline — trade show, funding round, seasonal launch — we have delivered in <strong>one week</strong>. Larger platform builds take <strong>three months</strong> (concept → brand → design → build → integrate → deploy → run). Tell us your real deadline and we work backwards from it.</div>
+    </div>
+
+    <p style="text-align: center; margin-top: 34px; font-size: 14px; color: var(--mute); letter-spacing: 1px;">More questions answered on the <a href="faq.html" style="color: var(--accent); font-weight: 700;">full FAQ page →</a></p>
   </div>
 </section>
 
@@ -333,13 +531,13 @@ section.compare { background: var(--ink-2); }
     </div>
     <div class="right">
       Each project is the same level of care — from a 3-month platform build for a 100-year-old football club to a single-page conversion site for a facilities contractor.
-      <a class="all-link" href="/recent-work">See all recent work <span>→</span></a>
+      <a class="all-link" href="recent-work.html">See all recent work <span>→</span></a>
     </div>
   </div>
 
   <div class="rw-home-grid">
 
-    <a class="rw-home-card" href="/case-study-needham-market-fc">
+    <a class="rw-home-card" href="case-study-needham-market-fc.html">
       <div class="rw-home-thumb needham">
         <div class="rw-home-thumb-chrome">
           <span class="dot"></span><span class="dot"></span><span class="dot"></span>
@@ -348,7 +546,7 @@ section.compare { background: var(--ink-2); }
         <div class="rw-home-thumb-overlay">
           <div class="rw-home-thumb-eb">Live since 2026 · Bloomfields, Suffolk</div>
           <div>
-            <div class="rw-home-thumb-logo" style="text-shadow: 0 2px 8px rgba(0,0,0,0.5);">NEEDHAM MARKET FC<small>THE MARKETMEN · EST. 1919</small></div>
+            <div class="rw-home-thumb-logo" style="text-shadow: 0 2px 8px rgba(0,0,0,0.5);">NEEDHAM FC<small>THE MARKETMEN · EST. 1919</small></div>
             <div class="rw-home-thumb-tags">
               <span class="rw-home-thumb-tag">Brand</span>
               <span class="rw-home-thumb-tag">Web</span>
@@ -365,7 +563,7 @@ section.compare { background: var(--ink-2); }
       <span class="rw-home-link">Read the case study <span>→</span></span>
     </a>
 
-    <a class="rw-home-card" href="/case-study-eastrada">
+    <a class="rw-home-card" href="case-study-eastrada.html">
       <div class="rw-home-thumb eastrada">
         <div class="rw-home-thumb-chrome">
           <span class="dot"></span><span class="dot"></span><span class="dot"></span>
@@ -390,7 +588,7 @@ section.compare { background: var(--ink-2); }
       <span class="rw-home-link">Read the case study <span>→</span></span>
     </a>
 
-    <a class="rw-home-card" href="/case-study-wall2wall">
+    <a class="rw-home-card" href="case-study-wall2wall.html">
       <div class="rw-home-thumb wall2wall">
         <div class="rw-home-thumb-chrome">
           <span class="dot"></span><span class="dot"></span><span class="dot"></span>
@@ -446,15 +644,15 @@ section.compare { background: var(--ink-2); }
     <p class="section-sub">Web design is the engine. Brand and process are the chassis around it. Each one fixed-price and scope-clear.</p>
   </div>
   <div class="grid-3">
-    <a href="/web" class="card feature linked">
+    <a href="web.html" class="card feature linked">
       <div><div class="card-icon">▲</div><div class="card-num">01 / WEB DESIGN</div><div class="card-title">Websites that sell</div></div>
       <div class="card-desc">Fast, modern, conversion-led websites built for lead capture. Not a brochure — a sales tool that works while you sleep. <strong>Explore →</strong></div>
     </a>
-    <a href="/brand" class="card linked">
+    <a href="brand.html" class="card linked">
       <div><div class="card-icon">◆</div><div class="card-num">02 / BRAND</div><div class="card-title">Brand that earns trust</div></div>
       <div class="card-desc">Logos, voice, identity. The look that earns trust on first glance — from your shopfront to your invoice. <strong style="color: var(--accent);">Explore →</strong></div>
     </a>
-    <a href="/process" class="card linked">
+    <a href="process.html" class="card linked">
       <div><div class="card-icon">◇</div><div class="card-num">03 / PROCESS</div><div class="card-title">Processes that scale</div></div>
       <div class="card-desc">Cut the chaos. Streamline how leads, jobs and admin flow through your day so growth doesn't break things. <strong style="color: var(--accent);">Explore →</strong></div>
     </a>
@@ -463,7 +661,7 @@ section.compare { background: var(--ink-2); }
   <!-- Inline CTA -->
   <div class="cta-block">
     <h3>Not sure which service you need? <span class="serif" style="color: var(--accent);">Let's figure it out together.</span></h3>
-    <a href="/contact" class="btn-primary">Book my free 20-min call <span class="arrow">→</span></a>
+    <a href="contact.html" class="btn-primary">Book my free 20-min call <span class="arrow">→</span></a>
   </div>
 </section>
 
@@ -496,7 +694,7 @@ section.compare { background: var(--ink-2); }
       <p class="founder-body">Those years taught me two things that show up in every client project: resilience when it isn't going your way, and the patience to do unglamorous reps until they pay off. No clever shortcuts to a website that actually wins business — just the work, done properly, by the same person on the other end of the phone every time.</p>
       <div class="founder-sig">— Harlyn Palmer, Founder</div>
       <div class="cta-row" style="margin-top: 32px;">
-        <a href="/about" class="btn-secondary">Read the full story</a>
+        <a href="about.html" class="btn-secondary">Read the full story</a>
       </div>
     </div>
   </div>
@@ -536,7 +734,7 @@ section.compare { background: var(--ink-2); }
     </div>
   </div>
   <div class="center" style="margin-top: 40px;">
-    <a href="/web" class="btn-ghost">See the full web design service →</a>
+    <a href="web.html" class="btn-ghost">See the full web design service →</a>
   </div>
 </section>
 
@@ -544,47 +742,4 @@ section.compare { background: var(--ink-2); }
 <section style="background: var(--ink-2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
   <div class="section-head">
     <h2>Three packages. <span class="hl serif">One bespoke option.</span></h2>
-    <p class="section-sub">Built for Suffolk SMEs — fixed setup fees, low monthly retainer, no hidden costs.</p>
-  </div>
-  <div class="grid-3" style="margin-top: 20px;">
-    <a href="/pricing" class="card linked" style="text-decoration: none;">
-      <div>
-        <div class="card-num">PACKAGE 01 / LAUNCH</div>
-        <div class="card-title" style="margin-top: 14px;">Get online, get found.</div>
-        <div style="font-size: 38px; font-weight: 900; letter-spacing: -1.5px; margin: 18px 0 4px;">£500<span style="font-size: 14px; font-weight: 600; color: var(--mute); letter-spacing: 0;"> setup</span></div>
-        <div style="font-size: 14px; color: var(--mute);">+ £25/month · 12-month min</div>
-      </div>
-      <div class="card-desc">Up to 10 pages, entry-level SEO + AEO, social channel integration, 1 change request/month. <strong style="color: var(--accent);">See what's included →</strong></div>
-    </a>
-    <a href="/pricing" class="card feature linked" style="text-decoration: none;">
-      <div>
-        <div class="card-num">PACKAGE 02 / GROW</div>
-        <div class="card-title" style="margin-top: 14px;">More polish, more leads.</div>
-        <div style="font-size: 38px; font-weight: 900; letter-spacing: -1.5px; margin: 18px 0 4px;">£1,000<span style="font-size: 14px; font-weight: 600; opacity: 0.7; letter-spacing: 0;"> setup</span></div>
-        <div style="font-size: 14px; opacity: 0.8;">+ £75/month · 12-month min</div>
-      </div>
-      <div class="card-desc">Up to 15 pages, 4 social posts/month, targeted SEO + monthly reports, 3 change requests/month. <strong>See what's included →</strong></div>
-    </a>
-    <a href="/pricing" class="card linked" style="text-decoration: none;">
-      <div>
-        <div class="card-num">PACKAGE 03 / FLAGSHIP</div>
-        <div class="card-title" style="margin-top: 14px;">Lead the market.</div>
-        <div style="font-size: 38px; font-weight: 900; letter-spacing: -1.5px; margin: 18px 0 4px;">£2,000<span style="font-size: 14px; font-weight: 600; color: var(--mute); letter-spacing: 0;"> setup</span></div>
-        <div style="font-size: 14px; color: var(--mute);">+ £125/month · 12-month min</div>
-      </div>
-      <div class="card-desc">Up to 25 pages, 8 social posts/month, full SEO+AEO strategy, monthly strategy call, 5 change requests/month. <strong style="color: var(--accent);">See what's included →</strong></div>
-    </a>
-  </div>
-  <div class="center" style="margin-top: 40px;">
-    <a href="/pricing" class="btn-primary">Compare all packages <span class="arrow">→</span></a>
-    <span style="display: block; margin-top: 16px; font-size: 13px; color: var(--mute);">Or <a href="/pricing#bespoke" style="color: var(--accent); border-bottom: 1px solid var(--accent);">start a bespoke conversation</a> — for e-commerce, member portals, integrations and anything custom.</span>
-  </div>
-</section>
-
-<!-- LEAD MAGNET -->
-<section class="magnet" id="audit">
-  <div class="magnet-inner">
-    <div>
-      <div class="magnet-tag">Free download · No card needed</div>
-      <h3 class="magnet-h">A personalised audit of <span class="hl serif">your site.</span></h3>
-      <p class="magnet-body">A one-page, plain-English review of your existing site — conversion fixes, speed tweaks, and the SEO basics you might be missing. Reviewed personally by Harlyn within 48 hours                                                                                                                                                                                                                            
+    <p class="sectio
