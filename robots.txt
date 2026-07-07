@@ -1,19 +1,13 @@
 # robots.txt for ajhtechnology.digital
-# Welcome to our site, search engines.
+# Welcome to our site, search engines and AI answer engines.
 
 User-agent: *
 Allow: /
-
-# Don't index these pages (they're either redirects or post-submission)
-Disallow: /thanks
 Disallow: /thanks.html
-Disallow: /ai
-Disallow: /ai.html
-Disallow: /workshop
-Disallow: /workshop.html
-Disallow: /app
-Disallow: /app.html
-Disallow: /audit-thanks
 Disallow: /audit-thanks.html
+Disallow: /ai.html
+Disallow: /workshop.html
+Disallow: /app.html
 
-Sitemap: https://ajhtechnology.digital/sitemap.xml
+# Explicit allow for major AI answer engines
+# We want ChatGPT, Claude, Perpl
