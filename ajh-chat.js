@@ -22,7 +22,7 @@
     {
       q: 'Who runs AJH Technology?',
       kw: ['who', 'runs', 'owns', 'founder', 'founded', 'harlyn', 'palmer', 'boss', 'director'],
-      a: "AJH Technology is founded and led by Harlyn Palmer — an ex-professional footballer turned digital operator. Harlyn runs client relationships, delivery and strategy end-to-end. You'll speak to the person doing the work.",
+      a: "AJH Technology is founded and led by Harlyn Palmer — an aspiring footballer who spent 7 years in the Ipswich Town academy and now plays at Needham Market FC, chasing promotion to Step 2 and a pro contract. Alongside football, Harlyn absolutely loves helping clients with everything web and AI. Every project has one point of contact — you speak to the person doing the work.",
       links: [{ text: "Harlyn's story", url: 'about.html' }]
     },
     {
