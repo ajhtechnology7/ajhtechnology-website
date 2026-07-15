@@ -62,6 +62,12 @@
       links: [{ text: 'Needham FC case study', url: 'case-study-needham-market-fc.html' }, { text: 'Get in touch', url: 'contact.html' }]
     },
     {
+      q: 'Do you produce video or animation?',
+      kw: ['video', 'animation', 'film', 'shoot', 'reel', 'social', 'linkedin', 'campaign', 'launch', 'day', 'life', 'upstream', 'endava', 'promo', 'clip'],
+      a: "Yes. AJH concepts, directs, edits and delivers short-form video for campaigns and launches. A recent example: a 50-second Day in the Life piece for Upstream Works Software supporting the pre-launch of their strategic partnership with Endava (NYSE: DAVA). Portrait format, tuned for LinkedIn and mobile social. Concept-to-delivery in days.",
+      links: [{ text: 'Upstream × Endava case study', url: 'case-study-upstream-endava.html' }, { text: 'Get in touch', url: 'contact.html' }]
+    },
+    {
       q: 'Where is AJH based?',
       kw: ['where', 'based', 'location', 'address', 'office', 'suffolk', 'needham', 'creeting'],
       a: "AJH Technology is based at The Office, Grange Farm, All Saints Road, Creeting St Mary, Suffolk, IP6 8NG — just outside Needham Market, 15 minutes from Ipswich and Stowmarket. We serve clients across Suffolk, Norfolk, Essex and Cambridgeshire, plus remote UK.",
@@ -80,9 +86,10 @@
     {
       q: 'Who have you worked with?',
       kw: ['who', 'clients', 'worked', 'work', 'case', 'studies', 'portfolio', 'projects', 'customers', 'examples', 'references'],
-      a: "Featured case studies: Needham Market FC (Southern League football club — brand, one-club website, live fixture/league APIs, SQL ticketing and venue booking, 3-month build), Eastrada Facilities Limited (CHAS/Achilles commercial cleaning contractor in Mendlesham), and Wall2Wall Group (CHAS-accredited plasterers in Stowmarket — full brand pack including vehicle livery).",
+      a: "Featured case studies: Upstream Works Software × Endava (short-form Day in the Life video supporting a strategic partnership pre-launch with NYSE-listed Endava), Needham Market FC (Southern League football club — brand, one-club website, live fixture/league APIs, SQL ticketing and venue booking, 3-month build), Eastrada Facilities Limited (CHAS/Achilles commercial cleaning contractor in Mendlesham), and Wall2Wall Group (CHAS-accredited plasterers in Stowmarket — full brand pack including vehicle livery).",
       links: [
         { text: 'All recent work', url: 'recent-work.html' },
+        { text: 'Upstream × Endava', url: 'case-study-upstream-endava.html' },
         { text: 'Needham FC', url: 'case-study-needham-market-fc.html' },
         { text: 'Eastrada', url: 'case-study-eastrada.html' },
         { text: 'Wall2Wall', url: 'case-study-wall2wall.html' }

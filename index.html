@@ -383,13 +383,19 @@ section.compare { background: var(--ink-2); }
 .rw-home .rw-head h2 .serif { font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400; color: var(--accent); }
 .rw-home .rw-head .right { color: #BBB; max-width: 380px; font-size: 15px; line-height: 1.6; }
 .rw-home .rw-head .right .all-link { display: inline-flex; align-items: center; gap: 8px; color: var(--accent); font-weight: 700; font-size: 14px; text-decoration: none; margin-top: 12px; border-bottom: 2px solid var(--accent); padding-bottom: 3px; }
-.rw-home-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 22px; }
-@media (max-width: 1100px) { .rw-home-grid { grid-template-columns: 1fr 1fr; } }
-@media (max-width: 700px) { .rw-home-grid { grid-template-columns: 1fr; } }
+.rw-home-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+@media (max-width: 1200px) { .rw-home-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 640px) { .rw-home-grid { grid-template-columns: 1fr; } }
 .rw-home-card { display: block; background: #141414; border: 1px solid var(--border); border-radius: 16px; padding: 20px; text-decoration: none; color: inherit; transition: transform 0.25s ease, border-color 0.25s ease; }
 .rw-home-card:hover { transform: translateY(-4px); border-color: var(--accent); }
 .rw-home-thumb { border-radius: 10px; aspect-ratio: 16 / 10; margin-bottom: 18px; position: relative; overflow: hidden; box-shadow: 0 16px 40px rgba(0,0,0,0.35); background-size: cover; background-position: center top; transition: filter 0.25s ease; }
 /* Faded screenshot of the actual live site underneath, brand gradient on top */
+.rw-home-thumb.upstream {
+  background-image:
+    linear-gradient(135deg, rgba(10,25,41,0.62) 0%, rgba(27,58,92,0.52) 55%, rgba(72,202,228,0.35) 100%),
+    url('uw-endava-poster.jpg');
+  background-size: cover; background-position: center 25%;
+}
 .rw-home-thumb.needham {
   background-image:
     linear-gradient(135deg, rgba(139,10,31,0.60) 0%, rgba(200,16,46,0.50) 55%, rgba(182,138,58,0.38) 100%),
@@ -489,16 +495,41 @@ section.compare { background: var(--ink-2); }
 <section class="rw-home">
   <div class="rw-head">
     <div class="left">
-      <div class="eyebrow-pill">Recent work · Three case studies</div>
-      <h2>Three Suffolk businesses. Three industries. <span class="serif">One studio.</span></h2>
+      <div class="eyebrow-pill">Recent work · Four case studies</div>
+      <h2>Four projects. From platforms to <span class="serif">50-second films.</span></h2>
     </div>
     <div class="right">
-      Each project is the same level of care — from a 3-month platform build for a 100-year-old football club to a single-page conversion site for a facilities contractor.
+      From a 3-month platform build for a 100-year-old football club to a 50-second Day in the Life video for a strategic partnership pre-launch — each project gets the piece of work the brief actually needs.
       <a class="all-link" href="recent-work.html">See all recent work <span>→</span></a>
     </div>
   </div>
 
   <div class="rw-home-grid">
+
+    <a class="rw-home-card" href="case-study-upstream-endava.html">
+      <div class="rw-home-thumb upstream">
+        <div class="rw-home-thumb-chrome">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="url">upstreamworks.com × NYSE: DAVA</span>
+        </div>
+        <div class="rw-home-thumb-overlay">
+          <div class="rw-home-thumb-eb">Delivered July 2026 · Short-form video</div>
+          <div>
+            <div class="rw-home-thumb-logo" style="text-shadow: 0 2px 8px rgba(0,0,0,0.5);">UPSTREAM<small>× ENDAVA · DAY IN THE LIFE</small></div>
+            <div class="rw-home-thumb-tags">
+              <span class="rw-home-thumb-tag">Concept</span>
+              <span class="rw-home-thumb-tag">Direct</span>
+              <span class="rw-home-thumb-tag">Edit</span>
+              <span class="rw-home-thumb-tag">Deliver</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rw-home-meta">Case study <span class="accent">·</span> Short-form video · Partnership launch</div>
+      <h3>A 50-second Day in the Life for a strategic partnership pre-launch.</h3>
+      <p class="desc">Concept, direction, edit and delivery of a portrait video piece for <strong>Upstream Works Software</strong>, warming up the announcement of their strategic relationship with <strong>Endava (NYSE: DAVA)</strong>.</p>
+      <span class="rw-home-link">Read the case study <span>→</span></span>
+    </a>
 
     <a class="rw-home-card" href="case-study-needham-market-fc.html">
       <div class="rw-home-thumb needham">
@@ -796,4 +827,8 @@ section.compare { background: var(--ink-2); }
     <div class="footer-col"><h4>Contact</h4><ul><li><a href="tel:+447488286207" style="color: inherit;">07488 286207</a></li><li>The Office, Grange Farm</li><li>All Saints Road</li><li>Creeting St Mary, Suffolk</li><li>IP6 8NG</li></ul></div>
   </div>
   <div class="footer-bottom"><div>© 2026 AJH Technology Limited. All rights reserved.</div><div><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="cookies.html">Cookies</a></div></div>
-</foo
+</footer>
+
+<script src="ajh-chat.js" defer></script>
+</body>
+</ht
