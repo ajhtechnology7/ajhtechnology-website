@@ -16,7 +16,7 @@
     {
       q: 'What does AJH Technology do?',
       kw: ['what', 'do', 'about', 'agency', 'company', 'ajh', 'business', 'service', 'services'],
-      a: "AJH Technology is a Suffolk web design and digital production agency. We design and build lead-generating websites for small businesses, with three fixed-price packages plus a bespoke option. Every website comes with brand support, SEO/AEO setup and an ongoing managed service. Founded in 2024 by Harlyn Palmer, based at Creeting St Mary, Suffolk.",
+      a: "AJH Technology is a Suffolk web design and digital production agency. We design and build lead-generating websites for small businesses, with three fixed-price packages plus a bespoke option. Every website comes with brand support, SEO/AEO setup and an ongoing managed service. Founded in 2024 by Harlyn Palmer and trading since 2026, based at Creeting St Mary, Suffolk.",
       links: [{ text: 'About AJH', url: 'about.html' }, { text: 'Services', url: 'services.html' }]
     },
     {
@@ -28,7 +28,7 @@
     {
       q: 'How much does a website cost?',
       kw: ['how', 'much', 'cost', 'price', 'pricing', 'expensive', 'cheap', 'budget', 'package', 'packages'],
-      a: "Three fixed-price packages: Launch — £500 setup + £25/month (3-page site, sole traders). Grow — £1,000 setup + £75/month (5–8 pages, most SMEs, most popular). Flagship — £2,000 setup + £125/month (8–14 pages, full brand + managed service). All 12-month minimum. Bespoke platform work (like Needham FC) priced on scope.",
+      a: "Three fixed-price packages: Launch — £550 setup + £40/month (3-page site, sole traders). Grow — £1,100 setup + £80/month (5–8 pages, most SMEs, most popular). Flagship — from £2,000 setup + £140/month (8–14 pages, full brand + managed service). All 12-month minimum. Bespoke platform work (like Needham FC) priced on scope.",
       links: [{ text: 'Full pricing', url: 'pricing.html' }, { text: 'Book a call', url: 'contact.html' }]
     },
     {
@@ -40,19 +40,19 @@
     {
       q: 'What is included in the Launch package?',
       kw: ['launch', 'starter', 'small', 'basic', 'entry', '500', '25'],
-      a: "Launch (£500 setup + £25/month) is for sole traders and micro-businesses. Includes a 3-page mobile-first website, hosting, SSL, lead-capture form, Google indexing, one design revision, on-brand favicon and Open Graph cards, GA4 analytics, and 30 days of post-launch support.",
+      a: "Launch (£550 setup + £40/month) is for sole traders and micro-businesses. Includes a 3-page mobile-first website, hosting, SSL, lead-capture form, Google indexing, one design revision, on-brand favicon and Open Graph cards, GA4 analytics, 20 minutes of updates a month, and 30 days of post-launch support.",
       links: [{ text: 'Launch details', url: 'pricing.html' }]
     },
     {
       q: 'What is included in the Grow package?',
       kw: ['grow', 'middle', 'popular', 'growth', 'sme', '1000', '75'],
-      a: "Grow (£1,000 setup + £75/month) is our most popular package for growing SMEs. Includes a 5–8 page mobile-first site, hosting, SSL, full brand refresh, FAQ/schema/AEO layer, Google Business Profile connection, unlimited copy updates, monthly performance reports, priority support and 90 days of post-launch care.",
+      a: "Grow (£1,100 setup + £80/month) is our most popular package for growing SMEs. Includes a 5–8 page mobile-first site, hosting, SSL, full brand refresh, FAQ/schema/AEO layer, Google Business Profile setup, 45 minutes of updates a month, monthly performance reports, priority support and 90 days of post-launch care.",
       links: [{ text: 'Grow details', url: 'pricing.html' }]
     },
     {
       q: 'What is included in the Flagship package?',
       kw: ['flagship', 'full', 'premium', 'big', 'best', 'top', '2000', '125'],
-      a: "Flagship (£2,000 setup + £125/month) is the whole system. 8–14 pages, full brand identity, custom photography direction, SEO + AEO programme, LinkedIn setup, content strategy, custom Open Graph per page, quarterly strategy reviews with Harlyn, continuous improvement worked into the retainer.",
+      a: "Flagship (from £2,000 setup + £140/month) is the whole system. 8–14 pages, full brand identity, custom photography direction, SEO + AEO programme, LinkedIn setup, content strategy, custom Open Graph per page, quarterly strategy reviews with Harlyn, 1 hour of updates a month, continuous improvement worked into the retainer.",
       links: [{ text: 'Flagship details', url: 'pricing.html' }]
     },
     {
@@ -116,13 +116,13 @@
     {
       q: 'Do you offer ongoing management?',
       kw: ['ongoing', 'management', 'managed', 'maintenance', 'support', 'monthly', 'retainer', 'after', 'launch'],
-      a: "Yes — every AJH package includes ongoing managed service. The monthly fee covers hosting, SSL, security, uptime monitoring, GDPR-compliant forms, unlimited copy updates, Schema.org maintenance, sitemap refresh, Search Console monitoring and monthly performance reporting. Larger platform clients get weekly content refreshes and quarterly strategy reviews.",
+      a: "Yes — every AJH package includes ongoing managed service. The monthly fee covers hosting, SSL, security, uptime monitoring, GDPR-compliant forms, your monthly update allowance (20 minutes on Launch, 45 on Grow, 1 hour on Flagship), Schema.org maintenance, sitemap refresh, Search Console monitoring and monthly performance reporting. Larger platform clients get weekly content refreshes and quarterly strategy reviews.",
       links: [{ text: 'Services', url: 'services.html' }]
     },
     {
       q: 'What kind of support do you offer?',
       kw: ['support', 'help', 'contact', 'response', 'urgent', 'emergency', 'broken', 'down'],
-      a: "Standard: email (typical response within one business day), phone on 07488 286207 (business hours), and unlimited copy update requests. Emergencies (site down, form broken) are prioritised same-day where possible. Grow and Flagship get priority windows and monthly check-ins. Platform clients get a weekly working cadence with the founder.",
+      a: "Standard: email (typical response within one business day), phone on 07488 286207 (business hours), and copy update requests within your monthly allowance. Emergencies (site down, form broken) are prioritised same-day where possible. Grow and Flagship get priority windows and monthly check-ins. Platform clients get a weekly working cadence with the founder.",
       links: [{ text: 'Contact', url: 'contact.html' }]
     },
     {
