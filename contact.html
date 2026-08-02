@@ -187,9 +187,9 @@
         <label for="enquiry">What are you looking for?</label>
         <select id="enquiry" name="enquiry">
           <option>I'm not sure yet — let's chat</option>
-          <option>Launch package (£500 setup + £25/mo)</option>
-          <option>Grow package (£1,000 setup + £75/mo)</option>
-          <option>Flagship package (£2,000 setup + £125/mo)</option>
+          <option>Launch package (£550 setup + £40/mo)</option>
+          <option>Grow package (£1,100 setup + £80/mo)</option>
+          <option>Flagship package (from £2,000 setup + £140/mo)</option>
           <option>Bespoke project (let's chat)</option>
         </select>
       </div>
@@ -293,7 +293,7 @@
     </div>
     <div class="card" style="background: var(--ink-2); margin-bottom: 16px; min-height: auto;">
       <h3 style="font-size: 20px; margin-bottom: 12px;">How much does it cost to get started?</h3>
-      <p style="font-size: 14px; color: #BBB; line-height: 1.6;">The strategy call and free website audit are zero-cost. Paid projects start with our <strong>Launch package at £500 setup + £25/month</strong> (12-month minimum), with Grow and Flagship tiers above that. Standalone Brand and Process projects start from £1,200. Every quote is fixed-price before you commit.</p>
+      <p style="font-size: 14px; color: #BBB; line-height: 1.6;">The strategy call and free website audit are zero-cost. Paid projects start with our <strong>Launch package at £550 setup + £40/month</strong> (12-month minimum), with Grow and Flagship tiers above that. Standalone Brand and Process projects start from £1,200. Every quote is fixed-price before you commit.</p>
     </div>
     <div class="card" style="background: var(--ink-2); margin-bottom: 16px; min-height: auto;">
       <h3 style="font-size: 20px; margin-bottom: 12px;">Will you actually tell me if AJH isn't the right fit?</h3>
@@ -330,9 +330,9 @@
   var select = document.getElementById('enquiry');
   if (!pkg || !select) return;
   var map = {
-    launch: 'Launch package (£500 setup + £25/mo)',
-    grow: 'Grow package (£1,000 setup + £75/mo)',
-    flagship: 'Flagship package (£2,000 setup + £125/mo)',
+    launch: 'Launch package (£550 setup + £40/mo)',
+    grow: 'Grow package (£1,100 setup + £80/mo)',
+    flagship: 'Flagship package (from £2,000 setup + £140/mo)',
     bespoke: 'Bespoke project (let\'s chat)'
   };
   var target = map[pkg.toLowerCase()];
@@ -349,4 +349,4 @@
 <script src="ajh-chat.js" defer></script>
 </body>
 </html>
-                                                                                                                                                                                                                                                                                                                                                
+
