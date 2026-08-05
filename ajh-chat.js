@@ -28,7 +28,7 @@
     {
       q: 'How much does a website cost?',
       kw: ['how', 'much', 'cost', 'price', 'pricing', 'expensive', 'cheap', 'budget', 'package', 'packages'],
-      a: "Three fixed-price packages: Launch — £550 setup + £40/month (3-page site, sole traders). Grow — £1,100 setup + £80/month (5–8 pages, most SMEs, most popular). Flagship — from £2,000 setup + £140/month (8–14 pages, full brand + managed service). All 12-month minimum. Bespoke platform work (like Needham FC) priced on scope.",
+      a: "Three fixed-price packages: Launch — £550 setup + £40/month (up to 10 pages, sole traders). Grow — £1,100 setup + £80/month (up to 25 pages, most SMEs, most popular). Flagship — from £2,000 setup + £140/month (25+ pages, full brand + managed service). All 12-month minimum. Bespoke platform work (like Needham FC) priced on scope.",
       links: [{ text: 'Full pricing', url: 'pricing.html' }, { text: 'Book a call', url: 'contact.html' }]
     },
     {
@@ -40,19 +40,19 @@
     {
       q: 'What is included in the Launch package?',
       kw: ['launch', 'starter', 'small', 'basic', 'entry', '500', '25'],
-      a: "Launch (£550 setup + £40/month) is for sole traders and micro-businesses. Includes a 3-page mobile-first website, hosting, SSL, lead-capture form, Google indexing, one design revision, on-brand favicon and Open Graph cards, GA4 analytics, 20 minutes of updates a month, and 30 days of post-launch support.",
+      a: "Launch (£550 setup + £40/month) is for sole traders and micro-businesses. Includes a mobile-first website of up to 10 pages, hosting, SSL, lead-capture form, Google indexing, one design revision, on-brand favicon and Open Graph cards, GA4 analytics, 20 minutes of updates a month, and 30 days of post-launch support.",
       links: [{ text: 'Launch details', url: 'pricing.html' }]
     },
     {
       q: 'What is included in the Grow package?',
       kw: ['grow', 'middle', 'popular', 'growth', 'sme', '1000', '75'],
-      a: "Grow (£1,100 setup + £80/month) is our most popular package for growing SMEs. Includes a 5–8 page mobile-first site, hosting, SSL, full brand refresh, FAQ/schema/AEO layer, Google Business Profile setup, 45 minutes of updates a month, monthly performance reports, priority support and 90 days of post-launch care.",
+      a: "Grow (£1,100 setup + £80/month) is our most popular package for growing SMEs. Includes a mobile-first site of up to 25 pages, hosting, SSL, full brand refresh, FAQ/schema/AEO layer, Google Business Profile setup, 45 minutes of updates a month, monthly performance reports, priority support and 90 days of post-launch care.",
       links: [{ text: 'Grow details', url: 'pricing.html' }]
     },
     {
       q: 'What is included in the Flagship package?',
       kw: ['flagship', 'full', 'premium', 'big', 'best', 'top', '2000', '125'],
-      a: "Flagship (from £2,000 setup + £140/month) is the whole system. 8–14 pages, full brand identity, custom photography direction, SEO + AEO programme, LinkedIn setup, content strategy, custom Open Graph per page, quarterly strategy reviews with Harlyn, 1 hour of updates a month, continuous improvement worked into the retainer.",
+      a: "Flagship (from £2,000 setup + £140/month) is the whole system. 25+ pages, full brand identity, custom photography direction, SEO + AEO programme, LinkedIn setup, content strategy, custom Open Graph per page, quarterly strategy reviews with Harlyn, 1 hour of updates a month, continuous improvement worked into the retainer.",
       links: [{ text: 'Flagship details', url: 'pricing.html' }]
     },
     {
