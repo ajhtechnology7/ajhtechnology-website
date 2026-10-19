@@ -117,6 +117,7 @@
   <a href="index.html" class="logo"><span class="logo-dot"></span>AJH<span class="logo-suffix">/technology</span></a>
   <div class="nav-links">
     <a href="web.html">Web design</a>
+    <a href="studio.html">Video</a>
     <a href="pricing.html">Pricing</a>
     <a href="recent-work.html">Our work</a>
     <a href="about.html">About</a>
@@ -176,9 +177,9 @@
         <label for="enquiry">What are you looking for?</label>
         <select id="enquiry" name="enquiry">
           <option>I'm not sure yet — let's chat</option>
-          <option data-key="starter">Starter website (£75/month, nothing upfront)</option>
-          <option data-key="business">Business website (£175/month, nothing upfront)</option>
-          <option data-key="platform">Platform website (£300 upfront + £350/month)</option>
+          <option data-key="starter">Starter website (£250/month, nothing upfront)</option>
+          <option data-key="business">Business website (£500/month, nothing upfront)</option>
+          <option data-key="bookings">Bookings &amp; Members website (quoted)</option>
           <option data-key="partnership">Marketing partnership (bespoke)</option>
           <option data-key="brand">Brand (refresh or full identity)</option>
           <option data-key="video">Video</option>
@@ -285,7 +286,7 @@
     </div>
     <div class="card" style="background: var(--ink-2); margin-bottom: 16px; min-height: auto;">
       <h3 style="font-size: 20px; margin-bottom: 12px;">How much does it cost to get started?</h3>
-      <p style="font-size: 14px; color: #BBB; line-height: 1.6;">The call and the free website check cost nothing. Websites start at <strong>£75 a month with nothing upfront</strong> on the Starter package (12-month minimum), with Business at £175 a month and Platform at £300 upfront + £350 a month. A full brand identity on its own is quoted up front. See <a href="pricing.html" style="color: var(--accent);">pricing</a> for what each includes. You get the price in writing before you commit.</p>
+      <p style="font-size: 14px; color: #BBB; line-height: 1.6;">The call and the free website check cost nothing. Websites start at <strong>£250 a month with nothing upfront</strong> on the Starter package (12-month minimum), with Business at £500 a month and Bookings & Members quoted to your setup. A full brand identity on its own is quoted up front. See <a href="pricing.html" style="color: var(--accent);">pricing</a> for what each includes. You get the price in writing before you commit.</p>
     </div>
     <div class="card" style="background: var(--ink-2); margin-bottom: 16px; min-height: auto;">
       <h3 style="font-size: 20px; margin-bottom: 12px;">Will you actually tell me if AJH isn't the right fit?</h3>
@@ -321,8 +322,8 @@
   var pkg = params.get('package') || params.get('service');
   var select = document.getElementById('enquiry');
   if (!pkg || !select) return;
-  // ?package=starter|business|platform|partnership|video (also ?service=brand|web|audit|video)
-  var aliases = { bespoke: 'partnership', marketing: 'partnership', studio: 'video', process: 'other' };
+  // ?package=starter|business|bookings|partnership|video (also ?service=brand|web|audit|video)
+  var aliases = { platform: 'bookings', members: 'bookings', bespoke: 'partnership', marketing: 'partnership', studio: 'video', process: 'other' };
   var key = (pkg || '').toLowerCase().trim();
   key = aliases[key] || key;
   if (!key) return;

@@ -28,7 +28,7 @@
     {
       q: "How much does a website cost?",
       kw: ["how", "much", "cost", "price", "pricing", "expensive", "cheap", "budget", "package", "packages"],
-      a: "Three packages, all on a 12-month minimum, with the build, hosting and monthly changes included: Starter £75/month (nothing upfront), Business £175/month (nothing upfront), Platform £300 upfront + £350/month. Whole marketing partnerships are priced on what you need.",
+      a: "Three packages, all on a 12-month minimum, with the build, hosting and monthly changes included: Starter £250/month (nothing upfront), Business £500/month (nothing upfront), Bookings & Members quoted to your setup. Whole marketing partnerships are priced on what you need.",
       links: [{ text: "Full pricing", url: "pricing.html" }, { text: "Book a call", url: "contact.html" }]
     },
     {
@@ -40,19 +40,19 @@
     {
       q: "What is in the Starter package?",
       kw: ["starter", "launch", "small", "basic", "entry", "single", "page", "75"],
-      a: "Starter is £75/month with nothing upfront (12-month minimum). A single-page site or up to 5 pages, enquiry form, hosting, SSL, security updates, set-up on Google with visitor stats, and 20 minutes of changes a month. Example: Eastrada Facilities.",
+      a: "Starter is £250/month with nothing upfront (12-month minimum). A single-page site or up to 5 pages, enquiry form, hosting, SSL, security updates, set-up on Google with visitor stats, and 20 minutes of changes a month. Example: Eastrada Facilities.",
       links: [{ text: "Pricing", url: "pricing.html" }, { text: "Eastrada case study", url: "case-study-eastrada.html" }]
     },
     {
       q: "What is in the Business package?",
       kw: ["business", "grow", "middle", "popular", "growth", "sme", "175"],
-      a: "Business is £175/month with nothing upfront (12-month minimum). Everything in Starter plus up to 15 pages, a brand refresh, set-up for Google and AI assistants, Google Business Profile set-up and 45 minutes of changes a month. Example: Wall2Wall Group.",
+      a: "Business is £500/month with nothing upfront (12-month minimum). Everything in Starter plus up to 15 pages, a brand refresh, set-up for Google and AI assistants, Google Business Profile set-up and 45 minutes of changes a month. Example: Wall2Wall Group.",
       links: [{ text: "Pricing", url: "pricing.html" }, { text: "Wall2Wall case study", url: "case-study-wall2wall.html" }]
     },
     {
-      q: "What is in the Platform package?",
-      kw: ["platform", "flagship", "full", "premium", "big", "booking", "system", "accounts", "350", "300"],
-      a: "Platform is £300 upfront plus £350/month (12-month minimum). For sites that need systems, such as a booking-request calendar or member accounts, or links to tools you already use. Scoped in writing before anything starts. Example: Needham Market FC.",
+      q: "What is in the Bookings & Members package?",
+      kw: ["bookings", "members", "venue", "club", "platform", "flagship", "full", "premium", "big", "booking", "system", "accounts", "350", "300"],
+      a: "Bookings & Members is quoted to your setup (12-month minimum). For venues, clubs and hire businesses: an online booking calendar with live availability, customer accounts, a booking dashboard and links to your ticket or shop provider. Fixed price in writing before anything starts. Example: Needham Market FC.",
       links: [{ text: "Pricing", url: "pricing.html" }, { text: "Needham FC case study", url: "case-study-needham-market-fc.html" }]
     },
     {
@@ -94,7 +94,7 @@
     {
       q: "How does AJH approach SEO?",
       kw: ["seo", "search", "google", "ranking", "indexing", "organic", "traffic"],
-      a: "Every site gets the basics done properly: clean page structure, page titles and descriptions, structured data, an XML sitemap and Google Search Console set up so you can see who's finding you. Business and Platform also get Google Business Profile set-up.",
+      a: "Every site gets the basics done properly: clean page structure, page titles and descriptions, structured data, an XML sitemap and Google Search Console set up so you can see who's finding you. Business and Bookings & Members also get Google Business Profile set-up.",
       links: [{ text: "AEO explained", url: "insights-aeo-for-suffolk-businesses.html" }]
     },
     {
@@ -106,7 +106,7 @@
     {
       q: "What's included each month?",
       kw: ["ongoing", "management", "managed", "maintenance", "monthly", "after", "care", "included"],
-      a: "Every package's monthly fee covers the build, hosting, SSL, security updates and a set amount of changes each month: 20 minutes on Starter, 45 on Business, 1 hour on Platform. Extra changes are £60/hour, quoted before any work starts.",
+      a: "Every package's monthly fee covers the build, hosting, SSL, security updates and a set amount of changes each month: 20 minutes on Starter, 45 on Business, 1 hour on Bookings & Members. Extra changes are £60/hour, quoted before any work starts.",
       links: [{ text: "Pricing", url: "pricing.html" }]
     },
     {
