@@ -5,9 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <meta name="theme-color" content="#0A0A0A">
-<title>Pricing &amp; Packages | AJH Technology — Web Design for Suffolk SMEs</title>
-<meta name="description" content="Fixed-price web design packages for Suffolk small businesses. Launch £550+£40/mo, Grow £1,100+£80/mo, Flagship from £2,000+£140/mo. Hosting, SSL, SEO/AEO, support included.">
+<title>Pricing | AJH Technology — Monthly Web Design for Suffolk Businesses</title>
+<meta name="description" content="Websites with nothing or very little upfront, paid monthly. Starter £150/month, Business £500/month, Bookings & Members quoted to your setup — each with a real example. Marketing partnerships priced on what you need.">
 <link rel="canonical" href="https://ajhtechnology.digital/pricing">
+<meta property="og:title" content="Pricing | AJH Technology">
+<meta property="og:description" content="Websites with no big upfront bill. Starter £150/month, Business £500/month, Bookings & Members quoted to your setup. Each package shows a real example.">
 <meta property="og:image" content="https://ajhtechnology.digital/og-pricing.png">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_GB">
@@ -15,8 +17,8 @@
 <meta property="og:image:height" content="630">
 <meta property="og:url" content="https://ajhtechnology.digital/pricing">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Pricing &amp; Packages | AJH Technology — Web Design for Suffolk SMEs">
-<meta name="twitter:description" content="Fixed-price web design packages for Suffolk small businesses. Launch £550+£40/mo, Grow £1,100+£80/mo, Flagship from £2,000+£140/mo. Hosting, SSL, SEO/AEO, support included.">
+<meta name="twitter:title" content="Pricing | AJH Technology">
+<meta name="twitter:description" content="Websites with no big upfront bill. Starter £150/month, Business £500/month, Bookings & Members quoted to your setup.">
 <meta name="twitter:image" content="https://ajhtechnology.digital/og-pricing.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -112,6 +114,39 @@
 .faq-a { margin-top: 18px; font-size: 15px; color: #BBB; line-height: 1.7; max-width: 800px; }
 .faq-a strong { color: var(--paper); }
 </style>
+<style>
+/* ==== Example strip inside each tier ==== */
+.tier-example { display: block; margin: 0 0 26px; border-radius: 14px; overflow: hidden; border: 1px solid #2a2a2a; background: var(--ink); transition: border-color 0.2s; }
+.tier-example:hover { border-color: var(--accent); }
+.tier.featured .tier-example { border-color: rgba(10,10,10,0.25); background: var(--ink); color: var(--paper); }
+.tier-example img { display: block; width: 100%; aspect-ratio: 16/8; object-fit: cover; }
+.tier-example span { display: flex; justify-content: space-between; gap: 10px; padding: 12px 14px; font-size: 13px; font-weight: 600; }
+.tier-example span em { font-style: normal; color: var(--accent); white-space: nowrap; }
+.tier-first-year { font-size: 12px; opacity: 0.7; margin: -18px 0 24px; }
+.page-header { padding: 60px 48px 10px; }
+.page-header .breadcrumb { font-size: 13px; color: var(--mute); margin-bottom: 18px; }
+.page-header .breadcrumb .accent { color: var(--accent); }
+@media (max-width: 700px) { .page-header, .pricing-grid, .bespoke, .compare-section, section { padding-left: 20px !important; padding-right: 20px !important; } }
+
+/* ==== Partnership band ==== */
+.partner-band { display: grid; grid-template-columns: 1.3fr 1fr; gap: 0; border-radius: 28px; overflow: hidden; border: 1px solid var(--border); }
+@media (max-width: 900px) { .partner-band { grid-template-columns: 1fr; } }
+.partner-copy { padding: 54px 50px; background: linear-gradient(135deg, var(--ink-2), var(--ink-3)); }
+@media (max-width: 700px) { .partner-copy { padding: 36px 24px; } }
+.partner-shot { background: #0a1929 url('uw-site-home.jpg') left top/cover no-repeat; min-height: 300px; position: relative; }
+.partner-shot a { position: absolute; left: 20px; bottom: 20px; background: rgba(10,10,10,0.85); color: var(--paper); font-size: 13px; font-weight: 700; padding: 10px 16px; border-radius: 100px; border: 1px solid #333; }
+.partner-shot a:hover { border-color: var(--accent); color: var(--accent); }
+
+/* ==== Add-on row ==== */
+.addons { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+@media (max-width: 900px) { .addons { grid-template-columns: 1fr; } }
+.addon { background: var(--ink-2); border: 1px solid var(--border); border-radius: 18px; padding: 30px; }
+.addon .k { font-size: 11px; letter-spacing: 2.5px; text-transform: uppercase; color: var(--accent); font-weight: 800; margin-bottom: 10px; }
+.addon h3 { font-size: 22px; margin-bottom: 6px; }
+.addon .pr { font-size: 30px; font-weight: 900; letter-spacing: -1px; margin: 10px 0; }
+.addon p { font-size: 14.5px; color: #AAA; line-height: 1.65; }
+.addon a { color: var(--accent); font-weight: 700; font-size: 14px; display: inline-block; margin-top: 12px; }
+</style>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -128,7 +163,7 @@
     "postalCode": "IP6 8NG",
     "addressCountry": "GB"
   },
-  "areaServed": ["Ipswich","Stowmarket","Bury St Edmunds","Sudbury","Woodbridge","Felixstowe","Diss","Needham Market"],
+  "areaServed": "Suffolk",
   "priceRange": "££"
 }
 </script>
@@ -147,11 +182,10 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type":"Question","name":"Why is there a 12-month minimum?","acceptedAnswer":{"@type":"Answer","text":"The monthly fee covers hosting, SSL, security, GDPR-ready forms, your monthly update allowance, performance reporting and support across a full year. After 12 months it moves to a rolling monthly contract — cancel any time with one month's notice."}},
-    {"@type":"Question","name":"Can I upgrade or downgrade later?","acceptedAnswer":{"@type":"Answer","text":"Yes. Upgrade any time — we adjust your monthly fee from the next billing cycle. Downgrades are available at the end of your 12-month term."}},
-    {"@type":"Question","name":"What's not included? Any hidden fees?","acceptedAnswer":{"@type":"Answer","text":"No hidden fees. Hosting, SSL, security and GDPR-ready forms are included in every package. Domain management from £15/year, extra update time beyond your monthly allowance at £60/hour, and any third-party tools sit outside every tier."}},
-    {"@type":"Question","name":"Do I own the website?","acceptedAnswer":{"@type":"Answer","text":"Yes — the design, content and code are yours from day one. We host and maintain it for you, but if you ever leave, you take the site with you."}},
-    {"@type":"Question","name":"Which package is right for me?","acceptedAnswer":{"@type":"Answer","text":"Launch (£550 setup + £40/month) suits sole traders and very small businesses who need a credible online presence. Grow (£1,100 setup + £80/month) fits established small businesses who want to actively generate leads. Flagship (from £2,000 setup + £140/month) is for ambitious SMEs who want their website to be a serious competitive advantage. Bespoke platform work — booking systems, API integrations — is priced on scope."}}
+    {"@type":"Question","name":"Why is there nothing to pay upfront?","acceptedAnswer":{"@type":"Answer","text":"Most small businesses would rather spread the cost than find a big lump sum. The build is paid off across a 12-month minimum term, so the Starter and Business packages have no setup fee. Bookings & Members is quoted to your setup."}},
+    {"@type":"Question","name":"What happens after 12 months?","acceptedAnswer":{"@type":"Answer","text":"The plan rolls on monthly and you can cancel with one month's notice."}},
+    {"@type":"Question","name":"Do I own the website?","acceptedAnswer":{"@type":"Answer","text":"Yes, once the 12-month term is complete. If you want to leave earlier, you can pay the rest of the term and take the site with you."}},
+    {"@type":"Question","name":"Which package is right for me?","acceptedAnswer":{"@type":"Answer","text":"Starter (£150/month, nothing upfront) suits a business that needs one strong page or a small site. Business (£500/month, nothing upfront) adds a brand refresh, more pages and search work. Bookings & Members (quoted to your setup) is for sites that need systems such as booking requests or member accounts. Whole marketing partnerships are priced on what you need."}}
   ]
 }
 </script>
@@ -159,11 +193,45 @@
 {
   "@context": "https://schema.org",
   "@type": "OfferCatalog",
-  "name": "AJH Technology web design packages",
+  "name": "AJH Technology website packages",
   "itemListElement": [
-    {"@type":"Offer","name":"Launch","description":"Mobile-first website of up to 10 pages. Hosting, SSL, lead-capture form, GA4, 30-day post-launch care, 20 minutes of updates a month.","price":"550","priceCurrency":"GBP","priceSpecification":{"@type":"UnitPriceSpecification","price":"40","priceCurrency":"GBP","billingDuration":"P1M","unitText":"MONTH"},"url":"https://ajhtechnology.digital/pricing"},
-    {"@type":"Offer","name":"Grow","description":"Up to 25 pages, brand refresh, FAQ/schema/AEO layer, Google Business Profile setup, priority support, 90-day post-launch care, 45 minutes of updates a month.","price":"1100","priceCurrency":"GBP","priceSpecification":{"@type":"UnitPriceSpecification","price":"80","priceCurrency":"GBP","billingDuration":"P1M","unitText":"MONTH"},"url":"https://ajhtechnology.digital/pricing"},
-    {"@type":"Offer","name":"Flagship","description":"25+ pages, full brand identity, custom photography direction, SEO + AEO programme, quarterly strategy review, 1 hour of updates a month. Setup from GBP 2,000, scoped per project.","price":"2000","priceCurrency":"GBP","priceSpecification":{"@type":"UnitPriceSpecification","price":"140","priceCurrency":"GBP","billingDuration":"P1M","unitText":"MONTH"},"url":"https://ajhtechnology.digital/pricing"}
+    {
+      "@type": "Offer",
+      "name": "Starter",
+      "description": "A simple website that covers what you do and how to get in touch, hosting and care included. Nothing upfront, 12-month minimum.",
+      "price": "0",
+      "priceCurrency": "GBP",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "150",
+        "priceCurrency": "GBP",
+        "billingDuration": "P1M",
+        "unitText": "MONTH"
+      },
+      "url": "https://ajhtechnology.digital/pricing"
+    },
+    {
+      "@type": "Offer",
+      "name": "Business",
+      "description": "Brand refresh, a full website with a page for each service, Google and AI search set-up, hosting and care included. Nothing upfront, 12-month minimum.",
+      "price": "0",
+      "priceCurrency": "GBP",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "500",
+        "priceCurrency": "GBP",
+        "billingDuration": "P1M",
+        "unitText": "MONTH"
+      },
+      "url": "https://ajhtechnology.digital/pricing"
+    },
+    {
+      "@type": "Offer",
+      "name": "Bookings & Members",
+      "description": "A website with custom systems such as booking requests, accounts or integrations, hosting and care included. Quoted to the project, 12-month minimum.",
+      "priceCurrency": "GBP",
+      "url": "https://ajhtechnology.digital/pricing"
+    }
   ]
 }
 </script>
@@ -174,6 +242,7 @@
   <a href="index.html" class="logo"><span class="logo-dot"></span>AJH<span class="logo-suffix">/technology</span></a>
   <div class="nav-links">
     <a href="web.html">Web design</a>
+    <a href="studio.html">Video</a>
     <a href="pricing.html" class="active">Pricing</a>
     <a href="recent-work.html">Our work</a>
     <a href="about.html">About</a>
@@ -187,115 +256,128 @@
 
 <div class="page-header">
   <div class="breadcrumb"><a href="index.html"><span class="accent">AJH</span></a> / Pricing</div>
-  <h1>Three packages. <span class="hl serif">One bespoke option.</span></h1>
-  <p class="sub">Fixed-price, fixed-scope web design for Suffolk small businesses. No hidden costs, no quote-on-application games. Pick the tier that matches your ambition.</p>
+  <h1>No big upfront bill. <span class="hl serif">Just a monthly fee.</span></h1>
+  <p class="sub">Three website packages, each with a real example you can click into. The build, hosting and ongoing care are all in the monthly fee, over a 12-month minimum. Need a whole marketing function? That's a partnership, priced on what you need.</p>
 </div>
 
 <!-- PACKAGES GRID -->
-<section style="padding: 60px 0 90px;">
+<section style="padding: 50px 0 80px;">
   <div class="pricing-grid">
 
-    <!-- LAUNCH -->
+    <!-- STARTER -->
     <div class="tier">
-      <div class="tier-name">Launch</div>
-      <div class="tier-h">Get online, <br>get found.</div>
-      <p class="tier-tagline">Your professional digital shop window — done properly, done quickly.</p>
+      <div class="tier-name">Starter</div>
+      <div class="tier-h">One strong page, <br>done properly.</div>
+      <p class="tier-tagline">For a business that needs to look credible and make it easy to get in touch.</p>
       <div class="tier-price">
-        <span class="tier-price-num">£550</span><span class="tier-price-unit"> setup</span>
+        <span class="tier-price-num">£150</span><span class="tier-price-unit">/month</span>
       </div>
-      <div class="tier-monthly">+ <strong>£40</strong>/month · 12-month minimum</div>
-      <a href="contact.html?package=launch" class="tier-cta">Choose Launch <span>→</span></a>
+      <div class="tier-monthly"><strong>£0</strong> upfront · 12-month minimum</div>
+      <p class="tier-first-year">£1,800 over the first year</p>
+      <a class="tier-example" href="case-study-eastrada.html"><img src="eastrada-hero.jpg" alt="" loading="lazy"><span>Example: Eastrada Facilities <em>See it →</em></span></a>
+      <a href="contact.html?package=starter" class="tier-cta">Choose Starter <span>→</span></a>
       <div class="tier-includes-h">What's included</div>
       <ul class="tier-list">
-        <li>Up to 10 pages, mobile-first and custom designed</li>
-        <li>Fast, accessible build that turns visitors into enquiries</li>
-        <li>Hosting, SSL and security included</li>
-        <li>GDPR-ready lead form (submissions to your inbox)</li>
+        <li>A simple site that covers what you do and how to get in touch, designed for phones first</li>
+        <li>Enquiry form straight to your inbox</li>
+        <li>Hosting, SSL and security updates</li>
         <li>Set up on Google, with visitor stats</li>
-        <li>Found on Google and by AI assistants</li>
-        <li>Monthly performance report</li>
-        <li>20 minutes of updates a month</li>
-        <li>30-day post-launch care window</li>
-        <li>Email support, 4-hour response in working hours</li>
+        <li>20 minutes of changes a month</li>
+        <li>Email and phone support, direct to me</li>
       </ul>
-      <p class="tier-foot-note">Domain management available as an add-on.</p>
     </div>
 
-    <!-- GROW (featured) -->
+    <!-- BUSINESS (featured) -->
     <div class="tier featured">
-      <span class="tier-badge">Most popular</span>
-      <div class="tier-name">Grow</div>
-      <div class="tier-h">More polish. <br>More leads.</div>
-      <p class="tier-tagline">More pages, sharper SEO and monthly reporting so you can see what's working.</p>
+      <div class="tier-name">Business</div>
+      <div class="tier-h">A brand and a site <br>that bring in work.</div>
+      <p class="tier-tagline">For an established business that wants enquiries from the site, not just a listing.</p>
       <div class="tier-price">
-        <span class="tier-price-num">£1,100</span><span class="tier-price-unit"> setup</span>
+        <span class="tier-price-num">£500</span><span class="tier-price-unit">/month</span>
       </div>
-      <div class="tier-monthly">+ <strong>£80</strong>/month · 12-month minimum</div>
-      <a href="contact.html?package=grow" class="tier-cta">Choose Grow <span>→</span></a>
-      <div class="tier-includes-h">Everything in Launch, plus</div>
+      <div class="tier-monthly"><strong>£0</strong> upfront · 12-month minimum</div>
+      <p class="tier-first-year">£6,000 over the first year</p>
+      <a class="tier-example" href="case-study-wall2wall.html"><img src="w2w-hero.jpg" alt="" loading="lazy"><span>Example: Wall2Wall Group <em>See it →</em></span></a>
+      <a href="contact.html?package=business" class="tier-cta">Choose Business <span>→</span></a>
+      <div class="tier-includes-h">Everything in Starter, plus</div>
       <ul class="tier-list">
-        <li>Up to 25 pages, room for a blog or portfolio</li>
-        <li>Brand refresh (palette, type, logo tune-up)</li>
-        <li>Set up so AI assistants recommend you</li>
-        <li>Google Business Profile setup</li>
-        <li>Blog or news section setup</li>
-        <li>Full visitor and search reporting</li>
-        <li>45 minutes of updates a month</li>
-        <li>Priority email + phone support, 24-hour response</li>
-        <li>90-day post-launch care window</li>
+        <li>A page for each of your services, plus room for projects or news</li>
+        <li>Brand refresh: colours, type and logo tidy-up</li>
+        <li>Set up for Google and AI assistants to understand</li>
+        <li>Google Business Profile set-up</li>
+        <li>45 minutes of changes a month</li>
       </ul>
-      <p class="tier-foot-note">Domain management available as an add-on.</p>
     </div>
 
-    <!-- FLAGSHIP -->
+    <!-- BOOKINGS & MEMBERS -->
     <div class="tier">
-      <div class="tier-name">Flagship</div>
-      <div class="tier-h">Lead the <br>market.</div>
-      <p class="tier-tagline">The full package. Full brand identity, custom photography direction, and ongoing strategy.</p>
+      <div class="tier-name">Bookings &amp; Members</div>
+      <div class="tier-h">A site that <br>takes the bookings.</div>
+      <p class="tier-tagline">For venues, clubs, sports facilities and hire businesses that take bookings or have members.</p>
       <div class="tier-price">
-        <span class="tier-price-from">From</span><span class="tier-price-num">£2,000</span><span class="tier-price-unit"> setup</span>
+        <span class="tier-price-num">Quoted</span>
       </div>
-      <div class="tier-monthly">+ <strong>£140</strong>/month · 12-month minimum</div>
-      <a href="contact.html?package=flagship" class="tier-cta">Choose Flagship <span>→</span></a>
-      <div class="tier-includes-h">Everything in Grow, plus</div>
+      <div class="tier-monthly">Priced to your setup · 12-month minimum</div>
+      <p class="tier-first-year">Every booking system is different, so you get a fixed monthly price in writing before anything starts</p>
+      <a class="tier-example" href="case-study-needham-market-fc.html"><img src="nmfc-stand.jpg" alt="" loading="lazy"><span>Example: Needham Market FC <em>See it →</em></span></a>
+      <a href="contact.html?package=bookings" class="tier-cta">Get a quote <span>→</span></a>
+      <div class="tier-includes-h">Everything in Business, plus</div>
       <ul class="tier-list">
-        <li>25+ pages</li>
-        <li>Full brand identity (not just a refresh)</li>
-        <li>Custom photography direction</li>
-        <li>Ongoing Google and AI search work, with a quarterly content plan</li>
-        <li>Quarterly strategy review with Harlyn</li>
-        <li>1 hour of updates a month</li>
-        <li>Custom Open Graph images per page</li>
+        <li>Online booking calendar with live availability (pitches, rooms, hire)</li>
+        <li>Customer accounts with email sign-in</li>
+        <li>A booking dashboard for you to confirm and manage requests</li>
+        <li>Live feeds where they help, e.g. results and league tables</li>
+        <li>Links to the tools you already use (tickets, shop, payments)</li>
+        <li>Regular updates posted for you, plus 1 hour of changes a month</li>
       </ul>
-      <p class="tier-foot-note">Setup starts at £2,000 and is scoped to the project. Domain management available as an add-on.</p>
     </div>
 
   </div>
+  <p style="max-width: 1200px; margin: 28px auto 0; padding: 0 48px; font-size: 14px; color: var(--mute); line-height: 1.6;">The examples show what each package includes. They aren't what those clients paid — every early project was priced differently.</p>
 </section>
 
-<!-- BESPOKE -->
-<section class="bespoke" id="bespoke">
-  <div class="bespoke-inner">
-    <div>
-      <div class="bespoke-tag">Beyond the boxed packages</div>
-      <h2 class="bespoke-h">Bespoke. <span class="hl">For ambitions that don't fit a box.</span></h2>
-      <p class="bespoke-body">If your project needs e-commerce, a member portal, deep integrations, or anything custom-coded, the boxed tiers won't fit — and we won't pretend they will. Bespoke projects start with a paid discovery workshop so we can scope honestly. We then quote a fixed price for the full build.</p>
-      <div class="bespoke-list">
-        <span>E-commerce &amp; payments</span>
-        <span>Membership / portal sites</span>
-        <span>CRM &amp; software integrations</span>
-        <span>Multi-language sites</span>
-        <span>Franchise / multi-site networks</span>
-        <span>Custom apps &amp; calculators</span>
-        <span>UX research &amp; prototyping</span>
-        <span>Booking systems &amp; APIs</span>
+<!-- PARTNERSHIP -->
+<section class="bespoke" id="partnership" style="padding-top: 20px;">
+  <div class="partner-band">
+    <div class="partner-copy">
+      <div class="bespoke-tag" style="color: var(--accent);">Partnership · Bespoke</div>
+      <h2 class="bespoke-h">Need a whole <span class="hl" style="color: var(--accent);">marketing function?</span></h2>
+      <p class="bespoke-body">Website, brand, video, launches and the weekly work that keeps it all moving — handled as one monthly partnership. It's priced on what you need, agreed in writing before anything starts.</p>
+      <p class="bespoke-body" style="margin-bottom: 26px;">Example: for Upstream Works, that meant a new website, a refreshed brand and a product launch film, all live on the same day.</p>
+      <div class="cta-row">
+        <a href="contact.html?package=partnership" class="btn-primary">Let's talk <span class="arrow">→</span></a>
+        <a href="case-study-upstream-works.html" class="btn-secondary">Read the case study</a>
       </div>
     </div>
-    <div class="bespoke-card">
-      <div class="bespoke-card-price">Investment</div>
-      <div class="bespoke-card-num">Let's talk.</div>
-      <p class="bespoke-card-sub">Every bespoke project is different. Start with a friendly call — we'll listen, ask the right questions, and quote a fixed price you're happy with before any build work starts.</p>
-      <a href="contact.html?package=bespoke" class="btn-primary bespoke-cta">Get a price <span class="arrow">→</span></a>
+    <div class="partner-shot" role="img" aria-label="The upstreamworks.com homepage"><a href="case-study-upstream-works.html">Upstream Works →</a></div>
+  </div>
+</section>
+
+<!-- ADD-ONS -->
+<section style="padding-top: 30px;">
+  <div class="section-head">
+    <h2>Add to <span class="hl serif">any package.</span></h2>
+    <p class="section-sub">For when you want more than the site itself.</p>
+  </div>
+  <div class="addons">
+    <div class="addon">
+      <div class="k">Growth retainer</div>
+      <h3>Ongoing marketing</h3>
+      <div class="pr">Quoted</div>
+      <p>Extra marketing on top of any package: content, social posts and improvements to the site, every month. Priced to what you need, in writing first.</p>
+    </div>
+    <div class="addon">
+      <div class="k">Video</div>
+      <h3>Short-form and studio films</h3>
+      <div class="pr">from £300</div>
+      <p>I film and edit: short videos from £300, studio films from £750, monthly video from £400/month. Already filmed it? Editing only from £150. Travel beyond 20 miles is added at cost.</p>
+      <a href="studio.html">See video prices →</a>
+    </div>
+    <div class="addon">
+      <div class="k">Extras</div>
+      <h3>Domains and extra time</h3>
+      <div class="pr">£60<small style="font-size:15px;">/hour</small></div>
+      <p>Changes beyond your monthly allowance are £60 an hour, quoted before I start. Domain management from £15 a year.</p>
     </div>
   </div>
 </section>
@@ -304,79 +386,37 @@
 <section class="compare-section">
   <div class="section-head">
     <h2>Compare the <span class="hl serif">packages.</span></h2>
-    <p class="section-sub">A side-by-side look at what each tier delivers. Bespoke — booking systems, API integrations and other platform-level builds — is custom-quoted. <strong style="color: var(--paper);">All packages launch in 1–3 weeks</strong> — faster when a deadline demands it.</p>
+    <p class="section-sub">Every package includes the build, hosting, security and monthly changes. You get a delivery date in writing before we start.</p>
   </div>
   <div class="compare-table-wrap">
     <table class="compare-table">
       <thead>
-        <tr>
-          <th>Included</th>
-          <th>Launch</th>
-          <th>Grow</th>
-          <th>Flagship</th>
-        </tr>
+        <tr><th>Included</th><th>Starter</th><th>Business</th><th>Bookings &amp; Members</th></tr>
       </thead>
       <tbody>
-        <tr class="compare-row-group"><td colspan="4">Setup &amp; investment</td></tr>
-        <tr><th>One-off setup fee</th><td>£550</td><td>£1,100</td><td>From £2,000</td></tr>
-        <tr><th>Monthly fee</th><td>£40/mo</td><td>£80/mo</td><td>£140/mo</td></tr>
-        <tr><th>Minimum contract</th><td>12 months</td><td>12 months</td><td>12 months</td></tr>
+        <tr class="compare-row-group"><td colspan="4">Cost</td></tr>
+        <tr><th>Upfront</th><td>£0</td><td>£0</td><td>Quoted</td></tr>
+        <tr><th>Monthly</th><td>£150</td><td>£500</td><td>Quoted</td></tr>
+        <tr><th>First year in total</th><td>£1,800</td><td>£6,000</td><td>Quoted</td></tr>
+        <tr><th>Minimum term</th><td>12 months</td><td>12 months</td><td>12 months</td></tr>
 
         <tr class="compare-row-group"><td colspan="4">Build</td></tr>
-        <tr><th>Pages included</th><td>Up to 10</td><td>Up to 25</td><td>25+</td></tr>
-        <tr><th>Custom design</th><td class="tick">✓</td><td class="tick">✓</td><td class="tick">✓</td></tr>
-        <tr><th>Mobile-first &amp; accessible</th><td class="tick">✓</td><td class="tick">✓</td><td class="tick">✓</td></tr>
-        <tr><th>Social channel integration</th><td class="tick">✓</td><td class="tick">✓</td><td class="tick">✓</td></tr>
-        <tr><th>Blog / news section</th><td>—</td><td class="tick">✓</td><td class="tick">✓</td></tr>
-        <tr><th>Brand work</th><td>—</td><td>Refresh</td><td>Full identity</td></tr>
-        <tr><th>Custom photography direction</th><td>—</td><td>—</td><td class="tick">✓</td></tr>
+        <tr><th>Designed for phones first</th><td class="tick">✓</td><td class="tick">✓</td><td class="tick">✓</td></tr>
+        <tr><th>Enquiry form</th><td class="tick">✓</td><td class="tick">✓</td><td class="tick">✓</td></tr>
+        <tr><th>Brand work</th><td>—</td><td>Refresh</td><td>Refresh</td></tr>
+        <tr><th>Custom systems (booking, accounts)</th><td>—</td><td>—</td><td class="tick">✓</td></tr>
 
-        <tr class="compare-row-group"><td colspan="4">Included in every package</td></tr>
-        <tr><th>Hosting, SSL &amp; security</th><td class="tick">✓</td><td class="tick">✓</td><td class="tick">✓</td></tr>
-        <tr><th>GDPR-ready forms</th><td class="tick">✓</td><td class="tick">✓</td><td class="tick">✓</td></tr>
-        <tr><th>Monthly performance report</th><td class="tick">✓</td><td class="tick">✓</td><td class="tick">✓</td></tr>
+        <tr class="compare-row-group"><td colspan="4">Search</td></tr>
+        <tr><th>Set up on Google, with visitor stats</th><td class="tick">✓</td><td class="tick">✓</td><td class="tick">✓</td></tr>
+        <tr><th>Structured for Google and AI assistants</th><td>Basics</td><td class="tick">✓</td><td class="tick">✓</td></tr>
+        <tr><th>Google Business Profile set-up</th><td>—</td><td class="tick">✓</td><td class="tick">✓</td></tr>
 
-        <tr class="compare-row-group"><td colspan="4">SEO &amp; AEO</td></tr>
-        <tr><th>Found on Google &amp; AI assistants</th><td class="tick">✓</td><td class="tick">✓</td><td class="tick">✓</td></tr>
-        <tr><th>Set up so AI assistants recommend you</th><td>—</td><td class="tick">✓</td><td class="tick">✓</td></tr>
-        <tr><th>Google Business Profile setup</th><td>—</td><td class="tick">✓</td><td class="tick">✓</td></tr>
-        <tr><th>Analytics</th><td>GA4</td><td>Visitor stats + search reporting</td><td>Visitor stats + search reporting</td></tr>
-        <tr><th>Ongoing Google &amp; AI search work</th><td>—</td><td>—</td><td class="tick">✓</td></tr>
-
-        <tr class="compare-row-group"><td colspan="4">Ongoing care</td></tr>
-        <tr><th>Monthly update allowance</th><td>20 minutes</td><td>45 minutes</td><td>1 hour</td></tr>
-        <tr><th>Post-launch care window</th><td>30 days</td><td>90 days</td><td>90 days</td></tr>
-        <tr><th>Strategy review with Harlyn</th><td>—</td><td>—</td><td>Quarterly</td></tr>
-
-        <tr class="compare-row-group"><td colspan="4">Support</td></tr>
-        <tr><th>Email support</th><td>4-hour response</td><td>Priority, 24-hour</td><td>Priority, 4-hour</td></tr>
-        <tr><th>Phone support</th><td>—</td><td class="tick">✓</td><td class="tick">✓</td></tr>
-
-        <tr class="compare-row-group"><td colspan="4">Add-ons (all tiers)</td></tr>
-        <tr><th>Domain management</th><td colspan="3">From £15/year</td></tr>
-        <tr><th>Additional update time</th><td colspan="3">£60/hour</td></tr>
+        <tr class="compare-row-group"><td colspan="4">Ongoing</td></tr>
+        <tr><th>Hosting, SSL and security updates</th><td class="tick">✓</td><td class="tick">✓</td><td class="tick">✓</td></tr>
+        <tr><th>Changes included each month</th><td>20 minutes</td><td>45 minutes</td><td>1 hour</td></tr>
+        <tr><th>Support</th><td colspan="3">Email and phone, direct to me</td></tr>
       </tbody>
     </table>
-  </div>
-</section>
-
-<!-- SEO/AEO EXPLAINER -->
-<section>
-  <div class="section-head">
-    <h2>Two words you'll see on every tier: <span class="hl serif">SEO and AEO.</span></h2>
-    <p class="section-sub">Plain-English explanations of what they mean and why both matter.</p>
-  </div>
-  <div class="terms">
-    <div class="term-card">
-      <div class="term-tag">SEO</div>
-      <h3 class="term-h">Search Engine Optimisation</h3>
-      <p class="term-body">The art of making your site easier for <strong>Google</strong> to read, understand and rank for the things your customers actually search for. We bake the basics in by default — fast pages, clean structure, the right meta tags, an XML sitemap, and Google Search Console set up so you can see who's finding you and how.</p>
-    </div>
-    <div class="term-card">
-      <div class="term-tag">AEO</div>
-      <h3 class="term-h">Answer Engine Optimisation</h3>
-      <p class="term-body">The new generation of search. <strong>ChatGPT, Perplexity, Google AI Overviews and Gemini</strong> increasingly answer questions directly — and they pick which sites to quote. AEO uses structured data and clear, factual content so when someone asks an AI "best web designer in Stowmarket?", your business is the one it names.</p>
-    </div>
   </div>
 </section>
 
@@ -384,36 +424,32 @@
 <section style="background: var(--ink-2);">
   <div class="section-head">
     <h2>Pricing questions <span class="hl serif">answered.</span></h2>
-    <p class="section-sub">The questions Suffolk owners actually ask when comparing packages.</p>
+    <p class="section-sub">Straight answers to what people ask before signing up.</p>
   </div>
   <div class="faq-list">
     <div class="faq-item">
-      <div class="faq-q"><h3>Why is there a 12-month minimum?</h3><div class="faq-toggle">+</div></div>
-      <div class="faq-a">The monthly fee covers hosting, SSL, security, GDPR-ready forms, your monthly update allowance, performance reporting and support across a full year. The 12-month minimum is what lets us price the setup fee as low as it is. After 12 months it moves to a <strong>rolling monthly contract</strong> — cancel any time with one month's notice.</div>
+      <div class="faq-q"><h3>Why is there nothing to pay upfront?</h3><div class="faq-toggle">+</div></div>
+      <div class="faq-a">Most small businesses would rather spread the cost than find a big lump sum. The build is paid off across the <strong>12-month minimum term</strong>, so Starter and Business have no setup fee. Bookings &amp; Members is quoted to your setup.</div>
     </div>
     <div class="faq-item">
-      <div class="faq-q"><h3>Can I upgrade or downgrade later?</h3><div class="faq-toggle">+</div></div>
-      <div class="faq-a">Yes. <strong>Upgrade any time</strong> — we'll add the new tier's features and adjust your monthly fee from the next billing cycle. Downgrades are available at the end of your 12-month term.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q"><h3>What's not included? Any hidden fees?</h3><div class="faq-toggle">+</div></div>
-      <div class="faq-a">No hidden fees. <strong>Hosting, SSL, security and GDPR-ready forms are included</strong> in every package — you are not billed separately for them. A few things do sit outside every tier and are quoted clearly upfront: <strong>domain registration &amp; management</strong> (from £15/yr), <strong>extra update time</strong> beyond your monthly allowance (£60/hr), and any <strong>third-party tools</strong> you choose to use (booking software, email marketing, etc.).</div>
+      <div class="faq-q"><h3>What happens after 12 months?</h3><div class="faq-toggle">+</div></div>
+      <div class="faq-a">The plan rolls on <strong>monthly</strong>, and you can cancel with one month's notice.</div>
     </div>
     <div class="faq-item">
       <div class="faq-q"><h3>Do I own the website?</h3><div class="faq-toggle">+</div></div>
-      <div class="faq-a">Yes — the design, the content and the code are <strong>yours from day one</strong>. We host and maintain it for you, but if you ever leave, you take the site with you.</div>
+      <div class="faq-a">Yes, <strong>once the 12-month term is complete</strong>. If you want to leave earlier, you can pay the rest of the term and take the site with you.</div>
     </div>
     <div class="faq-item">
-      <div class="faq-q"><h3>What counts towards my monthly update allowance?</h3><div class="faq-toggle">+</div></div>
-      <div class="faq-a">Anything you'd like updated, tweaked or added — copy edits, image swaps, new sections, price changes, news posts, opening-hours updates. Launch includes <strong>20 minutes a month</strong>, Grow <strong>45 minutes</strong>, Flagship <strong>1 hour</strong>. Most small edits take a few minutes. If a job needs longer than your allowance, we quote the extra time (£60/hr) before doing any work — never after.</div>
+      <div class="faq-q"><h3>Are there any other costs?</h3><div class="faq-toggle">+</div></div>
+      <div class="faq-a">Hosting, SSL, security updates and your monthly changes are all in the monthly fee. Outside that: <strong>extra changes</strong> beyond your allowance at £60/hour (quoted before I start), <strong>domain management</strong> from £15/year, and any <strong>third-party tools</strong> you choose to use, such as booking or email software.</div>
     </div>
     <div class="faq-item">
-      <div class="faq-q"><h3>I have an existing website. Can you take it over?</h3><div class="faq-toggle">+</div></div>
-      <div class="faq-a">In most cases yes — but every existing site is different. We'll do a quick technical audit on the call to confirm. If we can take it over, we'll often suggest the <strong>Launch</strong> tier as a starting point with a redesign sprint included.</div>
+      <div class="faq-q"><h3>Why are you cheaper than an agency?</h3><div class="faq-toggle">+</div></div>
+      <div class="faq-a">There's one person doing the work and no office team to pay for. You get the same person on every call, and the savings go into the price.</div>
     </div>
     <div class="faq-item">
       <div class="faq-q"><h3>Which package is right for me?</h3><div class="faq-toggle">+</div></div>
-      <div class="faq-a"><strong>Launch</strong> (£550 + £40/mo) suits sole traders and very small businesses who just need a credible online presence. <strong>Grow</strong> (£1,100 + £80/mo) fits established small businesses who want to actively generate leads from the site. <strong>Flagship</strong> (from £2,000 + £140/mo) is for ambitious SMEs who want their website to be a serious competitive advantage. Need a booking system, an API integration or anything platform-level? That is <strong><a href="#bespoke">Bespoke</a></strong>, priced on scope. Not sure? Book a 20-min call — we'll tell you honestly.</div>
+      <div class="faq-a"><strong>Starter</strong> if you need one strong page or a small site. <strong>Business</strong> if you want the site and your brand to bring in enquiries. <strong>Bookings &amp; Members</strong> if the site needs booking requests, customer accounts or accounts. If you need a whole marketing function, that's a <a href="#partnership" style="color: var(--accent);">partnership</a>. Not sure? Call me and I'll tell you honestly.</div>
     </div>
   </div>
 </section>
@@ -423,31 +459,31 @@
   <div class="final-content">
     <div class="eyebrow">Ready when you are</div>
     <h2 class="final-h">Pick a package, <span class="hl serif">or let's talk.</span></h2>
-    <p class="final-sub">A free 20-minute call. We'll listen, ask the right questions, and recommend the tier that fits — or tell you honestly if none of them do.</p>
+    <p class="final-sub">A free 20-minute call. I'll listen, ask the right questions and tell you which package fits — or if none of them do.</p>
     <div class="cta-row">
       <a href="contact.html" class="btn-primary">Get a price <span class="arrow">→</span></a>
-      <a href="services.html" class="btn-secondary">See all services</a>
+      <a href="recent-work.html" class="btn-secondary">See the work first</a>
     </div>
   </div>
 </section>
 
 <footer>
   <div class="footer-grid">
-    <div class="footer-brand"><div class="logo"><span class="logo-dot"></span>AJH<span class="logo-suffix">/technology</span></div><p>Built locally in Suffolk. Helping small businesses grow with professional web design, strong brand identity and streamlined processes.</p></div>
-    <div class="footer-col"><h4>Services</h4><ul><li><a href="web.html">Web design</a></li><li><a href="brand.html">Brand</a></li><li><a href="process.html">Process</a></li><li><a href="pricing.html">Pricing</a></li></ul></div>
+    <div class="footer-brand"><div class="logo"><span class="logo-dot"></span>AJH<span class="logo-suffix">/technology</span></div><p>Built locally in Suffolk. Websites, brand and video for small businesses — and the work that keeps them moving.</p></div>
+    <div class="footer-col"><h4>Services</h4><ul><li><a href="web.html">Web design</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="brand.html">Brand</a></li><li><a href="studio.html">Video &amp; studio</a></li><li><a href="services.html">All services</a></li></ul></div>
     <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="work.html">Approach</a></li><li><a href="recent-work.html">Recent work</a></li><li><a href="insights.html">Insights</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li></ul></div>
     <div class="footer-col"><h4>Contact</h4><ul><li><a href="tel:+447488286207" style="color: inherit;">07488 286207</a></li><li>The Office, Grange Farm</li><li>All Saints Road</li><li>Creeting St Mary, Suffolk</li><li>IP6 8NG</li></ul></div>
   </div>
-  <div class="footer-bottom"><div>© 2026 AJH Technology Ltd</div><div><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="cookies.html">Cookies</a></div></div>
+  <div class="footer-bottom"><div>© 2026 AJH Technology Limited. All rights reserved.</div><div><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="cookies.html">Cookies</a></div></div>
 </footer>
 
 <div class="sticky-cta">
   <span class="sticky-cta-dot"></span>
-  <span class="sticky-cta-text"><strong>Not sure which package?</strong> · We&apos;ll help you choose</span>
+  <span class="sticky-cta-text"><strong>Not sure which package?</strong> · I'll help you choose</span>
   <span class="sticky-cta-mobile">Book a 20-min call</span>
   <a href="contact.html" class="sticky-cta-btn">Get a price →</a>
 </div>
 
-<script src="ajh-chat.js" defer></script>
+<script src="nav.js" defer></script>
 </body>
 </html>

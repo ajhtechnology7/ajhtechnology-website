@@ -33,6 +33,8 @@ a { color: inherit; text-decoration: none; }
 .logo-dot { width: 10px; height: 10px; background: var(--accent); border-radius: 50%; box-shadow: 0 0 12px var(--accent); }
 .logo-suffix { color: #666; font-weight: 400; }
 .nav-links { display: flex; gap: 36px; font-size: 14px; color: #BBB; }
+@media (max-width: 1120px) { .nav-links { gap: 22px; } .nav { padding-left: 28px; padding-right: 28px; } }
+@media (max-width: 960px) { .nav-phone { display: none; } }
 .nav-links a { transition: color 0.2s; cursor: pointer; }
 .nav-links a:hover, .nav-links a.active { color: var(--accent); }
 .nav-right { display: flex; gap: 18px; align-items: center; }
@@ -248,3 +250,8 @@ footer { padding: 44px 48px 30px; border-top: 1px solid var(--border); }
 .footer-bottom { padding-top: 32px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; font-size: 12px; color: var(--mute); flex-wrap: wrap; gap: 16px; }
 
 /* ===========
+/* ============ PAGE HEADER (inner pages) ============ */
+.page-header { padding: 60px 48px 30px; max-width: 1336px; }
+.page-header .breadcrumb { font-size: 13px; color: var(--mute); letter-spacing: 1px; margin-bottom: 18px; }
+.page-header .breadcrumb a, .page-header .breadcrumb .accent { color: var(--accent); }
+@media (max-width: 700px) { .page-header { padding: 40px 20px 20px; } section { padding-left: 20px; padding-right: 20px; } }

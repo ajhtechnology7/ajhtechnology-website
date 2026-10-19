@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <meta name="theme-color" content="#0A0A0A">
-<title>Business Process Improvement for Suffolk SMBs | AJH Technology</title>
-<meta name="description" content="Streamline how leads, jobs and admin flow through your business. CRM setup, quote-to-invoice automation, team SOPs. From £1,800. Suffolk-based.">
+<title>Process &amp; Admin Help for Small Businesses | AJH Technology</title>
+<meta name="description" content="Help tidying up how enquiries, quotes and admin flow through a small business — connecting your website to the tools you use. Talk to me about what you need; priced up front.">
 <link rel="canonical" href="https://ajhtechnology.digital/process">
 <meta property="og:image" content="https://ajhtechnology.digital/og-process.png">
 <meta property="og:type" content="website">
@@ -15,13 +15,13 @@
 <meta property="og:image:height" content="630">
 <meta property="og:url" content="https://ajhtechnology.digital/process">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Business Process Improvement for Suffolk SMBs | AJH Technology">
-<meta name="twitter:description" content="Streamline how leads, jobs and admin flow through your business. CRM setup, quote-to-invoice automation, team SOPs. From £1,800. Suffolk-based.">
+<meta name="twitter:title" content="Process &amp; Admin Help for Small Businesses | AJH Technology">
+<meta name="twitter:description" content="Help tidying up how enquiries, quotes and admin flow through a small business — connecting your website to the tools you use. Talk to me about what you need; priced up front.">
 <meta name="twitter:image" content="https://ajhtechnology.digital/og-process.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="robots" content="noindex, follow">
 <link rel="stylesheet" href="shared.css">
 <style>
 .step-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 50px; }
@@ -55,7 +55,7 @@
     "postalCode": "IP6 8NG",
     "addressCountry": "GB"
   },
-  "areaServed": ["Ipswich","Stowmarket","Bury St Edmunds","Sudbury","Woodbridge","Felixstowe","Diss","Needham Market"],
+  "areaServed": {"@type": "AdministrativeArea", "name": "Suffolk"},
   "priceRange": "££"
 }
 </script>
@@ -75,12 +75,11 @@
   "@context": "https://schema.org",
   "@type": "Service",
   "@id": "https://ajhtechnology.digital/process#service",
-  "serviceType": "Business Process Improvement",
-  "name": "Business Process Improvement for Suffolk SMEs",
-  "description": "Streamline how leads, jobs and admin flow through your Suffolk business. Process audit, CRM setup and automation, quote-to-invoice workflow, team SOPs, reporting dashboard. From £1,800, 3-4 weeks.",
+  "serviceType": "Business process help",
+  "name": "Process and admin help for small businesses",
+  "description": "Help tidying up how enquiries, quotes and admin flow through a small business: mapping the steps, connecting website forms to the tools you already use, and writing simple instructions for the people who use them. Priced up front, in writing.",
   "provider": { "@type": "LocalBusiness", "@id": "https://ajhtechnology.digital/#business", "name": "AJH Technology" },
-  "areaServed": ["Ipswich","Stowmarket","Bury St Edmunds","Sudbury","Woodbridge","Felixstowe","Needham Market","Suffolk","East Anglia"],
-  "offers": { "@type": "Offer", "price": "1800", "priceCurrency": "GBP", "url": "https://ajhtechnology.digital/pricing" }
+  "areaServed": {"@type": "AdministrativeArea", "name": "Suffolk"}
 }
 </script>
 <script type="application/ld+json">
@@ -88,10 +87,10 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "What is business process improvement?", "acceptedAnswer": { "@type": "Answer", "text": "Business process improvement is rebuilding the operational flow of a small business — from lead capture to invoice paid. AJH Technology delivers a process audit, CRM setup and automation, a quote-to-invoice workflow, team standard operating procedures and a reporting dashboard, starting from £1,800." } },
-    { "@type": "Question", "name": "How long does a process improvement project take?", "acceptedAnswer": { "@type": "Answer", "text": "AJH Technology process projects take 3-4 weeks from kick-off to handover, with 30 days of post-launch support included." } },
-    { "@type": "Question", "name": "What CRM does AJH Technology recommend for Suffolk small businesses?", "acceptedAnswer": { "@type": "Answer", "text": "AJH Technology recommends and configures the CRM that fits your team, scale and budget. Common picks for Suffolk SMEs are HubSpot Starter, Pipedrive and Zoho, with deeper integrations available for larger teams." } },
-    { "@type": "Question", "name": "Can you connect my website to my CRM?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. AJH Technology process projects typically include lead-form integration from your website into your CRM, with automated tags, owner assignment and a follow-up workflow so no enquiry slips through." } }
+    { "@type": "Question", "name": "What does process help mean?", "acceptedAnswer": { "@type": "Answer", "text": "It means looking at how an enquiry becomes a quote, a job and a paid invoice in your business, and tidying up the steps in between — for example connecting your website forms to the tools you already use. I haven't delivered a standalone process project yet, so this is priced up front, in writing, once I know what you need." } },
+    { "@type": "Question", "name": "How long does it take?", "acceptedAnswer": { "@type": "Answer", "text": "It depends on what needs doing. You get a delivery date in writing before I start." } },
+    { "@type": "Question", "name": "Which CRM should a small business use?", "acceptedAnswer": { "@type": "Answer", "text": "It depends on your team, scale and budget. Good options for a small team include HubSpot Starter, Pipedrive and Zoho, and a spreadsheet is fine for some businesses." } },
+    { "@type": "Question", "name": "Can you connect my website to my CRM?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, in most cases. Website enquiry forms can usually be sent straight into a CRM or an inbox you already use, so enquiries land in one place." } }
   ]
 }
 </script>
@@ -102,6 +101,7 @@
   <a href="index.html" class="logo"><span class="logo-dot"></span>AJH<span class="logo-suffix">/technology</span></a>
   <div class="nav-links">
     <a href="web.html">Web design</a>
+    <a href="studio.html">Video</a>
     <a href="pricing.html">Pricing</a>
     <a href="recent-work.html">Our work</a>
     <a href="about.html">About</a>
@@ -116,25 +116,25 @@
 <div class="page-header">
   <div class="breadcrumb"><a href="index.html"><span class="accent">AJH</span></a> / <a href="services.html">Services</a> / Process</div>
   <h1>Stop running on <span class="hl serif">chaos.</span></h1>
-  <p class="sub">The bottleneck isn't usually marketing — it's the mess between your enquiry form and your invoice. We re-build the pipeline so growth doesn't break you.</p>
+  <p class="sub">Sometimes the problem isn't marketing — it's the mess between your enquiry form and your invoice. I can help you tidy up the steps in between.</p>
   <div class="cta-row">
     <a href="contact.html?service=process" class="btn-primary">Get a price <span class="arrow">→</span></a>
-    <a href="#example" class="btn-secondary">See an example</a>
-    <span class="mini">From £1,800 · 3–4 weeks · Fixed price</span>
+    <a href="#example" class="btn-secondary">See how it works</a>
+    <span class="mini">Priced up front, in writing</span>
   </div>
 </div>
 
 <section class="aeo-box">
   <div class="aeo-inner">
-    <div class="aeo-tag">What does business process improvement mean?</div>
-    <div class="aeo-a"><strong>AJH Technology's process service rebuilds the operational flow of a small business — from lead capture to invoice paid.</strong> It includes a process audit, CRM setup and automation, a quote-to-invoice workflow, team standard operating procedures, a reporting dashboard, and 30 days of handover support. Projects start at £1,800 and take 3–4 weeks.</div>
+    <div class="aeo-tag">What does process help mean?</div>
+    <div class="aeo-a"><strong>AJH Technology can help a small business tidy up how enquiries, quotes and admin flow through it — from the website form to the paid invoice.</strong> That can mean mapping the steps, connecting your website to the tools you already use, and writing simple instructions for whoever uses them. I haven't delivered a standalone process project yet, so it's priced up front once I know what you need.</div>
   </div>
 </section>
 
 <section id="example">
   <div class="section-head">
     <h2>The journey from <span class="hl serif">enquiry to invoice.</span></h2>
-    <p class="section-sub">Most SMBs lose money in the gaps between steps. We close them.</p>
+    <p class="section-sub">An illustration of the steps most small businesses go through. Things tend to get lost in the gaps between them.</p>
   </div>
   <div class="flow">
     <div class="flow-box"><div class="flow-box-tag">01</div><div class="flow-box-h">Lead arrives</div></div>
@@ -147,29 +147,29 @@
     <div class="flow-arrow">→</div>
     <div class="flow-box win"><div class="flow-box-tag">05</div><div class="flow-box-h">Invoice paid ✓</div></div>
   </div>
-  <p class="muted" style="text-align: center; font-size: 14px;">Every step automated where it should be, with human approval gates where it shouldn't.</p>
+  <p class="muted" style="text-align: center; font-size: 14px;">The aim: automate the steps that should be automatic, and keep a person in charge of the ones that shouldn't.</p>
 </section>
 
 <section style="background: var(--ink-2);">
   <div class="section-head">
-    <h2>The three-week <span class="hl serif">process build.</span></h2>
-    <p class="section-sub">Audit, build, embed. Done in a month.</p>
+    <h2>How I'd <span class="hl serif">approach it.</span></h2>
+    <p class="section-sub">Look, build, hand over. You get a delivery date in writing before I start.</p>
   </div>
   <div class="step-grid">
     <div class="step-card">
-      <div class="step-num">— WEEK ONE</div>
-      <div class="step-h">Audit</div>
-      <div class="step-desc">We shadow your team for a day, map every step from enquiry to invoice, and identify where time, leads or revenue are leaking out. You get a clear report and a prioritised fix list.</div>
+      <div class="step-num">— STEP 01</div>
+      <div class="step-h">Look</div>
+      <div class="step-desc">I talk to you about how work comes in and gets done, map the steps from enquiry to invoice, and point out where things are getting lost. You get a short list of what's worth fixing.</div>
     </div>
     <div class="step-card">
-      <div class="step-num">— WEEKS TWO &amp; THREE</div>
+      <div class="step-num">— STEP 02</div>
       <div class="step-h">Build</div>
-      <div class="step-desc">We set up your CRM, automate the right steps, write the SOPs your team will actually use, and connect everything together. We use tools you already pay for wherever possible.</div>
+      <div class="step-desc">I set up or tidy the tools, connect your website to them, and write simple instructions for whoever uses them. I use tools you already pay for wherever possible.</div>
     </div>
     <div class="step-card">
-      <div class="step-num">— WEEK FOUR</div>
-      <div class="step-h">Embed</div>
-      <div class="step-desc">We train your team in person, hand over a reporting dashboard, and stay close for 30 days to fix anything that surfaces. No "good luck" handovers.</div>
+      <div class="step-num">— STEP 03</div>
+      <div class="step-h">Hand over</div>
+      <div class="step-desc">I walk you through how it all works, in person if you're local, and help sort out anything that comes up once you're using it.</div>
     </div>
   </div>
   <div class="cta-block">
@@ -180,9 +180,9 @@
 
 <section class="final">
   <div class="final-content">
-    <div class="eyebrow">Ready to get your evenings back?</div>
-    <h2 class="final-h">Your business, <span class="hl serif">working smoother.</span></h2>
-    <p class="final-sub">A four-week build that hands you back hours every single week.</p>
+    <div class="eyebrow">Admin getting on top of you?</div>
+    <h2 class="final-h">Let's talk about <span class="hl serif">what's slowing you down.</span></h2>
+    <p class="final-sub">Tell me how things work now. If I can help, you get the price and a delivery date in writing. If I can't, I'll say so.</p>
     <div class="cta-row">
       <a href="contact.html?service=process" class="btn-primary">Get a price <span class="arrow">→</span></a>
       <a href="contact.html" class="btn-secondary">Get a price</a>
@@ -192,9 +192,9 @@
 
 <footer>
   <div class="footer-grid">
-    <div class="footer-brand"><div class="logo"><span class="logo-dot"></span>AJH<span class="logo-suffix">/technology</span></div><p>Built locally in Suffolk. Helping small businesses grow with professional web design, strong brand identity and streamlined processes.</p></div>
-    <div class="footer-col"><h4>Services</h4><ul><li><a href="web.html">Web design</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="brand.html">Brand</a></li><li><a href="process.html">Process</a></li><li><a href="services.html">All services</a></li></ul></div>
-    <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="work.html">Work</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="footer-brand"><div class="logo"><span class="logo-dot"></span>AJH<span class="logo-suffix">/technology</span></div><p>Built locally in Suffolk. Websites, brand and video for small businesses — and the work that keeps them moving.</p></div>
+    <div class="footer-col"><h4>Services</h4><ul><li><a href="web.html">Web design</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="brand.html">Brand</a></li><li><a href="studio.html">Video &amp; studio</a></li><li><a href="services.html">All services</a></li></ul></div>
+    <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="work.html">Approach</a></li><li><a href="recent-work.html">Recent work</a></li><li><a href="insights.html">Insights</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li></ul></div>
     <div class="footer-col"><h4>Contact</h4><ul><li><a href="tel:+447488286207" style="color: inherit;">07488 286207</a></li><li>The Office, Grange Farm</li><li>All Saints Road</li><li>Creeting St Mary, Suffolk</li><li>IP6 8NG</li></ul></div>
   </div>
   <div class="footer-bottom"><div>© 2026 AJH Technology Ltd</div><div><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="cookies.html">Cookies</a></div></div>
@@ -202,11 +202,11 @@
 
 <div class="sticky-cta">
   <span class="sticky-cta-dot"></span>
-  <span class="sticky-cta-text"><strong>Process projects from £1,800</strong> · 3–4 week builds</span>
-  <span class="sticky-cta-mobile">From £1,800 · 3 weeks</span>
+  <span class="sticky-cta-text"><strong>Process &amp; admin help</strong> · priced up front</span>
+  <span class="sticky-cta-mobile">Priced up front</span>
   <a href="contact.html?service=process" class="sticky-cta-btn">Get a price →</a>
 </div>
 
-<script src="ajh-chat.js" defer></script>
+<script src="nav.js" defer></script>
 </body>
 </html>
