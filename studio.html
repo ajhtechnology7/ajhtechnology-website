@@ -6,10 +6,10 @@
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <meta name="theme-color" content="#0A0A0A">
 <title>Video &amp; Studio Filming in Suffolk · Short-form, Launch &amp; Talking-head Films | AJH Technology</title>
-<meta name="description" content="Short-form social videos from £300 and studio-style films from £750, filmed and edited by AJH Technology in Suffolk. Or a monthly video plan from £400. See the work first.">
+<meta name="description" content="Short-form social videos from £300 and studio-style films from £750, filmed and edited by AJH Technology in Suffolk. Already got footage? Editing only from £150. Monthly video from £400.">
 <link rel="canonical" href="https://ajhtechnology.digital/studio">
 <meta property="og:title" content="Video &amp; Studio · AJH Technology">
-<meta property="og:description" content="Short-form social videos from £300, studio-style films from £750, monthly video from £400. Filming and editing included.">
+<meta property="og:description" content="Short-form videos from £300, studio films from £750, monthly video from £400 — filmed and edited. Editing only, from your own footage, from £150.">
 <meta property="og:image" content="https://ajhtechnology.digital/uw-launch-film-still.jpg">
 <meta property="og:url" content="https://ajhtechnology.digital/studio">
 <meta property="og:type" content="website">
@@ -26,6 +26,8 @@
   "areaServed": "Suffolk, United Kingdom",
   "offers": [
     { "@type": "Offer", "name": "Short-form video", "description": "Up to 60 seconds, filmed on location and edited for LinkedIn or Instagram.", "priceSpecification": { "@type": "PriceSpecification", "minPrice": 300, "priceCurrency": "GBP" } },
+    { "@type": "Offer", "name": "Short-form edit (your footage)", "description": "Up to 60 seconds, edited from clips you send.", "priceSpecification": { "@type": "PriceSpecification", "minPrice": 150, "priceCurrency": "GBP" } },
+    { "@type": "Offer", "name": "Film edit (your footage)", "description": "Up to 6 minutes, edited from footage you send, with titles and captions.", "priceSpecification": { "@type": "PriceSpecification", "minPrice": 400, "priceCurrency": "GBP" } },
     { "@type": "Offer", "name": "Studio film", "description": "Up to 6 minutes, multi-camera, captions and script support. Editing included.", "priceSpecification": { "@type": "PriceSpecification", "minPrice": 750, "priceCurrency": "GBP" } },
     { "@type": "Offer", "name": "Monthly video", "description": "Two short videos a month plus one studio film a quarter.", "priceSpecification": { "@type": "UnitPriceSpecification", "price": 400, "priceCurrency": "GBP", "unitText": "MONTH" } }
   ]
@@ -71,6 +73,15 @@
 .st-card .p small { font-size: 16px; font-weight: 600; letter-spacing: 0; }
 .st-card .u { font-size: 13px; color: var(--mute); margin-bottom: 22px; }
 .st-card.hl .u { color: #333; }
+.st-card .eo { margin: -8px 0 22px; padding: 12px 14px; border-radius: 12px; background: #1a1a1a; font-size: 13px; line-height: 1.45; color: var(--mute); }
+.st-card .eo b { color: var(--paper); font-weight: 700; }
+.st-card.hl .eo { background: rgba(10,10,10,0.1); color: #222; }
+.st-card.hl .eo b { color: var(--ink); }
+.st-ways { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 26px; }
+@media (max-width: 800px) { .st-ways { grid-template-columns: 1fr; } }
+.st-way { border: 1px solid var(--border); border-radius: 16px; padding: 20px 22px; }
+.st-way h3 { font-size: 16px; margin: 0 0 6px; }
+.st-way p { font-size: 14px; color: var(--mute); margin: 0; line-height: 1.55; }
 .st-card ul { list-style: none; padding: 0; margin: 0 0 24px; flex: 1; }
 .st-card li { font-size: 15px; padding: 9px 0; border-top: 1px solid rgba(255,255,255,0.07); color: #CCC; }
 .st-card.hl li { border-top-color: rgba(0,0,0,0.12); color: #1a1a1a; }
@@ -141,13 +152,18 @@
 
 <section class="st-wrap st-sec" id="prices">
   <div class="st-eyebrow">Prices</div>
-  <h2>Three ways to buy. <span class="serif">Editing always included.</span></h2>
-  <p class="st-intro">Every price includes planning, filming and editing. A "from" price is where most jobs land — bigger shoots, extra locations or more versions cost more, and you'll know the exact figure before anything is booked.</p>
+  <h2>I film it, or you send the clips. <span class="serif">Editing always included.</span></h2>
+  <p class="st-intro">A "from" price is where most jobs land — bigger shoots, extra locations or more versions cost more, and you'll know the exact figure before anything is booked.</p>
+  <div class="st-ways">
+    <div class="st-way"><h3>I film it and edit it</h3><p>I come to you with the kit, film it, then edit it. The main prices below.</p></div>
+    <div class="st-way"><h3>You send the clips, I edit</h3><p>Filmed it yourself on a phone or camera? Send me the footage and I'll turn it into a finished video. Cheaper, and no travel.</p></div>
+  </div>
   <div class="st-prices">
     <div class="st-card">
       <div class="n">Short-form</div>
       <div class="p">£300</div>
-      <div class="u">from, per video</div>
+      <div class="u">from, per video, filmed and edited</div>
+      <div class="eo">Editing only, from your clips: <b>from £150</b></div>
       <ul>
         <li>Up to 60 seconds</li>
         <li>Filmed on location</li>
@@ -155,12 +171,13 @@
         <li>Portrait or landscape</li>
         <li>Captions burned in</li>
       </ul>
-      <div class="ex">Example: <a href="case-study-upstream-endava.html">Upstream Works × Endava, Day in the Life →</a></div>
+      <div class="ex">Example (edited from the client's own footage): <a href="case-study-upstream-endava.html">Upstream Works × Endava, Day in the Life →</a></div>
     </div>
     <div class="st-card hl">
       <div class="n">Studio film</div>
       <div class="p">£750</div>
-      <div class="u">from, per film</div>
+      <div class="u">from, per film, filmed and edited</div>
+      <div class="eo">Editing only, from your footage: <b>from £400</b></div>
       <ul>
         <li>Up to 6 minutes</li>
         <li>Multi-camera, lit, recorded sound</li>
@@ -173,7 +190,8 @@
     <div class="st-card">
       <div class="n">Monthly video</div>
       <div class="p">£400<small>/month</small></div>
-      <div class="u">12-month minimum</div>
+      <div class="u">12-month minimum, filming included</div>
+      <div class="eo">Editing only, from your clips: <b>quoted</b></div>
       <ul>
         <li>2 short-form videos a month</li>
         <li>1 studio film a quarter</li>
@@ -184,7 +202,7 @@
       <div class="ex">Pairs well with a <a href="pricing.html">website care plan</a>.</div>
     </div>
   </div>
-  <p class="st-note">You always get the exact price in writing before anything is booked.</p>
+  <p class="st-note"><strong>Travel:</strong> filming within 20 miles of Needham Market is included. Further than that, I add mileage at 45p a mile (there and back), plus parking, trains or an overnight stay if a shoot needs one. It's all in the quote, so you get the exact price in writing before anything is booked.</p>
 </section>
 
 <section class="st-wrap st-sec">
@@ -197,7 +215,7 @@
     <div>
       <h3>Short-form: a Day in the Life, 50 seconds</h3>
       <p>A portrait video for Upstream Works, warming up the announcement of their partnership with Endava. Travel, prep, the studio session — the human side, before the corporate news.</p>
-      <p>Concept, direction, filming, edit and delivery.</p>
+      <p>Filmed on the day by Upstream's CRO — it's his day in the life. I edited it into the finished piece: the "you send the clips, I edit" option.</p>
       <a class="lnk" href="case-study-upstream-endava.html">Read the case study →</a>
     </div>
   </div>
@@ -216,7 +234,7 @@
   <div class="st-steps">
     <div class="st-step"><h3>Plan</h3><p>A short call about what the video is for and where it'll be posted. You get a one-page plan and a fixed price.</p></div>
     <div class="st-step"><h3>Script</h3><p>For studio films, I help shape what you'll say, so it sounds like you and fits the time.</p></div>
-    <div class="st-step"><h3>Film</h3><p>Filmed at your place — office, workshop or site — at a time that suits you.</p></div>
+    <div class="st-step"><h3>Film</h3><p>I film at your place — office, workshop or site — at a time that suits you. Or you film it yourself and send me the clips.</p></div>
     <div class="st-step"><h3>Edit</h3><p>You review a first cut, tell me what to change, then get final files sized for each platform.</p></div>
   </div>
 </section>
@@ -255,6 +273,6 @@
   });
 })();
 </script>
-<script src="ajh-chat.js" defer></script>
+<script src="nav.js" defer></script>
 </body>
 </html>

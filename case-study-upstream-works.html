@@ -11,8 +11,8 @@
 <meta property="og:title" content="Case Study · Upstream Works · Brand, Website &amp; Product Launch | AJH Technology">
 <meta property="og:description" content="A rebuilt website, a refreshed brand and a product launch film for a contact-centre software company — all live on the same day.">
 <meta property="og:image" content="https://ajhtechnology.digital/uw-site-home.jpg">
-<meta property="og:image:width" content="1440">
-<meta property="og:image:height" content="812">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="722">
 <meta property="og:url" content="https://ajhtechnology.digital/case-study-upstream-works">
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_GB">
@@ -113,6 +113,16 @@
 }
 
 /* Screens pair */
+.uw-ba { position: relative; margin-top: 40px; border-radius: 16px; overflow: hidden; border: 1px solid #2a2a2a; background: #111; --pos: 50%; user-select: none; touch-action: pan-y; }
+.uw-ba img { display: block; width: 100%; height: auto; pointer-events: none; }
+.uw-ba-before { position: absolute; inset: 0; clip-path: inset(0 calc(100% - var(--pos)) 0 0); }
+.uw-ba-line { position: absolute; top: 0; bottom: 0; left: var(--pos); width: 3px; margin-left: -1.5px; background: #C7F100; pointer-events: none; }
+.uw-ba-knob { position: absolute; top: 50%; left: var(--pos); width: 46px; height: 46px; margin: -23px 0 0 -23px; border-radius: 50%; background: #C7F100; color: #0A0A0A; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 15px; box-shadow: 0 6px 24px rgba(0,0,0,0.5); pointer-events: none; }
+.uw-ba-tag { position: absolute; top: 14px; padding: 6px 12px; border-radius: 100px; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; background: rgba(10,10,10,0.82); color: #FAFAF7; pointer-events: none; }
+.uw-ba-tag.b { left: 14px; } .uw-ba-tag.a { right: 14px; background: #C7F100; color: #0A0A0A; }
+.uw-ba input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: ew-resize; }
+.uw-ba input:focus-visible ~ .uw-ba-knob { outline: 3px solid #FAFAF7; outline-offset: 3px; }
+.uw-ba-cap { font-size: 13px; color: var(--mute); margin-top: 12px; line-height: 1.5; }
 .uw-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 40px; }
 .uw-pair figure { margin: 0; }
 .uw-pair img { width: 100%; height: auto; display: block; border-radius: 14px; border: 1px solid #2a2a2a; }
@@ -220,16 +230,28 @@
   <h2>A ten-year-old website, a product launch with a fixed date, and <span class="serif">no marketing team.</span></h2>
   <p class="uw-p">The old upstreamworks.com was a WordPress site that had grown for a decade: hundreds of old blog posts, tag pages and campaign pages, and legal pages that hadn't been touched in years. It wasn't bringing in enquiries.</p>
   <p class="uw-p">At the same time, Upstream had a new platform coming with a fixed launch date, and the name couldn't go public early. They needed a website, a brand and a launch campaign ready for the same morning — and there was no in-house marketing team to do it.</p>
+
+  <div class="uw-ba" id="uw-ba">
+    <img src="uw-site-home.jpg" width="1280" height="722" alt="After: the new upstreamworks.com homepage, October 2026" loading="lazy">
+    <div class="uw-ba-before"><img src="uw-old-site.jpg" width="1280" height="722" alt="Before: the old upstreamworks.com homepage, August 2025" loading="lazy"></div>
+    <span class="uw-ba-tag b">Before · Aug 2025</span>
+    <span class="uw-ba-tag a">After · Oct 2026</span>
+    <input type="range" min="0" max="100" value="50" aria-label="Drag to compare the old and new upstreamworks.com homepages">
+    <div class="uw-ba-line"></div>
+    <div class="uw-ba-knob" aria-hidden="true">↔</div>
+  </div>
+  <p class="uw-ba-cap">Drag to compare. Left: upstreamworks.com in August 2025, from the Wayback Machine (web.archive.org). Right: the new site I built, live since 14 October 2026.</p>
+  <script>(function(){var b=document.getElementById('uw-ba');if(!b)return;var r=b.querySelector('input');function u(){b.style.setProperty('--pos',r.value+'%');}r.addEventListener('input',u);u();})();</script>
 </section>
 
 <section class="uw-wrap uw-sec">
   <div class="uw-eyebrow">What I did</div>
   <h2>From plan to launch, <span class="serif">in order.</span></h2>
-  <p class="uw-p">I worked directly with Upstream's Chief Revenue Officer, with their channel and CRM lead handling the sales systems.</p>
+  <p class="uw-p">I worked directly with Upstream's Chief Revenue Officer, with their channel and CRM lead handling the sales systems. From first plan to launch day took about six weeks.</p>
 
   <div class="uw-time">
     <div class="uw-step">
-      <div class="uw-date">Mid Sept</div>
+      <div class="uw-date">Early Sept</div>
       <div>
         <h3>Look before you build</h3>
         <p>I went through every page on the old site before designing anything, so nothing that brought in traffic or enquiries got lost. Then I wrote one plan document that everyone built from: the new page structure, what happens to every old link, a phased plan and the risks.</p>
@@ -399,6 +421,6 @@
   });
 })();
 </script>
-<script src="ajh-chat.js" defer></script>
+<script src="nav.js" defer></script>
 </body>
 </html>
