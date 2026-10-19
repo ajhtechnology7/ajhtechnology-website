@@ -6,7 +6,7 @@
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <meta name="theme-color" content="#0A0A0A">
 <title>Contact AJH Technology · Web Design Stowmarket, Ipswich, Bury St Edmunds</title>
-<meta name="description" content="Get a fixed price from Harlyn Palmer at AJH Technology. Phone 07488 286207 or use the form. Suffolk web design agency — Creeting St Mary, IP6 8NG.">
+<meta name="description" content="Talk to Harlyn Palmer at AJH Technology. Phone 07488 286207 or use the form. One-person web design business — Creeting St Mary, IP6 8NG.">
 <link rel="canonical" href="https://ajhtechnology.digital/contact">
 <meta property="og:image" content="https://ajhtechnology.digital/og-contact.png">
 <meta property="og:type" content="website">
@@ -16,7 +16,7 @@
 <meta property="og:url" content="https://ajhtechnology.digital/contact">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Contact AJH Technology · Web Design Stowmarket, Ipswich, Bury St Edmunds">
-<meta name="twitter:description" content="Get a fixed price from Harlyn Palmer at AJH Technology. Phone 07488 286207 or use the form. Suffolk web design agency — Creeting St Mary, IP6 8NG.">
+<meta name="twitter:description" content="Talk to Harlyn Palmer at AJH Technology. Phone 07488 286207 or use the form. One-person web design business — Creeting St Mary, IP6 8NG.">
 <meta name="twitter:image" content="https://ajhtechnology.digital/og-contact.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -70,7 +70,7 @@
     "postalCode": "IP6 8NG",
     "addressCountry": "GB"
   },
-  "areaServed": ["Ipswich","Stowmarket","Bury St Edmunds","Sudbury","Woodbridge","Felixstowe","Diss","Needham Market"],
+  "areaServed": {"@type": "AdministrativeArea", "name": "Suffolk"},
   "priceRange": "££"
 }
 </script>
@@ -104,11 +104,6 @@
       "postalCode": "IP6 8NG",
       "addressCountry": "GB"
     },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-      "opens": "09:00", "closes": "17:30"
-    },
     "contactPoint": [
       { "@type": "ContactPoint", "telephone": "+44-7488-286207", "contactType": "sales", "areaServed": "GB", "availableLanguage": "English" }
     ]
@@ -135,22 +130,22 @@
 
 <div class="page-header">
   <div class="breadcrumb"><a href="index.html"><span class="accent">AJH</span></a> / Contact</div>
-  <h1>Let's get your <span class="hl serif">first 10 leads.</span></h1>
-  <p class="sub">Twenty minutes. No sales pitch. Just an honest conversation about what your business needs and whether we're the right fit.</p>
+  <h1>Let's talk about <span class="hl serif">your website.</span></h1>
+  <p class="sub">Twenty minutes. No sales pitch. Just an honest conversation about what your business needs and whether I'm the right fit.</p>
 </div>
 
 <div class="confirm-strip">
-  <span>Reply within 4 working hours</span>
+  <span>I read every message myself</span>
   <span>No obligation</span>
   <span>Same person every call</span>
-  <span>Fixed-price quote within 48 hours</span>
+  <span>Price in writing before you commit</span>
 </div>
 
 <div class="contact-grid">
   <!-- FORM -->
   <div class="contact-form">
-    <h2 class="form-h">Tell us about <span class="hl serif">your business.</span></h2>
-    <p class="form-sub">The more you tell us, the better we can prepare. But none of this is required — even a one-line "let's chat" works.</p>
+    <h2 class="form-h">Tell me about <span class="hl serif">your business.</span></h2>
+    <p class="form-sub">The more you tell me, the better I can prepare. But none of this is required — even a one-line "let's chat" works.</p>
     <form name="contact" method="POST" action="https://formsubmit.co/hp@ajhtechnology.digital">
       <input type="hidden" name="_subject" value="New contact form — AJH Technology">
       <input type="hidden" name="_next" value="https://ajhtechnology.digital/thanks.html">
@@ -181,18 +176,21 @@
         <label for="enquiry">What are you looking for?</label>
         <select id="enquiry" name="enquiry">
           <option>I'm not sure yet — let's chat</option>
-          <option>Launch package (£550 setup + £40/mo)</option>
-          <option>Grow package (£1,100 setup + £80/mo)</option>
-          <option>Flagship package (from £2,000 setup + £140/mo)</option>
-          <option>Bespoke project (let's chat)</option>
+          <option data-key="starter">Starter website (£75/month, nothing upfront)</option>
+          <option data-key="business">Business website (£175/month, nothing upfront)</option>
+          <option data-key="platform">Platform website (£300 upfront + £350/month)</option>
+          <option data-key="partnership">Marketing partnership (bespoke)</option>
+          <option data-key="brand">Brand (refresh or full identity)</option>
+          <option data-key="video">Video</option>
+          <option data-key="other">Something else</option>
         </select>
       </div>
       <div class="form-field">
-        <label for="message">Tell us a bit about your business</label>
+        <label for="message">Tell me a bit about your business</label>
         <textarea id="message" name="message" placeholder="What you do, where you're based, and what's currently frustrating you about your digital setup. Even a few sentences helps."></textarea>
       </div>
       <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; padding: 20px; font-family: inherit;">Send my message <span class="arrow">→</span></button>
-      <div class="form-mini">Your details are kept private. We'll never share, sell or pass them on. GDPR-compliant.</div>
+      <div class="form-mini">Your details are only used to reply to you. See the <a href="privacy.html" style="color: inherit; text-decoration: underline;">privacy notice</a>.</div>
     </form>
   </div>
 
@@ -205,15 +203,15 @@
       <div class="contact-icon">📞</div>
       <div>
         <div class="contact-method-h">Phone</div>
-        <div class="contact-method-detail"><strong><a href="tel:+447488286207" style="color: inherit;">07488 286207</a></strong><br>Mon–Fri, 9am–5:30pm. Voicemail goes straight to my phone.</div>
+        <div class="contact-method-detail"><strong><a href="tel:+447488286207" style="color: inherit;">07488 286207</a></strong><br>It's my own mobile. If I'm on a job or at training, leave a message and I'll call you back.</div>
       </div>
     </div>
 
     <div class="contact-method">
-      <div class="contact-icon">☕</div>
+      <div class="contact-icon">✉️</div>
       <div>
-        <div class="contact-method-h">Coffee in person</div>
-        <div class="contact-method-detail">Come to the office at <strong>Grange Farm, Creeting St Mary</strong> — we make a mean latte with seriously fresh organic beans. Or anywhere else across Suffolk if you'd rather.</div>
+        <div class="contact-method-h">Email</div>
+        <div class="contact-method-detail"><strong><a href="mailto:hp@ajhtechnology.digital" style="color: inherit;">hp@ajhtechnology.digital</a></strong><br>Happy to meet in person too, by arrangement.</div>
       </div>
     </div>
 
@@ -231,7 +229,7 @@
 <section style="padding: 70px 48px 90px; background: var(--ink-2); border-top: 1px solid var(--border);">
   <div class="section-head">
     <h2>Find the <span class="hl serif">office.</span></h2>
-    <p class="section-sub">Grange Farm, Creeting St Mary — just off the A14 between Stowmarket and Needham Market. Free parking, decent coffee.</p>
+    <p class="section-sub">Grange Farm, Creeting St Mary — just off the A14 between Stowmarket and Needham Market. Visits by appointment.</p>
   </div>
   <div style="border-radius: 18px; overflow: hidden; border: 1px solid var(--border); max-width: 1200px; margin: 30px auto 0;">
     <iframe
@@ -253,23 +251,23 @@
 <section style="background: var(--ink-2);">
   <div class="section-head">
     <h2>What happens <span class="hl serif">next.</span></h2>
-    <p class="section-sub">No mystery. Here's exactly how the next 48 hours look.</p>
+    <p class="section-sub">No mystery. Here's how it works.</p>
   </div>
   <div class="grid-3">
     <div class="card">
       <div class="card-icon">01</div>
-      <div class="card-title" style="margin-top: 10px;">Within 4 hours</div>
-      <div class="card-desc">I read your message personally and reply with two or three time slots that work for a 20-minute call.</div>
+      <div class="card-title" style="margin-top: 10px;">I reply</div>
+      <div class="card-desc">I read your message myself and reply with a few times that work for a 20-minute call. If it's urgent, call me on 07488 286207.</div>
     </div>
     <div class="card">
       <div class="card-icon">02</div>
-      <div class="card-title" style="margin-top: 10px;">Within 24 hours</div>
-      <div class="card-desc">We talk. No script, no slides. I listen, ask questions, and tell you honestly whether AJH is the right fit.</div>
+      <div class="card-title" style="margin-top: 10px;">We talk</div>
+      <div class="card-desc">No script, no slides. I listen, ask questions, and tell you honestly whether AJH is the right fit.</div>
     </div>
     <div class="card">
       <div class="card-icon">03</div>
-      <div class="card-title" style="margin-top: 10px;">Within 48 hours</div>
-      <div class="card-desc">If we're a fit, you get a written fixed-price proposal. If we're not, I'll point you to who is. Zero pressure either way.</div>
+      <div class="card-title" style="margin-top: 10px;">You get it in writing</div>
+      <div class="card-desc">If it's a fit, you get the price and what's included in writing before you commit. If it's not, I'll say so. No pressure either way.</div>
     </div>
   </div>
 </section>
@@ -283,27 +281,27 @@
   <div style="max-width: 900px;">
     <div class="card" style="background: var(--ink-2); margin-bottom: 16px; min-height: auto;">
       <h3 style="font-size: 20px; margin-bottom: 12px;">Do I need to know what I want before calling?</h3>
-      <p style="font-size: 14px; color: #BBB; line-height: 1.6;">No. Most clients arrive with "we know something needs to change but we're not sure what". The 20-minute call is designed exactly for that.</p>
+      <p style="font-size: 14px; color: #BBB; line-height: 1.6;">No. Lots of people arrive with "we know something needs to change but we're not sure what". The 20-minute call is designed exactly for that.</p>
     </div>
     <div class="card" style="background: var(--ink-2); margin-bottom: 16px; min-height: auto;">
       <h3 style="font-size: 20px; margin-bottom: 12px;">How much does it cost to get started?</h3>
-      <p style="font-size: 14px; color: #BBB; line-height: 1.6;">The strategy call and free website audit are zero-cost. Paid projects start with our <strong>Launch package at £550 setup + £40/month</strong> (12-month minimum), with Grow and Flagship tiers above that. Standalone Brand and Process projects start from £1,200. Every quote is fixed-price before you commit.</p>
+      <p style="font-size: 14px; color: #BBB; line-height: 1.6;">The call and the free website check cost nothing. Websites start at <strong>£75 a month with nothing upfront</strong> on the Starter package (12-month minimum), with Business at £175 a month and Platform at £300 upfront + £350 a month. A full brand identity on its own is quoted up front. See <a href="pricing.html" style="color: var(--accent);">pricing</a> for what each includes. You get the price in writing before you commit.</p>
     </div>
     <div class="card" style="background: var(--ink-2); margin-bottom: 16px; min-height: auto;">
       <h3 style="font-size: 20px; margin-bottom: 12px;">Will you actually tell me if AJH isn't the right fit?</h3>
-      <p style="font-size: 14px; color: #BBB; line-height: 1.6;">Yes. We've turned down more projects than most agencies have taken on. If you need something we don't do, or if you don't need what we offer, I'll say so — and where I can, I'll suggest who might be a better match.</p>
+      <p style="font-size: 14px; color: #BBB; line-height: 1.6;">Yes. If I'm not the right fit, I'll say so and point you to someone who is. If you need something I don't do, or don't need what I offer, I'll tell you — and where I can, I'll suggest who might be a better match.</p>
     </div>
     <div class="card" style="background: var(--ink-2); min-height: auto;">
       <h3 style="font-size: 20px; margin-bottom: 12px;">Do you work outside Suffolk?</h3>
-      <p style="font-size: 14px; color: #BBB; line-height: 1.6;">Yes — remote across the UK. In-person is reserved for Ipswich, Stowmarket, Bury St Edmunds, Sudbury, Woodbridge, Felixstowe and Diss.</p>
+      <p style="font-size: 14px; color: #BBB; line-height: 1.6;">Yes — I can work remotely with anyone in the UK. In person, I'm happy to meet anywhere reasonably close in Suffolk.</p>
     </div>
   </div>
 </section>
 
 <footer>
   <div class="footer-grid">
-    <div class="footer-brand"><div class="logo"><span class="logo-dot"></span>AJH<span class="logo-suffix">/technology</span></div><p>Built locally in Suffolk. Helping small businesses grow with professional web design, strong brand identity and streamlined processes.</p></div>
-    <div class="footer-col"><h4>Services</h4><ul><li><a href="web.html">Web design</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="brand.html">Brand</a></li><li><a href="process.html">Process</a></li><li><a href="services.html">All services</a></li></ul></div>
+    <div class="footer-brand"><div class="logo"><span class="logo-dot"></span>AJH<span class="logo-suffix">/technology</span></div><p>Built locally in Suffolk. Websites, brand and video for small businesses — and the work that keeps them moving.</p></div>
+    <div class="footer-col"><h4>Services</h4><ul><li><a href="web.html">Web design</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="brand.html">Brand</a></li><li><a href="studio.html">Video &amp; studio</a></li><li><a href="services.html">All services</a></li></ul></div>
     <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="work.html">Approach</a></li><li><a href="recent-work.html">Recent work</a></li><li><a href="insights.html">Insights</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li></ul></div>
     <div class="footer-col"><h4>Contact</h4><ul><li><a href="tel:+447488286207" style="color: inherit;">07488 286207</a></li><li>The Office, Grange Farm</li><li>All Saints Road</li><li>Creeting St Mary, Suffolk</li><li>IP6 8NG</li></ul></div>
   </div>
@@ -320,19 +318,16 @@
 <script>
 (function() {
   var params = new URLSearchParams(window.location.search);
-  var pkg = params.get('package');
+  var pkg = params.get('package') || params.get('service');
   var select = document.getElementById('enquiry');
   if (!pkg || !select) return;
-  var map = {
-    launch: 'Launch package (£550 setup + £40/mo)',
-    grow: 'Grow package (£1,100 setup + £80/mo)',
-    flagship: 'Flagship package (from £2,000 setup + £140/mo)',
-    bespoke: 'Bespoke project (let\'s chat)'
-  };
-  var target = map[pkg.toLowerCase()];
-  if (!target) return;
+  // ?package=starter|business|platform|partnership|video (also ?service=brand|web|audit|video)
+  var aliases = { bespoke: 'partnership', marketing: 'partnership', studio: 'video', process: 'other' };
+  var key = (pkg || '').toLowerCase().trim();
+  key = aliases[key] || key;
+  if (!key) return;
   for (var i = 0; i < select.options.length; i++) {
-    if (select.options[i].text === target) {
+    if (select.options[i].getAttribute('data-key') === key) {
       select.selectedIndex = i;
       break;
     }

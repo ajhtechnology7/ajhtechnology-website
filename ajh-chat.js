@@ -14,164 +14,154 @@
   // Each entry: {q, kw (trigger keywords), a (answer), links (related pages)}
   const KB = [
     {
-      q: 'What does AJH Technology do?',
-      kw: ['what', 'do', 'about', 'agency', 'company', 'ajh', 'business', 'service', 'services'],
-      a: "AJH Technology is a Suffolk web design and digital production agency. We design and build lead-generating websites for small businesses, with three fixed-price packages plus a bespoke option. Every website comes with brand support, SEO/AEO setup and an ongoing managed service. Founded in 2024 by Harlyn Palmer and trading since 2026, based at Creeting St Mary, Suffolk.",
-      links: [{ text: 'About AJH', url: 'about.html' }, { text: 'Services', url: 'services.html' }]
+      q: "What does AJH Technology do?",
+      kw: ["what", "do", "about", "agency", "company", "ajh", "business", "service", "services"],
+      a: "AJH Technology is a one-person web design, brand and video business in Suffolk, run by Harlyn Palmer. It builds websites for small businesses on monthly plans, makes short-form and studio-style videos, and works as a monthly marketing partner for bigger clients. Registered in 2024, trading since 2026, based at Creeting St Mary.",
+      links: [{ text: "About AJH", url: "about.html" }, { text: "Services", url: "services.html" }]
     },
     {
-      q: 'Who runs AJH Technology?',
-      kw: ['who', 'runs', 'owns', 'founder', 'founded', 'harlyn', 'palmer', 'boss', 'director'],
-      a: "AJH Technology is founded and led by Harlyn Palmer — an aspiring footballer who spent 7 years in the Ipswich Town academy and now plays at Needham Market FC, chasing promotion to Step 2 and a pro contract. Alongside football, Harlyn absolutely loves helping clients with everything web and AI. Every project has one point of contact — you speak to the person doing the work.",
-      links: [{ text: "Harlyn's story", url: 'about.html' }]
+      q: "Who runs AJH Technology?",
+      kw: ["who", "runs", "owns", "founder", "founded", "harlyn", "palmer", "boss", "director"],
+      a: "Harlyn Palmer runs AJH on his own, so you always speak to the person doing the work. He is also a first-team player at Needham Market FC, after seven years in the Ipswich Town academy.",
+      links: [{ text: "Harlyn's story", url: "about.html" }]
     },
     {
-      q: 'How much does a website cost?',
-      kw: ['how', 'much', 'cost', 'price', 'pricing', 'expensive', 'cheap', 'budget', 'package', 'packages'],
-      a: "Three fixed-price packages: Launch — £550 setup + £40/month (up to 10 pages, sole traders). Grow — £1,100 setup + £80/month (up to 25 pages, most SMEs, most popular). Flagship — from £2,000 setup + £140/month (25+ pages, full brand + managed service). All 12-month minimum. Bespoke platform work (like Needham FC) priced on scope.",
-      links: [{ text: 'Full pricing', url: 'pricing.html' }, { text: 'Book a call', url: 'contact.html' }]
+      q: "How much does a website cost?",
+      kw: ["how", "much", "cost", "price", "pricing", "expensive", "cheap", "budget", "package", "packages"],
+      a: "Three packages, all on a 12-month minimum, with the build, hosting and monthly changes included: Starter £75/month (nothing upfront), Business £175/month (nothing upfront), Platform £300 upfront + £350/month. Whole marketing partnerships are priced on what you need.",
+      links: [{ text: "Full pricing", url: "pricing.html" }, { text: "Book a call", url: "contact.html" }]
     },
     {
-      q: 'How long does a website take?',
-      kw: ['how', 'long', 'take', 'timeline', 'timescale', 'when', 'delivery', 'deadline', 'live'],
-      a: "Most AJH websites go live within three weeks of the kick-off call. When a client has a hard deadline — trade show, funding round, seasonal launch — we've delivered in one week. Larger platform builds take three months. Tell us your deadline and we work backwards.",
-      links: [{ text: 'Our approach', url: 'work.html' }]
+      q: "How long does a website take?",
+      kw: ["how", "long", "take", "timeline", "timescale", "when", "delivery", "deadline", "live"],
+      a: "It depends on the size of the job. You get a delivery date in writing before anything starts, and if you have a real deadline, tell Harlyn on the first call so the plan works back from it.",
+      links: [{ text: "Our approach", url: "work.html" }]
     },
     {
-      q: 'What is included in the Launch package?',
-      kw: ['launch', 'starter', 'small', 'basic', 'entry', '500', '25'],
-      a: "Launch (£550 setup + £40/month) is for sole traders and micro-businesses. Includes a mobile-first website of up to 10 pages, hosting, SSL, lead-capture form, Google indexing, one design revision, on-brand favicon and Open Graph cards, GA4 analytics, 20 minutes of updates a month, and 30 days of post-launch support.",
-      links: [{ text: 'Launch details', url: 'pricing.html' }]
+      q: "What is in the Starter package?",
+      kw: ["starter", "launch", "small", "basic", "entry", "single", "page", "75"],
+      a: "Starter is £75/month with nothing upfront (12-month minimum). A single-page site or up to 5 pages, enquiry form, hosting, SSL, security updates, set-up on Google with visitor stats, and 20 minutes of changes a month. Example: Eastrada Facilities.",
+      links: [{ text: "Pricing", url: "pricing.html" }, { text: "Eastrada case study", url: "case-study-eastrada.html" }]
     },
     {
-      q: 'What is included in the Grow package?',
-      kw: ['grow', 'middle', 'popular', 'growth', 'sme', '1000', '75'],
-      a: "Grow (£1,100 setup + £80/month) is our most popular package for growing SMEs. Includes a mobile-first site of up to 25 pages, hosting, SSL, full brand refresh, FAQ/schema/AEO layer, Google Business Profile setup, 45 minutes of updates a month, monthly performance reports, priority support and 90 days of post-launch care.",
-      links: [{ text: 'Grow details', url: 'pricing.html' }]
+      q: "What is in the Business package?",
+      kw: ["business", "grow", "middle", "popular", "growth", "sme", "175"],
+      a: "Business is £175/month with nothing upfront (12-month minimum). Everything in Starter plus up to 15 pages, a brand refresh, set-up for Google and AI assistants, Google Business Profile set-up and 45 minutes of changes a month. Example: Wall2Wall Group.",
+      links: [{ text: "Pricing", url: "pricing.html" }, { text: "Wall2Wall case study", url: "case-study-wall2wall.html" }]
     },
     {
-      q: 'What is included in the Flagship package?',
-      kw: ['flagship', 'full', 'premium', 'big', 'best', 'top', '2000', '125'],
-      a: "Flagship (from £2,000 setup + £140/month) is the whole system. 25+ pages, full brand identity, custom photography direction, SEO + AEO programme, LinkedIn setup, content strategy, custom Open Graph per page, quarterly strategy reviews with Harlyn, 1 hour of updates a month, continuous improvement worked into the retainer.",
-      links: [{ text: 'Flagship details', url: 'pricing.html' }]
+      q: "What is in the Platform package?",
+      kw: ["platform", "flagship", "full", "premium", "big", "booking", "system", "accounts", "350", "300"],
+      a: "Platform is £300 upfront plus £350/month (12-month minimum). For sites that need systems, such as a booking-request calendar or member accounts, or links to tools you already use. Scoped in writing before anything starts. Example: Needham Market FC.",
+      links: [{ text: "Pricing", url: "pricing.html" }, { text: "Needham FC case study", url: "case-study-needham-market-fc.html" }]
     },
     {
-      q: 'Do you offer bespoke development?',
-      kw: ['bespoke', 'custom', 'platform', 'complex', 'big', 'enterprise', 'ecommerce', 'e-commerce', 'shop', 'store', 'booking', 'api', 'database', 'sql'],
-      a: "Yes. Beyond the three packages we deliver bespoke platform work — the Needham Market FC site is a recent example: live FA Full-Time fixture/league API integrations, SQL-powered ticketing and venue booking, supporter portal, club shop and NeedhamFC TV. Bespoke projects are priced on scope.",
-      links: [{ text: 'Needham FC case study', url: 'case-study-needham-market-fc.html' }, { text: 'Get in touch', url: 'contact.html' }]
+      q: "Do you do bigger, ongoing work?",
+      kw: ["bespoke", "custom", "partnership", "partner", "marketing", "fractional", "enterprise", "retainer", "ongoing", "upstream", "totalix"],
+      a: "Yes. For clients who need a whole marketing function, AJH works as a monthly partner, priced on what's needed. Example: Upstream Works, where that meant a rebuilt website, a refreshed brand and a product launch film, all live on 14 October 2026.",
+      links: [{ text: "Upstream Works case study", url: "case-study-upstream-works.html" }, { text: "Get in touch", url: "contact.html" }]
     },
     {
-      q: 'Do you produce video or animation?',
-      kw: ['video', 'animation', 'film', 'shoot', 'reel', 'social', 'linkedin', 'campaign', 'launch', 'day', 'life', 'upstream', 'endava', 'promo', 'clip'],
-      a: "Yes. AJH concepts, directs, edits and delivers short-form video for campaigns and launches. A recent example: a 50-second Day in the Life piece for Upstream Works Software supporting the pre-launch of their strategic partnership with Endava (NYSE: DAVA). Portrait format, tuned for LinkedIn and mobile social. Concept-to-delivery in days.",
-      links: [{ text: 'Upstream × Endava case study', url: 'case-study-upstream-endava.html' }, { text: 'Get in touch', url: 'contact.html' }]
+      q: "Do you make videos?",
+      kw: ["video", "animation", "film", "shoot", "reel", "social", "linkedin", "campaign", "day", "life", "endava", "promo", "clip", "studio"],
+      a: "Yes. Short-form videos from £300, studio-style films from £750, or monthly video from £400/month. Editing and captions are always included. Examples: the Upstream Works × Endava Day in the Life and the Totalix launch film.",
+      links: [{ text: "Video & studio", url: "studio.html" }, { text: "Upstream × Endava", url: "case-study-upstream-endava.html" }]
     },
     {
-      q: 'Where is AJH based?',
-      kw: ['where', 'based', 'location', 'address', 'office', 'suffolk', 'needham', 'creeting'],
-      a: "AJH Technology is based at The Office, Grange Farm, All Saints Road, Creeting St Mary, Suffolk, IP6 8NG — just outside Needham Market, 15 minutes from Ipswich and Stowmarket. We serve clients across Suffolk, Norfolk, Essex and Cambridgeshire, plus remote UK.",
-      links: [{ text: 'Contact', url: 'contact.html' }]
+      q: "Where is AJH based?",
+      kw: ["where", "based", "location", "address", "office", "suffolk", "needham", "creeting"],
+      a: "The Office, Grange Farm, All Saints Road, Creeting St Mary, Suffolk, IP6 8NG — just outside Needham Market. Most clients are in Suffolk, but work can be done remotely too.",
+      links: [{ text: "Contact", url: "contact.html" }]
     },
     {
-      q: 'What areas do you serve?',
-      kw: ['areas', 'serve', 'coverage', 'region', 'ipswich', 'stowmarket', 'bury', 'sudbury', 'woodbridge', 'felixstowe', 'diss', 'norwich', 'norfolk', 'essex', 'east', 'anglia'],
-      a: "Primary coverage: Ipswich, Stowmarket, Needham Market, Bury St Edmunds, Sudbury, Woodbridge, Felixstowe, Diss and surrounding Suffolk villages. Extended coverage across Norfolk, Essex and Cambridgeshire. Remote UK clients are also welcome.",
-      links: [
-        { text: 'Ipswich', url: 'web-design-ipswich.html' },
-        { text: 'Stowmarket', url: 'web-design-stowmarket.html' },
-        { text: 'Bury St Edmunds', url: 'web-design-bury-st-edmunds.html' }
-      ]
+      q: "What areas do you serve?",
+      kw: ["areas", "serve", "coverage", "region", "ipswich", "stowmarket", "bury", "sudbury", "woodbridge", "felixstowe", "diss", "norwich", "norfolk", "essex", "east", "anglia"],
+      a: "Mainly Suffolk — Ipswich, Stowmarket, Needham Market, Bury St Edmunds and the towns around them — and remote work anywhere in the UK.",
+      links: [{ text: "Ipswich", url: "web-design-ipswich.html" }, { text: "Stowmarket", url: "web-design-stowmarket.html" }, { text: "Bury St Edmunds", url: "web-design-bury-st-edmunds.html" }]
     },
     {
-      q: 'Who have you worked with?',
-      kw: ['who', 'clients', 'worked', 'work', 'case', 'studies', 'portfolio', 'projects', 'customers', 'examples', 'references'],
-      a: "Featured case studies: Upstream Works Software × Endava (short-form Day in the Life video supporting a strategic partnership pre-launch with NYSE-listed Endava), Needham Market FC (Southern League football club — brand, one-club website, live fixture/league APIs, SQL ticketing and venue booking, 3-month build), Eastrada Facilities Limited (CHAS/Achilles commercial cleaning contractor in Mendlesham), and Wall2Wall Group (CHAS-accredited plasterers in Stowmarket — full brand pack including vehicle livery).",
-      links: [
-        { text: 'All recent work', url: 'recent-work.html' },
-        { text: 'Upstream × Endava', url: 'case-study-upstream-endava.html' },
-        { text: 'Needham FC', url: 'case-study-needham-market-fc.html' },
-        { text: 'Eastrada', url: 'case-study-eastrada.html' },
-        { text: 'Wall2Wall', url: 'case-study-wall2wall.html' }
-      ]
+      q: "Who have you worked with?",
+      kw: ["who", "clients", "worked", "work", "case", "studies", "portfolio", "projects", "customers", "examples", "references"],
+      a: "Upstream Works (website rebuild, brand and launch film as a monthly marketing partner), Wall2Wall Group (brand, website and print), Eastrada Facilities (single-page website and ongoing care) and Needham Market FC (brand refresh, club website and booking-request system, built as a volunteer). Plus a Day in the Life video for Upstream Works × Endava.",
+      links: [{ text: "All recent work", url: "recent-work.html" }, { text: "Upstream Works", url: "case-study-upstream-works.html" }, { text: "Needham FC", url: "case-study-needham-market-fc.html" }, { text: "Eastrada", url: "case-study-eastrada.html" }, { text: "Wall2Wall", url: "case-study-wall2wall.html" }]
     },
     {
-      q: 'What tech do you use?',
-      kw: ['tech', 'technology', 'stack', 'code', 'build', 'built', 'framework', 'wordpress', 'html', 'css', 'javascript', 'netlify', 'github', 'sql', 'database'],
-      a: "AJH builds mobile-first static HTML and CSS websites hosted on Netlify with GitHub-driven deploys. Sub-2-second load times on 4G, zero attack surface, easy long-term maintenance, no CMS bloat. Larger projects add SQL-backed transactional systems and API integrations. Every site ships with Schema.org structured data for SEO and AEO surfacing.",
-      links: [{ text: 'Approach', url: 'work.html' }]
+      q: "What tech do you use?",
+      kw: ["tech", "technology", "stack", "code", "build", "built", "framework", "wordpress", "html", "css", "javascript", "netlify", "github", "database", "ai"],
+      a: "Mostly static, hand-built HTML and CSS sites hosted on Netlify and deployed from GitHub, which keeps them quick and simple to look after. Every site includes structured data for Google and AI assistants.",
+      links: [{ text: "Approach", url: "work.html" }]
     },
     {
-      q: 'How does AJH approach SEO?',
-      kw: ['seo', 'search', 'google', 'ranking', 'indexing', 'organic', 'traffic'],
-      a: "SEO is a first-class discipline at AJH, not an afterthought. Every site ships with clean semantic HTML, canonical URLs, comprehensive Schema.org markup (LocalBusiness, Service, Article, FAQPage, BreadcrumbList, Product/Offer), a valid XML sitemap, per-page Open Graph images and Search Console verification. Town-specific landing pages support local search. Grow and Flagship get monthly performance reports.",
-      links: [{ text: 'AEO insights', url: 'insights-aeo-for-suffolk-businesses.html' }]
+      q: "How does AJH approach SEO?",
+      kw: ["seo", "search", "google", "ranking", "indexing", "organic", "traffic"],
+      a: "Every site gets the basics done properly: clean page structure, page titles and descriptions, structured data, an XML sitemap and Google Search Console set up so you can see who's finding you. Business and Platform also get Google Business Profile set-up.",
+      links: [{ text: "AEO explained", url: "insights-aeo-for-suffolk-businesses.html" }]
     },
     {
-      q: 'What is AEO?',
-      kw: ['aeo', 'answer', 'engine', 'chatgpt', 'perplexity', 'claude', 'llm', 'ai', 'assistant'],
-      a: "AEO — Answer Engine Optimisation — is designed into every AJH project. We build direct-answer sections so ChatGPT, Google AI Overviews, Perplexity and Claude can quote your business as a named answer. FAQPage/Service/LocalBusiness schema, dateModified freshness, plain-English town/service language. Measured by asking the major AI assistants specific customer questions.",
-      links: [{ text: 'AEO deep dive', url: 'insights-aeo-for-suffolk-businesses.html' }]
+      q: "What is AEO?",
+      kw: ["aeo", "answer", "engine", "chatgpt", "perplexity", "llm", "assistant"],
+      a: "AEO (Answer Engine Optimisation) means writing and structuring your site so AI assistants like ChatGPT and Google's AI Overviews can understand your business and are more likely to mention it. Nobody can guarantee an AI will name you, but clear answers and structured data give you the best chance.",
+      links: [{ text: "AEO explained", url: "insights-aeo-for-suffolk-businesses.html" }]
     },
     {
-      q: 'Do you offer ongoing management?',
-      kw: ['ongoing', 'management', 'managed', 'maintenance', 'support', 'monthly', 'retainer', 'after', 'launch'],
-      a: "Yes — every AJH package includes ongoing managed service. The monthly fee covers hosting, SSL, security, uptime monitoring, GDPR-compliant forms, your monthly update allowance (20 minutes on Launch, 45 on Grow, 1 hour on Flagship), Schema.org maintenance, sitemap refresh, Search Console monitoring and monthly performance reporting. Larger platform clients get weekly content refreshes and quarterly strategy reviews.",
-      links: [{ text: 'Services', url: 'services.html' }]
+      q: "What's included each month?",
+      kw: ["ongoing", "management", "managed", "maintenance", "monthly", "after", "care", "included"],
+      a: "Every package's monthly fee covers the build, hosting, SSL, security updates and a set amount of changes each month: 20 minutes on Starter, 45 on Business, 1 hour on Platform. Extra changes are £60/hour, quoted before any work starts.",
+      links: [{ text: "Pricing", url: "pricing.html" }]
     },
     {
-      q: 'What kind of support do you offer?',
-      kw: ['support', 'help', 'contact', 'response', 'urgent', 'emergency', 'broken', 'down'],
-      a: "Standard: email (typical response within one business day), phone on 07488 286207 (business hours), and copy update requests within your monthly allowance. Emergencies (site down, form broken) are prioritised same-day where possible. Grow and Flagship get priority windows and monthly check-ins. Platform clients get a weekly working cadence with the founder.",
-      links: [{ text: 'Contact', url: 'contact.html' }]
+      q: "What kind of support do you offer?",
+      kw: ["support", "help", "response", "urgent", "emergency", "broken", "down"],
+      a: "Email or call Harlyn directly on 07488 286207. If something is broken, like the site being down or a form not working, it gets fixed first.",
+      links: [{ text: "Contact", url: "contact.html" }]
     },
     {
-      q: 'Do you offer brand identity work?',
-      kw: ['brand', 'branding', 'identity', 'logo', 'colours', 'colors', 'typography', 'visual', 'design'],
-      a: "Yes. Grow and Flagship packages include a brand refresh — palette, type, logo tune-up and Open Graph card set. Full brand builds (like the 8-piece Wall2Wall pack — logo system, vehicle livery, site boards, letterhead, business cards, email signature, workwear, social kit) are quoted separately. The Needham Market FC project included a brand refresh around the historic 1919 crest.",
-      links: [{ text: 'Brand service', url: 'brand.html' }, { text: 'Wall2Wall case study', url: 'case-study-wall2wall.html' }]
+      q: "Do you offer brand identity work?",
+      kw: ["brand", "branding", "identity", "logo", "colours", "colors", "typography", "visual", "design"],
+      a: "Yes. A brand refresh is included in the Business package, and a full identity can be quoted on its own. Examples: the Wall2Wall brand and the Upstream Works brand pack.",
+      links: [{ text: "Brand service", url: "brand.html" }, { text: "Wall2Wall case study", url: "case-study-wall2wall.html" }]
     },
     {
-      q: 'Do you work with tradespeople?',
-      kw: ['trade', 'trades', 'tradespeople', 'plumber', 'plumbers', 'electrician', 'electricians', 'builder', 'builders', 'plasterer', 'plasterers', 'chas', 'accredited'],
-      a: "Yes — tradespeople are a core AJH audience. Recent trade clients include CHAS-accredited plasterers, commercial cleaning contractors and construction-adjacent businesses across Suffolk. Trade websites typically use Launch or Grow, with an emphasis on accreditation display (CHAS, Achilles, Constructionline, HSE), before/after photography, clear pricing, quote-request forms, and tel:/WhatsApp routes.",
-      links: [{ text: 'Wall2Wall case study', url: 'case-study-wall2wall.html' }]
+      q: "Do you work with tradespeople?",
+      kw: ["trade", "trades", "tradespeople", "plumber", "plumbers", "electrician", "electricians", "builder", "builders", "plasterer", "plasterers", "chas", "accredited"],
+      a: "Yes. Wall2Wall (plasterers) and Eastrada (commercial cleaning and facilities) are both trade businesses. Trade sites usually put accreditations, real job photos and an easy quote form front and centre.",
+      links: [{ text: "Wall2Wall case study", url: "case-study-wall2wall.html" }, { text: "Eastrada case study", url: "case-study-eastrada.html" }]
     },
     {
-      q: 'What is the delivery process?',
-      kw: ['process', 'delivery', 'phases', 'stages', 'steps', 'how', 'work', 'workflow', 'method', 'methodology'],
-      a: "Four phases. 1) Discovery: a 20-minute strategy call plus a written brief. 2) Design: mobile-first flat files with one revision round. 3) Build: hand-coded static HTML/CSS, schema, indexing, GA4, form pipelines. 4) Launch: DNS/SSL, sitemap submission, Search Console, 30 days of post-launch care. Larger builds add an Integrate phase (API/SQL) between Build and Launch.",
-      links: [{ text: 'Approach', url: 'work.html' }]
+      q: "What is the delivery process?",
+      kw: ["process", "delivery", "phases", "stages", "steps", "work", "workflow", "method", "methodology"],
+      a: "Plan (a call and a written brief), design, build, then launch with Google set-up — and the ongoing monthly care after that. You see the site working on your phone before it goes live.",
+      links: [{ text: "Approach", url: "work.html" }]
     },
     {
-      q: 'What happens after the 12-month minimum?',
-      kw: ['12', 'month', 'minimum', 'contract', 'end', 'after', 'cancel', 'termination', 'terminate', 'notice'],
-      a: "After the 12-month minimum, packages move to a rolling monthly contract, cancellable by either party with one calendar month's written notice. No lock-in — clients stay because they want to. On termination we hand over the domain, DNS and content assets.",
-      links: [{ text: 'Full terms', url: 'terms.html' }]
+      q: "What happens after the 12-month minimum?",
+      kw: ["12", "month", "minimum", "contract", "end", "cancel", "termination", "terminate", "notice", "own", "ownership"],
+      a: "After 12 months the plan rolls on monthly, and you can cancel with one month's notice. The website is yours once the 12-month term is complete; if you want to leave earlier, you can pay the rest of the term and take it with you.",
+      links: [{ text: "Pricing FAQ", url: "pricing.html" }, { text: "Terms", url: "terms.html" }]
     },
     {
-      q: 'Are you GDPR-compliant?',
-      kw: ['gdpr', 'privacy', 'data', 'compliance', 'compliant', 'legal', 'lawful'],
-      a: "Yes — fully UK GDPR-compliant. Every site ships with a tailored Privacy Notice, cookie transparency, GDPR-compliant contact forms with lawful basis captured, and analytics configured with consent. AJH itself is a UK data controller. Client data is stored in UK/EEA regions only.",
-      links: [{ text: 'Privacy notice', url: 'privacy.html' }]
+      q: "Are you GDPR-compliant?",
+      kw: ["gdpr", "privacy", "data", "compliance", "compliant", "legal", "lawful"],
+      a: "AJH sites include a privacy notice, cookie information and contact forms that only collect what's needed. If your business has specific data requirements, raise them on the first call so they're built in.",
+      links: [{ text: "Privacy notice", url: "privacy.html" }]
     },
     {
-      q: 'Do you offer a free audit?',
-      kw: ['free', 'audit', 'review', 'check', 'analysis', 'assessment'],
-      a: "Yes. Free 1-page website audit for qualifying Suffolk businesses. Covers technical SEO, mobile page-speed, Schema.org markup, AEO readiness, accessibility (WCAG 2.1 AA), Open Graph, Google Business Profile status and 3 prioritised recommendations. Delivered within five working days.",
-      links: [{ text: 'Request the audit', url: 'audit.html' }]
+      q: "Do you offer a free website check?",
+      kw: ["free", "audit", "review", "check", "analysis", "assessment"],
+      a: "Yes. Send your website through the free website check form and Harlyn will look it over and come back with the main things worth fixing.",
+      links: [{ text: "Free website check", url: "audit.html" }]
     },
     {
-      q: 'How do I get started?',
-      kw: ['start', 'started', 'begin', 'book', 'call', 'contact', 'reach', 'talk', 'chat', 'meet', 'first'],
-      a: "20-minute strategy call. Book one at the contact page or call 07488 286207 (Harlyn). We'll discuss your business, goals, what a good lead looks like, and which package fits. You get a written scope, fixed price and proposed timeline. No obligation.",
-      links: [{ text: 'Book a call', url: 'contact.html' }, { text: 'Call 07488 286207', url: 'tel:+447488286207' }]
+      q: "How do I get started?",
+      kw: ["start", "started", "begin", "book", "call", "contact", "reach", "talk", "chat", "meet", "first"],
+      a: "Book a free 20-minute call on the contact page or ring Harlyn on 07488 286207. You'll talk about your business and what you need, then get the scope and price in writing. No obligation.",
+      links: [{ text: "Book a call", url: "contact.html" }, { text: "Call 07488 286207", url: "tel:+447488286207" }]
     },
     {
-      q: 'Do you sell websites for football clubs?',
-      kw: ['football', 'sport', 'club', 'sports', 'team', 'league', 'fixtures', 'needham'],
-      a: "Yes — Needham Market FC is one of our biggest projects. Southern League Premier Central club, one-club website covering Marketmen, Market Women, Reserves and Academy. Live FA Full-Time integrations for fixtures, league table, results, form and scorers. SQL-powered ticketing and venue booking. Sponsor architecture, club shop, NeedhamFC TV.",
-      links: [{ text: 'Needham FC case study', url: 'case-study-needham-market-fc.html' }]
+      q: "Do you build websites for football clubs?",
+      kw: ["football", "sport", "club", "sports", "team", "league", "fixtures", "needham"],
+      a: "Yes. Harlyn built the Needham Market FC website for his own club as a volunteer: a brand refresh, a club website and an online booking-request system for the pitch and venue, with tickets and the shop linking to the club's ticketing provider.",
+      links: [{ text: "Needham FC case study", url: "case-study-needham-market-fc.html" }]
     }
   ];
 
@@ -282,7 +272,7 @@
 
   const FALLBACK = "I'm just a simple site bot, so I don't know the answer to that one — but Harlyn (the human founder) will. Give him a shout for a proper conversation.";
 
-  const GREETING = "Hi — I'm the AJH site bot. Ask me anything about AJH Technology — pricing, packages, tech stack, sectors, delivery time, our team, or recent work. If I don't know, I'll point you to Harlyn.";
+  const GREETING = "Hi — I'm the AJH site bot. Ask me anything about AJH Technology — pricing, packages, video, how sites are built, or recent work. If I don't know, I'll point you to Harlyn.";
 
   const SUGGESTIONS = [
     'How much does a website cost?',
