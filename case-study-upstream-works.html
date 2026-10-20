@@ -118,7 +118,7 @@
 .uw-ba-before { position: absolute; inset: 0; clip-path: inset(0 calc(100% - var(--pos)) 0 0); }
 .uw-ba-line { position: absolute; top: 0; bottom: 0; left: var(--pos); width: 3px; margin-left: -1.5px; background: #C7F100; pointer-events: none; }
 .uw-ba-knob { position: absolute; top: 50%; left: var(--pos); width: 46px; height: 46px; margin: -23px 0 0 -23px; border-radius: 50%; background: #C7F100; color: #0A0A0A; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 15px; box-shadow: 0 6px 24px rgba(0,0,0,0.5); pointer-events: none; }
-.uw-ba-tag { position: absolute; top: 14px; padding: 6px 12px; border-radius: 100px; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; background: rgba(10,10,10,0.82); color: #FAFAF7; pointer-events: none; }
+.uw-ba-tag { position: absolute; bottom: 14px; padding: 6px 12px; border-radius: 100px; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; background: rgba(10,10,10,0.82); color: #FAFAF7; pointer-events: none; }
 .uw-ba-tag.b { left: 14px; } .uw-ba-tag.a { right: 14px; background: #C7F100; color: #0A0A0A; }
 .uw-ba input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: ew-resize; }
 .uw-ba input:focus-visible ~ .uw-ba-knob { outline: 3px solid #FAFAF7; outline-offset: 3px; }
@@ -232,15 +232,15 @@
   <p class="uw-p">At the same time, Upstream had a new platform coming with a fixed launch date, and the name couldn't go public early. They needed a website, a brand and a launch campaign ready for the same morning — and there was no in-house marketing team to do it.</p>
 
   <div class="uw-ba" id="uw-ba">
-    <img src="uw-site-home.jpg" width="1280" height="722" alt="After: the new upstreamworks.com homepage, October 2026" loading="lazy">
-    <div class="uw-ba-before"><img src="uw-old-site.jpg" width="1280" height="722" alt="Before: the old upstreamworks.com homepage, August 2025" loading="lazy"></div>
-    <span class="uw-ba-tag b">Before · Aug 2025</span>
-    <span class="uw-ba-tag a">After · Oct 2026</span>
+    <img src="uw-new-site-hero.jpg" width="1280" height="500" alt="After: the new upstreamworks.com homepage, October 2026" loading="lazy">
+    <div class="uw-ba-before"><img src="uw-old-site-hero.jpg" width="1280" height="500" alt="Before: the old upstreamworks.com homepage" loading="lazy"></div>
+    <span class="uw-ba-tag b">Before</span>
+    <span class="uw-ba-tag a">After</span>
     <input type="range" min="0" max="100" value="50" aria-label="Drag to compare the old and new upstreamworks.com homepages">
     <div class="uw-ba-line"></div>
     <div class="uw-ba-knob" aria-hidden="true">↔</div>
   </div>
-  <p class="uw-ba-cap">Drag to compare. Left: upstreamworks.com in August 2025, from the Wayback Machine (web.archive.org). Right: the new site I built, live since 14 October 2026.</p>
+  <p class="uw-ba-cap">Drag to compare. Left: the upstreamworks.com homepage before the rebuild. Right: the new site I built, live since 14 October 2026.</p>
   <script>(function(){var b=document.getElementById('uw-ba');if(!b)return;var r=b.querySelector('input');function u(){b.style.setProperty('--pos',r.value+'%');}r.addEventListener('input',u);u();})();</script>
 </section>
 
